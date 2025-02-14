@@ -1,0 +1,128 @@
+.Awards-PP-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 1279px;
+    width: 100%;
+    margin: 20px auto;
+    height: fit-content;
+    border-radius: 16px;
+    border: 1px solid rgba(193, 193, 193, 1);
+    background: rgba(255, 255, 255, 1);
+    padding: 20px 40px;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.Awards-PP-container h2 {
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 25px;
+    color: #272848;
+    margin: 0;
+}
+
+/* Awards section */
+.Awards-PP-contain {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+/* Individual Award Item */
+.Awards-PP-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    width: 275px;
+    height: auto;
+    box-shadow: 0px 4px 3px 0px #0000000A;
+    border: 0.5px solid #0167FF80;
+    border-radius: 12px;
+    padding: 16px;
+    background-color: #fff;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.Awards-PP-item .Awards-PP-desi {
+    color: #272848;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 25px;
+    margin: 0;
+    transition: font-weight 0.3s ease, background-color 0.3s ease;
+}
+
+.Awards-PP-item:hover {
+    background-color: #F2F6FF;
+}
+
+.Awards-PP-item:hover .Awards-PP-desi {
+    font-weight: 500;
+}
+
+/* ===== Responsive Design ===== */
+
+/* Tablets (max-width: 1024px) */
+@media (max-width: 1024px) {
+    .Awards-PP-container {
+        padding: 20px;
+    }
+
+    .Awards-PP-contain {
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .Awards-PP-item {
+        width: 100%;
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 998px) {
+    .Awards-PP-item {
+        width: 100%;
+        max-width: 330px;
+    }
+}
+
+/* Mobile Devices (max-width: 768px) */
+@media (max-width: 768px) {
+    .Awards-PP-container {
+        padding:20px;
+    }
+    .Awards-PP-container h2 {
+        font-size: 20px;
+    }
+
+    .Awards-PP-contain {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .Awards-PP-item {
+        width: 100%;
+        max-width:100%;
+    }
+
+   
+}
+
+/* Small Mobile Devices (max-width: 480px) */
+@media (max-width: 480px) {
+    .Awards-PP-container {
+        border-radius: 0px;
+    }
+
+    .Awards-PP-item {
+        padding: 12px;
+        gap: 10px;
+    }
+
+    .Awards-PP-item .Awards-PP-desi {
+        font-size: 14px;
+        line-height: 20px;
+    }
+}

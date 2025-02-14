@@ -1,0 +1,91 @@
+/* Styling for the popup overlay */
+.blog-popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.6); /* Slightly transparent dark overlay */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+/* Popup content container */
+.blog-popup-content {
+  background-color: #ffffff; /* Clean white background */
+  border-radius: 16px;
+  padding: 2rem;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  text-align: center;
+  color: #333; /* Dark text for readability */
+  animation: popup-appear 0.4s ease-in-out;
+  position: relative;
+}
+
+/* Smooth popup animation */
+@keyframes popup-appear {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Title styling */
+.blog-popup-content h2 {
+  font-size: 1.8rem;
+  color: #1a73e8; /* Light blue for the title */
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+/* Paragraph styling */
+.blog-popup-content p {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  color: #666; /* Soft gray for secondary text */
+}
+
+/* Countdown timer styling */
+.countdown-timer p:first-child {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.countdown-timer p:last-child {
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: 0.05rem;
+  color: #333;
+}
+
+/* Close button styling */
+.blog-popup-close-button {
+  background-color: #1a73e8; /* Light blue button */
+  color: #fff;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 25px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  
+  bottom: 1rem;
+  left:60%;
+  transform: translateX(-50%);
+  margin-top: 20px !important;
+  margin-left: 90px;
+}
+
+/* Close button hover effect */
+.blog-popup-close-button:hover {
+  background-color: #135cb0; /* Slightly darker blue on hover */
+}

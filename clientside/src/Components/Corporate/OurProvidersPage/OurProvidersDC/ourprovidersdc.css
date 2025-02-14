@@ -1,0 +1,236 @@
+.OurProvidersDC-blogPage-Doctors-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 30px;
+    max-width: 1279px;
+    width: 100%;
+    margin-top: 50px;
+    box-sizing: border-box;
+}
+.OurProvidersDC-blogPage-Doctors-title-head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.OurProvidersDC-blogPage-Doctors-title-head h2 {
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 33.6px;
+    color: rgba(39, 40, 72, 1);
+}
+.OurProvidersDC-blogPage-Doctors-title-head .OurProvidersDC-See-more-btn{
+    background-color: #0167ff;
+    width: 124px;
+    height:35px;
+    padding: 0px 10px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19.2px; 
+    transition: background 0.3s ease, transform 0.3s ease;   
+}
+.OurProvidersDC-blogPage-Doctors-title-head .OurProvidersDC-See-more-btn:hover {
+    background-color: #edf3ff;
+    border: 0.4px solid #0167ff;
+    color: #0167ff;
+    transform: scale(1.05);
+}
+.OurProvidersDC-blogPageDoctorCardBox {
+  display: flex;
+  align-items: flex-start;
+  gap: 25px;
+  overflow-x: auto; /* Enable horizontal scrolling */
+  overflow-y: hidden;
+  padding-bottom: 15px;
+  scroll-behavior: smooth;
+  white-space: nowrap; /* Prevent cards from wrapping */
+}
+
+.OurProvidersDC-blogPageDoctorCardBox::-webkit-scrollbar {
+  height: 4.5px;
+}
+
+.OurProvidersDC-blogPageDoctorCardBox::-webkit-scrollbar-thumb {
+  background-color:rgba(219, 219, 219, 1);
+  border-radius: 40px;
+}
+
+.OurProvidersDC-blogPageDoctorCard {
+  flex: 0 0 298px; /* Fixed card width */
+  height: 269px;
+  display: inline-flex; /* Aligns items horizontally */
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+  cursor: pointer;
+  margin-top: 60px;
+  border-radius: 12px;
+  transition: all 0.2s ease;
+  background: rgba(255, 255, 255, 1);
+  border: 0.4px solid rgba(1, 103, 255, 0.4);
+  box-shadow: 0px 2px 4px rgba(1, 103, 255, 0.08);
+}
+
+.OurProvidersDC-blogPageDoctorCard:hover {
+  border: 0.4px solid #0167ff;
+}
+
+.OurProvidersDC-blogPageDoctorCardImgBox {
+  position: relative;
+  top: -33%;
+  bottom: 0;
+  margin: 0 auto;
+}
+
+.OurProvidersDC-blogPageDoctorCardImgBox > a > img {
+  width: 94px;
+  height: 94px;
+  padding: 2px;
+  object-fit: cover;
+  border-radius: 50%;
+  background-color: #ff7f50;
+}
+.OurProvidersDC-sponsorColor > a > img{
+  background-color: #0167ff !important;
+}
+.OurProvidersDC-blogPageVerifiedTick {
+  position: absolute;
+  right: 0.06vw;
+  bottom: 0.3vw;
+}
+
+.OurProvidersDC-blogPageDoctorCard-content {
+  position: relative;
+  top: -28%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.OurProvidersDC-blogPageDoctorCardHeader {
+  display: flex;
+  justify-content: space-between;
+}
+
+.OurProvidersDC-blogPageDoctorCardName {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 19.2px;
+  color: rgba(0, 0, 0, 1);
+}
+
+.OurProvidersDC-blogPageDoctorCardRating {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  color: white;
+  font-size: 10px;
+  font-weight: 400;
+  width: 41px;
+  height: 18px;
+  border-radius: 5px;
+  align-items: center;
+  background-color: #ff7f50;
+}
+
+.OurProvidersDC-blogPageDoctorCardSpecialist,
+.OurProvidersDC-blogPageDoctorCardExp {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.OurProvidersDC-blogPageDoctorCardSpecialist p,
+.OurProvidersDC-blogPageDoctorCardExp p {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14.4px;
+  color: rgba(68, 68, 68, 1);
+  margin: 0;
+}
+
+.OurProvidersDC-blogPageDoctorCardDesc {
+  max-width: 258px;
+  height: fit-content;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 13.5px;
+  color: rgba(0, 0, 0, 1);
+  white-space: normal; 
+}
+
+.OurProvidersDC-blogPageDoctorCard-content .OurProvidersDC-blogPageDoctorCardBtn {
+  width: 145px;
+  height: 37px;
+  border: none;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 5px;
+  background-color: #0167ff;
+  text-align: center;
+  line-height: 37px;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.OurProvidersDC-blogPageDoctorCard-content .OurProvidersDC-blogPageDoctorCardBtn:hover {
+  background-color: #edf3ff;
+  border: 0.4px solid #0167ff;
+  color: #0167ff;
+  transform: scale(1.05);
+}
+
+
+@media (max-width: 1440px) and (min-width: 1200px) {
+ 
+    .OurProvidersDC-blogPage-Doctors-container {
+      max-width: 100%; 
+      padding: 0 20px; 
+    }
+  
+    .OurProvidersDC-blogPageDoctorCard {
+      flex-basis: calc(40.5% - 100px);
+    }
+} 
+
+
+@media (max-width: 768px) {
+    
+    .OurProvidersDC-blogPage-Doctors-container {
+      max-width: 100%; 
+      padding: 0 10px;
+      margin-top: 30px;
+    }
+    
+    .OurProvidersDC-blogPageDoctorCard {
+      flex: 0 0 calc(100% - 0px);
+    } 
+    .OurProvidersDC-blogPageDoctorCardDesc {
+      max-width:100%;
+      height: auto;
+      font-size: 10px;
+      font-weight: 400;
+      line-height: 13.5px;
+      color: rgba(0, 0, 0, 1);
+    }
+} 
+
+@media (max-width: 480px) {
+
+    .OurProvidersDC-blogPage-Doctors-title-head h2 {
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 33.6px;
+        color: rgba(39, 40, 72, 1);
+    }
+    .OurProvidersDC-blogPage-Doctors-title-head .OurProvidersDC-See-more-btn {
+        width: 100px;
+        height: 30px;
+        padding: 0px 5px;
+        font-size: 14px;
+    }
+}

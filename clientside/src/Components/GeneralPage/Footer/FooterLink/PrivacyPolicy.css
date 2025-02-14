@@ -1,0 +1,168 @@
+/* Base styles for desktop */
+.privacy-policy{
+  background: linear-gradient(180deg, #EDF3FF 0%, #FFFFFF 100%); 
+}
+.privacy-policy-container {
+  display: flex;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  max-width: 1440px;
+}
+
+.privacyh2 {
+  text-align: center;
+  padding: 50px;
+  color: #272848;
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.sidebar-policy {
+  width: 30%;
+  padding: 20px;
+  margin-left: 30px;
+  background-color: transparent;
+}
+
+.sidebar-policy ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar-policy ul li {
+  padding: 10px;
+  cursor: pointer;
+  color: #272848;
+  font-size: 16px;
+  font-weight: 400;
+  border: 2px solid #CCCCCC;
+  border-bottom: 1px solid #CCCCCC !important;
+  border-top: 2px solid #CCCCCC !important;
+}
+
+.content-area-policy {
+  width: 75%;
+  padding: 0px 40px;
+  margin-bottom: 200px;
+}
+
+.questionhead {
+  color: #272848;
+  font-size: 28px;
+  font-weight: 600;
+  text-align: justify;
+}
+
+.questionpara {
+  color: #272848;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: justify;
+}
+
+.active76 {
+  border-left: 5px solid #0167FF !important;
+}
+
+.fullsixe45 {
+  margin: 30px;
+  color: #272848;
+}
+
+.dotesize {
+  width: 30px;
+  height: 30px;
+  font-size: 50px;
+  margin-left: 20px;
+}
+
+/* Mobile responsive styles for screens up to 768px */
+@media (max-width: 768px) {
+  .privacy-policy-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+  }
+
+  .privacyh2 {
+    font-size: 28px;
+    padding: 30px 0;
+  }
+
+  .sidebar-policy {
+    width: 100%;
+    padding: 15px;
+    margin-left: 0;
+  }
+
+  .sidebar-policy ul li {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .content-area-policy {
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 100px;
+  }
+
+  .questionhead {
+    font-size: 24px;
+  }
+
+  .questionpara {
+    font-size: 16px;
+  }
+
+  .fullsixe45 {
+    margin: 15px;
+    font-size: 16px;
+  }
+
+  .dotesize {
+    width: 25px;
+    height: 25px;
+    font-size: 30px;
+    margin-left: 10px;
+  }
+}
+
+/* Additional styles for smaller screens up to 480px */
+@media (max-width: 480px) {
+  .privacyh2 {
+    font-size: 24px;
+    padding: 20px;
+  }
+
+  .sidebar-policy ul li {
+    font-size: 14px;
+    padding: 6px;
+  }
+
+  .content-area-policy {
+    padding: 10px;
+    margin-bottom: 50px;
+  }
+
+  .questionhead {
+    font-size: 20px;
+    text-align: left;
+  }
+
+  .questionpara {
+    font-size: 14px;
+  }
+
+  .fullsixe45 {
+    margin: 10px;
+    font-size: 14px;
+  }
+
+  .dotesize {
+    width: 20px;
+    height: 20px;
+    font-size: 24px;
+    margin-left: 5px;
+  }
+}

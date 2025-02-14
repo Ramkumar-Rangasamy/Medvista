@@ -1,0 +1,341 @@
+/* General main container styling */
+.home-awareness-container-main {
+  background: rgba(255, 255, 255, 1);
+}
+
+/* Awareness container for both sections */
+.home-awareness-container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+  min-height: 608px;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.home-awareness-left,
+.home-awareness-right {
+  flex: 1 1 48%;
+  position: relative;
+}
+
+/* Left Section */
+.home-awareness-left {
+  background: rgba(242, 246, 255, 1);
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.home-awareness-content {
+  margin-top: 50px;
+  margin-left: 250px;
+  margin-right: auto;
+  max-width: 450px;
+  z-index: 1;
+}
+
+.home-awareness-image {
+  position: absolute;
+  left: 0;
+  max-width: 495px;
+  height: auto;
+  z-index: 0;
+}
+
+.home-awareness-title {
+  font-size: 1.6em;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: left;
+  color: #272848;
+  margin-bottom: 20px;
+}
+
+.home-awareness-text-left {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  color: #52525b;
+  margin-bottom: 20px;
+}
+
+.home-awareness-special {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 28.8px;
+  text-align: left;
+  color: rgba(0, 0, 0, 1);
+  margin-bottom: 20px;
+}
+
+.home-awareness-button {
+  width: 100%;
+  max-width: 143px;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  background: #0167ff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.home-awareness-button:hover {
+  background-color: #edf3ff;
+  color: #0167ff;
+  transform: scale(1.05) !important;
+}
+
+/* Right Section */
+.home-awareness-right {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.home-awareness-content-right {
+  max-width: 450px;
+  margin-top: 50px;
+  margin-right: auto;
+}
+
+.home-awareness-title-right {
+  font-size: 1.6em;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: left;
+  color: rgba(0, 0, 0, 1);
+  margin-bottom: 20px;
+}
+.home-awareness-title span,
+.home-awareness-title-right span
+{
+  color: #0167ff;
+}
+
+.home-awareness-text-right {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  color: #52525b;
+  margin-bottom: 20px;
+}
+
+.home-awareness-health-image {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  max-width: 401px;
+  height: auto;
+}
+
+/* Responsive adjustments for large screens */
+@media (max-width: 1600px) {
+  .home-awareness-content,
+  .home-awareness-content-right {
+    margin-top: 40px;
+  }
+
+}
+
+/* Responsive adjustments for screens between 1440px and 1024px */
+@media (max-width: 1440px) and (min-width: 1199px) {
+  .home-awareness-container {
+    min-height: 530px;
+    gap: 15px; /* Reduce the gap slightly */
+  }
+
+  .home-awareness-content{
+    margin-left: 200px;
+    max-width: 400px; /* Reduce content width to fit better */
+    margin-top: 25px; /* Adjust top margin */
+  }
+  .home-awareness-content-right {
+    max-width: 370px; /* Reduce content width to fit better */
+    margin-top: 25px;
+  }
+
+
+  .home-awareness-title,
+  .home-awareness-title-right {
+    font-size: 18px; /* Slightly smaller title font size */
+    line-height: 32px;
+    margin-bottom: 5px;
+  }
+
+  .home-awareness-text-left,
+  .home-awareness-text-right {
+    font-size: 16px; /* Adjust font size for text */
+    line-height: 24px;
+  }
+  .home-awareness-text-right {
+    margin-bottom: 10px;
+  }
+
+  .home-awareness-special {
+    font-size: 16px; /* Adjust special text font size */
+  }
+
+  .home-awareness-image {
+    max-width: 420px; /* Reduce image size slightly */
+  }
+
+  .home-awareness-health-image {
+    max-width: 290px; /* Reduce health image size */
+  }
+}
+
+@media (max-width: 1200px) {
+  .home-awareness-container {
+    flex-direction: column; /* Stack sections vertically */
+    gap: 15px; /* Space between sections */
+  }
+
+  .home-awareness-left {
+    flex: 1 1 100%; /* Full width for the left section */
+    padding: 10px 10px 70px 10px; /* Add padding for better spacing */
+  }
+
+  .home-awareness-right {
+    flex: 1 1 100%; /* Full width for the right section */
+    padding: 10px 10px 70px 10px; /* Add padding for better spacing */
+  }
+
+  .home-awareness-content {
+    max-width: 90%; /* Reduce width slightly for better readability */
+    margin: 40px auto; /* Center-align the content with top margin */
+    padding: 10px 40px; /* Add padding to content */
+  }
+  .home-awareness-content-right {
+    max-width: 70%; /* Reduce width slightly for better readability */
+    margin: 0px 40px; /* Center-align the content with top margin */
+    padding: 10px; /* Add padding to content */
+  }
+ 
+  .home-awareness-content {
+    margin-left: 150px; /* Reset side margin */
+  }
+
+  .home-awareness-image {
+    width: 100%; /* Full width within container */
+    max-width: 340px; /* Limit max size */
+    margin: 20px auto; /* Center the image */
+    display: block;
+  }
+
+  .home-awareness-health-image {
+    width: 100%; /* Full width for the right section image */
+    max-width: 340px; /* Limit max size */
+    margin: 20px auto; /* Center the image */
+    display: block;
+  }
+
+  .home-awareness-title,
+  .home-awareness-title-right {
+    font-size: 20px; /* Slightly larger font for readability */
+    line-height: 28px;
+    margin-bottom: 10px;
+  }
+
+  .home-awareness-text-left,
+  .home-awareness-text-right {
+    font-size: 1rem; /* Adjust text size for comfortable reading */
+    line-height: 26px;
+    text-align: justify; /* Justify text for a clean look */
+  }
+
+  
+}
+
+
+/* Responsive adjustments for tablet screens (below 998px) */
+@media (max-width: 999px) {
+  .home-awareness-container {
+    flex-direction: column;
+    min-height: 1000px;
+  }
+  .home-awareness-content {
+    max-width: 80%; 
+    text-align: justify;
+    margin: 30px 20px;
+  }
+  .awareness-content-right {
+    max-width: 70%;
+    text-align: justify;
+    margin: 30px 20px;
+  }
+
+  .home-awareness-content {
+    margin-left: 200px;
+  }
+  .home-awareness-image {
+    max-width: 400px;
+  }
+  .home-awareness-health-image {
+    max-width: 300px; /* Reduce health image size */
+  }
+
+}
+
+
+@media (max-width: 768px) {
+  .home-awareness-container {
+    flex-direction: column;
+    min-height: auto; /* Adjust to content height */
+    gap: 15px;
+  }
+
+  .home-awareness-left,
+  .home-awareness-right {
+    flex: 1 1 100%; /* Full width for both sections */
+    margin: 0; /* Reset margins for better alignment */
+    padding: 15px; /* Add padding for spacing */
+  }
+
+  .home-awareness-content,
+  .home-awareness-content-right {
+    max-width: 100%; /* Use full width */
+    margin: 0 auto; /* Center-align the content */
+    padding: 10px;
+  }
+
+  .home-awareness-content {
+    margin-left: 0; /* Reset margin for smaller screens */
+    margin: 40px 20px; /* Adjust top margin */
+  }
+  .home-awareness-content-right{
+    margin: 40px 20px;
+  }
+
+  .home-awareness-title,
+  .home-awareness-title-right {
+    font-size: 20px; /* Slightly larger for readability */
+    line-height: 28px;
+    margin-bottom: 10px;
+  }
+
+  .home-awareness-text-left,
+  .home-awareness-text-right {
+    font-size: 15px;
+    line-height: 25.5px;
+    text-align: justify;
+
+  }
+
+  .home-awareness-button {
+    margin-top: 15px;
+  }
+
+  /* Hide images to avoid layout issues */
+  .home-awareness-image,
+  .home-awareness-health-image {
+    display: none;
+  }
+}
+
+

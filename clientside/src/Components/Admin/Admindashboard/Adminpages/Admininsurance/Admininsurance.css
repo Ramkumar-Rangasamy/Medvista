@@ -1,0 +1,231 @@
+.admin-insurance{
+    padding: 0 20px;
+}
+
+.admin-insurance-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:20px 10px 0 5px;
+    margin-bottom: 20px;
+}
+
+.admin-insurance-header h2{
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 28.8px;
+    color: #272848;
+    display: inline-block; 
+}
+
+.Admin-new-insurance{
+    border: 1.5px solid #0163F7;
+    border-radius: 2px;
+    background: none;
+    outline: none;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 21px;
+    color: #0163F7;
+    padding: 8px 15px;
+    margin: 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    gap:10px; 
+}
+
+.Admin-new-insurance:hover{
+    background-color: #0163F7;
+    color: #fff;
+}
+.Admin-new-insurance .Admin-new-insurance-iocn{
+    margin-top:3px;
+}
+
+.admin-insurance-list {
+    height:calc(100vh - 180px);
+    overflow-y: auto;  
+   
+}
+
+.admin-insurance-list::-webkit-scrollbar {
+    width: 0px;
+}
+
+.admin-insurance-list {
+    display: flex;
+    justify-content: flex-start;
+    align-items:start;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.admin-insurance-content {
+    background-color: #fff;
+    border-radius:8px;
+    box-shadow: 0 0 10px #0000001A;
+    width: 250px;
+    height:250px;
+    margin: 5px 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+.admin-insurance-image img {
+    width: 200px;
+    height:100px;
+    object-fit:contain;
+    border-radius:5px;
+    margin-bottom: 15px;
+}
+
+.admin-insurance-specialist {
+    font-size: 16px;
+    font-weight:550;
+    line-height: 28.8px;
+    color: #272848;
+}
+
+.admin-insurance-delete {
+    background: none;
+    color: #272848;
+    border: 1.5px solid orange;
+    border-radius:5px;
+    padding: 5px 20px;
+    font-weight: 600;
+}
+
+.admin-insurance-delete:hover{
+    background-color: orange;
+    color:#ffffff;
+}
+
+
+/* Modal Styles */
+.admin-insurance-modal {
+    background: white;
+    border-radius: 8px;
+    max-width: 550px;
+    width: 100%; 
+    margin: auto;
+    padding: 20px;
+    position: relative;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    z-index: 1001; 
+}
+
+.admin-insurance-modal h2{
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 28.8px;
+    color: #272848;
+    display: inline-block; 
+}
+
+.admin-insurance-modal-overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    padding: 20px;
+}
+
+.admin-insurance-form-group {
+    margin-top: 30px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.admin-insurance-form-group label {
+    display: block;
+    color:#272848;
+    font-weight: 500;
+    padding-bottom:5px;
+}
+
+.admin-insurance-form-group input{
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 2px solid #2E37A41A;
+    border-radius: 5px;
+    outline: none;
+
+}
+
+.image-upload-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px dashed #2E37A41A;
+    border-radius: 5px;
+    padding: 20px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.uploaded-image {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+}
+
+.image-placeholder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #aaa;
+}
+
+.image-placeholder p {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.admin-insurance-modal-submit {
+    border: 1.5px solid #272848;
+    background: none;
+    color: #272848;    
+    border-radius:5px;
+    padding: 5px 25px;
+    font-weight: 600;
+    margin-top: 20px;
+
+}
+
+.admin-insurance-modal-submit:hover{
+    background-color: #272848;
+    color:#ffffff;
+}
+
+.admin-insurance-modal-close {
+    border: 1.5px solid orange;
+    background: none;
+    color: #272848;    
+    border-radius:5px;
+    padding: 5px 25px;
+    font-weight: 600;
+    margin-top: 20px;
+
+}
+
+.admin-insurance-modal-close:hover{
+    background-color: orange;
+    color:#ffffff;
+}
+
+.admininsurance-modal-button{
+    display: flex;
+    justify-content:end;
+    gap: 20px;
+}
+
+

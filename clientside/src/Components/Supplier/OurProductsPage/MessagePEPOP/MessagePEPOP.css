@@ -1,0 +1,308 @@
+.Supplier-message-popup-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    padding: 10px;
+}
+
+.Supplier-popup-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 800px; /* Popup max width */
+    width: 100%;
+    height: 90vh; /* Prevents overflow */
+    overflow-y: auto;
+    margin: 0 auto;
+}
+
+/* Scrollbar Styling */
+.Supplier-popup-content::-webkit-scrollbar {
+    width: 8px;
+}
+.Supplier-popup-content::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 4px;
+}
+
+.Supplier-popup-close-btn-container {
+    display: flex;
+    justify-content: flex-end;
+    cursor: pointer;
+}
+
+.Supplier-popup-close-btn-icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    color: rgba(1, 103, 255, 1);
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s, color 0.3s;
+}
+
+.Supplier-popup-close-btn-icon:hover {
+    background: rgba(133, 133, 133, 1);
+    color: #ffffff;
+}
+
+.Supplier-popup-content-title {
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 33.6px;
+    color: rgba(39, 40, 72, 1);
+    margin-bottom: 20px;
+}
+
+.Supplier-popup-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+}
+
+
+
+.Supplier-popup-form-flex-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.Supplier-popup-form-group-label {
+    display: block;
+    font-size: 16px;
+    font-weight: 500;
+    color: rgba(39, 40, 72, 1);
+}
+
+/* Input fields */
+.Supplier-popup-form-group-input,
+.Supplier-popup-select-box,
+.Supplier-popup-form-full-width-group-input,
+.Supplier-popup-form-full-width-group-textarea {
+    color: #272848;
+    border-radius: 8px;
+    padding: 10px;
+    border: 2px solid #2E37A41A;
+    outline: none;
+    margin: 10px auto;
+    display: block;
+    max-width: 800px;
+}
+
+.Supplier-popup-form-group-input, 
+.Supplier-popup-select-box{
+    width: 366px;
+    height: 45px;   
+}
+
+.Supplier-popup-form-full-width-group-input {
+    width: 100%;
+    height: 45px;
+}
+
+.Supplier-popup-form-full-width-group-textarea {
+    width: 100%;
+    height: 100px;
+    resize: none;
+}
+
+/* Phone Number Input Fix */
+.Supplier-popup-form-phone-number-number{
+    width: 366px;
+    height: 45px;   
+    color: #272848;
+    border-radius: 8px;
+    border: 2px solid #2E37A41A;
+    outline: none;
+    margin: 10px auto;
+    display: block;
+    max-width: 800px;
+    padding:4px 10px;
+}
+
+.Supplier-popup-form-phone-number-number
+.selected-flag{
+  border: none !important;    
+  box-shadow: none !important;
+  background-color: transparent !important;
+}
+
+.Supplier-popup-form-phone-number-number
+input {
+  border: none !important;    
+  box-shadow: none !important;
+  background-color: transparent !important;
+}
+
+.Supplier-popup-form-phone-number-number
+.flag-dropdown {
+  border: none !important;    
+  box-shadow: none !important; 
+  background-color: transparent !important; 
+}
+
+
+.Supplier-popup-submit-button-contianer {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.Supplier-popup-submit-button-contianer button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 150px;
+    height: 40px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #272848;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 14.4px;
+    color: white;
+    outline: none;
+    margin-top: 30px;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.Supplier-popup-submit-button-contianer button:hover {
+    border: 0.4px solid #272848;
+    background: none;
+    color: #272848;
+    transform: scale(1.05);
+}
+
+.Supplier-popup-success-popup {
+  text-align: center;
+  padding: 20px;
+  background: #0167ff; /* Your color */
+  border-radius: 10px;
+  margin-top: 10px;
+  color: white;
+  font-weight: bold;
+}
+
+.Supplier-popup-success-popup p {
+  font-size: 16px;
+  color: white;
+  font-weight: bold;
+}
+
+.Supplier-popup-success-popup-btn {
+  background: white;
+  color: #0167ff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 10px;
+  transition: background 0.3s ease;
+}
+
+.Supplier-popup-success-popup-btn:hover {
+  background: #e6efff; /* Light shade of your color */
+}
+
+  
+  /* -------- Responsive Design for Tablets and Small Screens -------- */
+  @media screen and (max-width: 1024px) {
+  
+    .Supplier-popup-content-title {
+      font-size: 24px;
+    }
+
+    .Supplier-popup-content {
+       max-width:80%;
+    }
+  
+    .Supplier-popup-form-flex-container {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .Supplier-popup-form-group-input,
+    .Supplier-popup-form-phone-number-number,
+    .Supplier-popup-select-box{
+      width: 100%;
+      max-width: 100%;
+    }
+
+    .Supplier-popup-submit-button-contianer button {
+        margin-top: 15px;
+    }
+  }
+  
+  /* -------- Responsive Design for Mobile Screens -------- */
+  @media screen and (max-width: 768px) {
+    .Supplier-message-popup-container {
+      padding: 5px;
+    }
+  
+    .Supplier-popup-close-btn-icon {
+      width: 25px;
+      height: 25px;
+      font-size: 18px;
+    }
+  
+    .Supplier-popup-content-title {
+      font-size: 22px;
+    }
+  
+
+    .Supplier-popup-form-group-input,
+    .react-tel-input,
+    select {
+        width: 100% !important;
+    }
+
+    .react-tel-input .form-control {
+        width: 100% !important;
+    }
+  
+  }
+
+  @media screen and (max-width: 576px){
+    .Supplier-popup-form {
+        padding-right:10px;
+    
+    }
+  }
+  
+  /* -------- Very Small Screens (Phones) -------- */
+  @media screen and (max-width: 480px) {
+    .Supplier-popup-content {
+        max-width:95%;
+        height: 80vh;
+    }
+
+    .Supplier-popup-content {
+      padding: 10px;
+      width: 100%;
+    }
+  
+    .Supplier-popup-content-title {
+      font-size: 20px;
+    }
+  
+    .Supplier-popup-form-group-label {
+      font-size: 14px;
+    }
+  }
+  

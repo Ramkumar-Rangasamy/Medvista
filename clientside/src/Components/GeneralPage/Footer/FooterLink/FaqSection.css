@@ -1,0 +1,109 @@
+/* Container for the entire FAQ section */
+.faq-question-container{
+  background: linear-gradient(180deg, #EDF3FF 0%, #FFFFFF 100%); 
+}
+.faq-section00 {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding:40px 20px;
+}
+
+/* FAQ section title */
+.faq-title00 {
+  font-size: 36px;
+  color: #272848;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* Each FAQ item */
+.faq-item00 {
+  padding: 15px 0;
+  border-bottom: 1px solid #ddd;
+  color: aqua;
+}
+
+/* FAQ question container */
+.faq-questionss00 {
+  font-size: 14px !important;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  background-color: #F2F6FF;
+  border-radius: 5px; /* Rounded corners for a polished look */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transitions */
+}
+
+/* FAQ question text (h2) */
+.faq-question-texts00 {
+  font-size: 24px !important;
+  font-weight: 500;
+  margin: 0;
+  color: #272848;
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+/* Icon for toggle (plus/minus) */
+.faq-toggle-icon00 {
+  font-size: 1.5em;
+  color: #545454;
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+/* FAQ answer container */
+.faq-answers00 {
+  margin-top: 15px;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #333;
+  text-align: left;
+  padding-left: 20px; /* Aligns the answer with the question */
+}
+
+.faq-answers00 li {
+  margin-bottom: 20px;
+}
+
+/* Specific styles for the first FAQ item answer */
+.faq-item00:first-of-type .faq-answer00 {
+  margin-top: 15px;
+  padding: 0 10px;
+}
+
+/* Styles when the FAQ item is open */
+.faq-item-open00 .faq-question00 {
+  background-color: #0167FF; /* Background color when the item is open */
+  color: #fff; /* Text color when the item is open */
+}
+
+/* FAQ question and icon text when open */
+.faq-item-open00 .faq-question-text00,
+.faq-item-open00 .faq-toggle-icon00 {
+  color: #fff; /* Change text and icon color when open */
+}
+
+/* Hover effects for the FAQ question */
+.faq-question00:hover {
+  background-color: #e5ebff; /* Slightly darker background on hover */
+  transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+.faq-answer-texts00{
+  font-size: 18px;
+  font-weight: 400;
+}
+
+
+
+/* When FAQ is open, apply this class */
+.faq-questionss00.open {
+  background-color: #0167FF;
+  color: #fff !important;
+}
+
+/* Target the h2 inside the open FAQ and change its color */
+.faq-questionss00.open h2 {
+  color: #fff;
+  color: #fff !important;
+}

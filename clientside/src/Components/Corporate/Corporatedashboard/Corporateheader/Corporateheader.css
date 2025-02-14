@@ -1,0 +1,103 @@
+.Corporate-DBD-header-head {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+    border-top-right-radius: 60px; 
+    border-top-left-radius: 60px;
+    padding: 1.2rem 3rem 10px 1.5rem;
+}
+
+.Corporate-DBD-header-head .Corporate-DBD-home-return {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #F3F6FF;
+    padding: 5px 30px;
+    border-radius: 20px 5px 20px 5px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    height: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.Corporate-DBD-header-head .Corporate-DBD-home-return .Corporate-DBD-text-home-return {
+    color: #7979B2;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19.2px;
+    text-decoration: none;
+    transition: color 0.3s ease; 
+}
+
+.Corporate-DBD-header-head .Corporate-DBD-home-return:hover .Corporate-DBD-text-home-return {
+    color: #262744; /* Change the color of the icon when the parent div is hovered */
+}
+
+.Corporate-DBD-header-head .Corporate-DBD-home-return .Corporate-DBD-text-home-return:hover {
+    color: #262744; /* Also change icon color when the link itself is hovered */
+}
+
+.Corporate-DBD-header-head .Corporate-DBD-home-return  p{
+    margin: 0 5px;
+}
+
+
+.Corporate-DBD-profile-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.Corporate-DBD-profile-container .Corporate-DBD-image-container {
+    width: 50px;
+    height: 50px;
+    border-radius: 20px 5px 20px 5px;
+    overflow: hidden;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.Corporate-DBD-profile-container .Corporate-DBD-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+    .Corporate-DBD-header-head {
+        justify-content: flex-end;
+    }
+}
+
+@media (max-width: 768px) {
+    .Corporate-DBD-header-head {
+        padding: 20px 30px;
+    }
+}
+
+@media (max-width: 576px) {
+    .Corporate-DBD-header-head {
+        padding: 20px 10px;
+    }
+
+
+    .profile-container .Corporate-DBD-image-container {
+        width: 50px !important;
+        height: 50px !important;
+        border-radius:20px 5px 20px 5px;
+    }
+}
+
+@media (max-width: 380px) {
+    .Corporate-DBD-header-head {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        border-top-right-radius: 30px;
+        border-top-left-radius: 30px;
+        padding:1.5rem;
+    }
+}

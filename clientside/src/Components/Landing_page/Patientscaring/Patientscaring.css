@@ -1,0 +1,165 @@
+.patientcaring-container {
+  padding: 70px;
+  background: #f4f8ff;
+}
+
+.patientcaring-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  max-width: 1340px;
+  margin: auto;
+}
+
+.patientcaring-image-section {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.patientcaring-image img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.patientcaring-text-section {
+  width: 50%;
+  padding: 20px;
+}
+
+.patientcaring-text-section h1 {
+  color: #0167ff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24.8px;
+  text-transform: uppercase;
+}
+
+.patientcaring-text-section h2 {
+  font-size: 35px;
+  font-weight: 600;
+  line-height: 54.25px;
+  color: #272848;
+}
+
+.patientcaring-highlight {
+  color: #0167ff;
+}
+
+.patientcaring-text-section p {
+  color: #52525b;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.patientcaring-features {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.patientcaring-feature-item {
+  display: flex;
+  margin: 10px 0;
+}
+
+.patientcaring-features-tick {
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+}
+
+.patientcaring-feature-item p {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  color: #272848;
+}
+
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 1024px) {
+  .patientcaring-content {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .patientcaring-image-section,
+  .patientcaring-text-section {
+    width: 100%;
+  }
+
+  .patientcaring-text-section h2 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .patientcaring-text-section h1 {
+    font-size: 14px;
+  }
+
+  .patientcaring-text-section p {
+    font-size: 14px;
+  }
+  .patientcaring-feature-item {
+    text-align: center;
+  }
+  .patientcaring-feature-item p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .patientcaring-content {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .patientcaring-image-section,
+  .patientcaring-text-section {
+    width: 100%;
+  }
+
+  .patientcaring-text-section h2 {
+    font-size: 28px;
+    line-height: 40px;
+  }
+
+  .patientcaring-text-section h1 {
+    font-size: 14px;
+  }
+
+  .patientcaring-text-section p {
+    font-size: 14px;
+  }
+
+  .patientcaring-feature-item p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .patientcaring-container {
+    padding: 20px;
+  }
+  .patientcaring-text-section h2 {
+    font-size: 24px;
+  }
+
+  .patientcaring-text-section h1 {
+    font-size: 12px;
+  }
+
+  .patientcaring-text-section p,
+  .patientcaring-feature-item p {
+    font-size: 12px;
+    margin-top: -3px;
+  }
+
+  .patientcaring-features-tick {
+    width: 18px;
+    height: 18px;
+  }
+}

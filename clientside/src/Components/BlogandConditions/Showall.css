@@ -1,0 +1,248 @@
+/* CSS */
+.featured-b {
+  font-weight: 700;
+  font-size: 45px;
+}
+.top-box {
+  background: #e4edff;
+  height: 519px;
+}
+.arrow {
+  height: 40px;
+  width: 40px;
+}
+
+.blog-feature {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.card-photo {
+  /* border: 1px solid black; */
+  width: 573px;
+  height: 280px;
+  display: flex;
+  flex-direction: row;
+  border-radius: 12px;
+  background-color: white;
+}
+/* CSS */
+.featured-title {
+  padding-left: 100px;
+  font-weight: 700;
+  font-size: 36px;
+}
+
+.post-meta-show {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* margin-right: 20px; */
+}
+
+.post-meta-show img {
+  width: 229px;
+  height: 240px;
+  border-radius: 6px;
+  margin: 10px;
+}
+
+.post-author-show {
+  /* margin-bottom: 5px; */
+
+  text-align: center;
+  background-color: #f0f0f0;
+  color: #4b6bfb;
+  padding: 5px;
+}
+
+.post-time-show {
+  /* margin: 5px 0; */
+  color: #777;
+}
+
+.post-content-show {
+  flex: 1;
+}
+
+.post-content-show h4 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 5px;
+  overflow: hidden;
+}
+
+.post-content-show p {
+  color: #666;
+  /* margin-bottom: 10px; */
+}
+
+.all-posts-show {
+  font-weight: 700;
+  font-size: 36px;
+  padding-left: 6%;
+}
+.all-head {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  width: 86%;
+  /* border:1px solid black; */
+  margin-left: 6%;
+  /* background-color: white; */
+}
+
+.post-meta-all {
+  border: 1px solid #e3e3e3;
+  background-color: white;
+  border-radius: 10px;
+
+  /* margin-right: 20px; */
+}
+.mid-section {
+  background: linear-gradient(180deg, #edf3ff 0%, #ffffff 100%);
+  max-width: 100%;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+.mid-section img {
+    max-width: 100%;
+    height: auto;
+  }
+.post-meta-all img {
+  width: 360px;
+  height: 240px;
+  border-radius: 6px;
+  margin: 10px;
+}
+
+.post-author-all {
+  /* margin-bottom: 5px; */
+
+  text-align: center;
+  background-color: #f0f0f0;
+  color: #4b6bfb;
+  padding: 5px;
+}
+
+.post-time-all {
+  /* margin: 5px 0; */
+  color: #777;
+}
+
+.post-content-all {
+  flex: 1;
+  padding: 10px;
+}
+
+.post-content-all h4 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 5px;
+  overflow: hidden;
+}
+
+.post-content-all p {
+  color: #666;
+}
+.bottom-buttons {
+  display: flex;
+  flex-direction: row;
+  margin-right: auto;
+  margin-left: auto;
+  width: max-content;
+  gap: 2px;
+  cursor: pointer;
+}
+.buttons-next {
+  width: 38px;
+  height: 40px;
+}
+.up {
+  position: relative;
+  left: 90%;
+  top: -40px;
+  cursor: pointer;
+}
+
+.prof1 img {
+  height: 36px;
+  width: 36px;
+  border-radius: 50%;
+}
+.prof2{
+    padding-top: 15px;
+    color: #97989F; 
+    font-size: 16px;
+    font-weight: 500;
+}
+.prof{
+    display: flex;
+    flex-direction: row;
+    gap:5px;
+    justify-content: flex-start;
+    /* height:40px;
+    border: 1px solid black; */
+}
+.dat{
+    color: #97989F; 
+    
+}
+
+.sides{
+    display: flex;
+    flex-direction: row;
+    gap:40px;
+    /* border:1px solid black; */
+    position: relative;
+    top:-40px;
+    left:55%;
+}
+
+.side1{
+    /* border:1px solid red;  */
+    font-weight: 400;
+    font-size: 16px;
+}
+
+/* Carousel.css */
+.carousel {
+    position: relative;
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+  }
+  
+  .carousel-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px; /* Adjust height as needed */
+  }
+  
+  .carousel-content img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  
+  .carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .carousel-button.prev {
+    left: 10px;
+  }
+  
+  .carousel-button.next {
+    right: 10px;
+  }
+  

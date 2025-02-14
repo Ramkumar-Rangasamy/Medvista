@@ -1,0 +1,360 @@
+.admin-edit-view-doctor-top-head {
+    padding: 0px 20px;
+}
+  
+.admin-edit-view-doctor-top-head .admin-viewdoctor-head-title {
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 28.8px;
+    color: #272848;
+    display: inline-block;
+    padding: 20px 10px 0 5px;
+    margin-bottom: 30px;
+}
+  
+.admin-viewdoctor-container {
+    overflow-y: auto;
+    height: calc(100vh - 180px);
+}
+  
+.admin-viewdoctor-container::-webkit-scrollbar {
+    width: 0px;
+}
+  
+.admin-viewdoctor-profile-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 20px;
+}
+  
+.admin-viewdoctor-profile-head {
+    width: 250px;
+    height:250px;
+    border: 5px solid #2E37A41A;
+    position: relative;
+    border-radius:2px;
+}
+  
+.admin-viewdoctor-profile-show {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.admin-viewdoctor-profile-icon-header{
+    position: absolute;
+    top: -10px; 
+    left:210px;
+    width: 38px;
+    height: 38px;
+    background-color: #F7FAFF;
+    border: 5px solid #FFFFFF;
+    border-radius:2px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+  
+.adim-viewdoctor-profile-edit-iocn {
+    font-size: 18px;
+    color: #42427D;  
+}
+
+.admin-viewdoctor-profile-head-title {
+    width: 500px;
+    max-width: 100%;
+    display: flex;
+    justify-content:center;
+    flex-direction: column;
+    gap:30px;
+}
+
+.admin-viewdoctor-profile-input-header {
+    position: relative;
+    width: 450px;
+    max-width: 100%;
+}
+  
+.admin-viewdoctor-profile-input-name-clsn{
+    width: 520px;
+    height: 45px;
+    border-radius: 8px;
+    padding: 0 22px;
+    border: 2px solid #2E37A41A;
+    outline: none;
+}
+
+.admin-viewdoctor-profile-input-placeholder{
+    position: absolute;
+    top: -0.9rem;
+    left: 1rem;
+    padding: 0 0.5rem;
+    transition: all 200ms ease-in-out;
+    font-weight: 500;
+    background: #ffffff;
+}
+
+.admin-viewdoctor-profile-input-placeholder span{
+    color:red;
+}
+
+.admin-viewdoctor-profile-textarea{
+    width: 520px;
+    height:auto;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #ffffff;
+    border: 2px solid #2E37A41A;
+    outline: none;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    position: relative;
+}
+
+.admin-viewdoctor-profile-head-title .about-us-clsn {
+    font-size: 16px;
+    font-weight: 400;
+    color: #272848;
+    display: inline-block;
+    border: none;
+    outline: none;
+    width: 100%;
+    padding:0px 10px;
+    overflow-y: auto;
+    border-radius: 5px;
+    background-color: #ffffff;
+    box-sizing: border-box;
+}
+
+.admin-viewdoctor-profile-head-title .about-us-clsn::-webkit-scrollbar {
+    width: 0px;
+}
+
+/*header for title to all input and input-placeholder ============Start*/
+.admin-viewdoctor-profile-edit-header-two{
+    margin: 0 0 50px 0;
+}
+.admin-viewdoctor-edit-details{
+    display: flex;
+    justify-content:space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin: 40px 8rem;    
+}
+
+.admin-viewdoctor-edit-details-division{
+    position: relative;
+    width: 450px;
+    max-width: 100%;
+}
+
+.admin-viewdoctor-edit-details-input {
+    width: 100%;
+    height: 50px;
+    border-radius: 8px;
+    padding: 0 22px;
+    border: 2px solid #2E37A41A;
+    outline: none;
+}
+
+.admin-viewdoctor-edit-details-input-placeholder{
+    position: absolute;
+    top: -0.9rem;
+    left: 1rem;
+    padding: 0 0.5rem;
+    transition: all 200ms ease-in-out;
+    font-weight: 500;
+    background: #ffffff;
+}
+
+.admin-viewdoctor-edit-details-input-placeholder span{
+    color:red;
+}
+/*header for title to all input and input-placeholder ============End*/
+
+/*Gender, bloodgroup, Consultation for  select box css style=========Satrt*/
+.select-box-arrow-icon-head{
+    position: relative;
+    display: inline-block;
+}
+
+.select-box-arrow-icon-head .select-box-arrow-icon-input {
+    -webkit-appearance: none; /* For Chrome */
+    -moz-appearance: none; /* For Firefox */
+    appearance: none; /* For modern browsers */
+    outline: none;
+    cursor: pointer;
+
+}
+
+.select-box-arrow-icon-head  .select-box-arrow-icon {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: orange;
+    pointer-events: none;
+}
+
+/*Gender, bloodgroup, Consultation for  select box css style=======End*/
+
+.admin-viewdoctor-edit-details-socialmediahandles-header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    padding: 10px 0; 
+}
+  
+.admin-viewdoctor-edit-details-socialmediahandles-header h2 {
+    margin: 0; 
+    font-size: 20px; 
+    font-weight: 700;
+    color: #272848; 
+    display: inline-block; 
+}
+
+
+/*common css and second className in css for Specialties, Conditions and Languages==========Satrt*/
+.special-division-edit {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+
+.admin-viewdoctor-edit-details-input-placeholder .add-plus-icon {
+    margin-left:10px;
+    cursor: pointer;
+    color: #007bff;
+}
+
+.admin-viewdoctor-edit-details-remove-icon{
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    color: orange;
+    cursor: pointer;
+}
+/*common css and second class css for Specialties,Conditions and Languages==========End*/
+
+
+/*hospital container style========Start*/
+
+.admin-viewdoctor-edit-details-hospital-container{
+    display: flex;
+    justify-content:space-between;
+    flex-direction: row;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.admin-viewdoctor-edit-details-hospital-row{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.admin-viewdoctor-edit-details-button-aglin{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    gap: 20px;
+}
+
+.admin-viewdoctor-edit-details-button-aglin .add-button {
+    background: none;
+    color: #272848;
+    border: 1.5px solid #0163F7;
+    border-radius: 5px;
+    padding: 5px 20px;
+    font-weight: 600;
+    display: flex;
+    place-items: center;
+    gap: 5px;
+    transition: color 0.3s, background-color 0.3s; 
+}
+
+.admin-viewdoctor-edit-details-button-aglin .add-button:hover {
+    background-color: #0163F7;
+    color: #ffffff;
+}
+
+.admin-viewdoctor-edit-details-button-aglin .add-button:hover .add-iocn-color {
+    color: #ffffff;
+}
+
+.admin-viewdoctor-edit-details-button-aglin .remove-button {
+    background: none;
+    color: #272848;
+    border: 1.5px solid orange;
+    border-radius: 5px;
+    padding: 5px 20px;
+    font-weight: 600;
+    display: flex;
+    place-items: center;
+    gap: 5px;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+.admin-viewdoctor-edit-details-button-aglin .remove-button:hover {
+    background-color: orange;
+    color: #ffffff;
+}
+
+.admin-viewdoctor-edit-details-button-aglin .remove-button:hover .remove-iocn-color {
+    color: #ffffff;
+}
+
+.add-iocn-color {
+    color: #0163F7;
+}
+
+.remove-iocn-color {
+    color: orange;
+}
+/*hospital container style========End*/
+
+
+/*Only for Insurance =========Start*/
+.select-box-arrow-icon-insurance{
+    position: absolute;
+    top: 50%;
+    right: 50px;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: orange;
+    pointer-events: none;
+}
+
+.financial-overview-container p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.admin-viewdoctor-edit-details-update-profile{
+    color:#FFFFFF;
+    background-color: #0163F7;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding: 10px 40px;
+    font-weight: 600;
+    display: flex;
+    place-items: center;
+    gap: 5px;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+/*Only for Insurance =========End*/
+
+
+
+  

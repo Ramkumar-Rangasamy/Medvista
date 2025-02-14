@@ -1,0 +1,234 @@
+.OurProductsDC-blogPage-Doctors-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 30px;
+    max-width: 1279px;
+    width: 100%;
+    margin-top: 50px;
+    box-sizing: border-box;
+}
+.OurProductsDC-blogPage-Doctors-title-head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.OurProductsDC-blogPage-Doctors-title-head h2 {
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 33.6px;
+    color: rgba(39, 40, 72, 1);
+}
+.OurProductsDC-blogPage-Doctors-title-head .OurProductsDC-See-more-btn{
+    background-color: #0167ff;
+    width: 124px;
+    height:35px;
+    padding: 0px 10px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19.2px; 
+    transition: background 0.3s ease, transform 0.3s ease;   
+}
+.OurProductsDC-blogPage-Doctors-title-head .OurProductsDC-See-more-btn:hover {
+    background-color: #edf3ff;
+    border: 0.4px solid #0167ff;
+    color: #0167ff;
+    transform: scale(1.05);
+}
+.OurProductsDC-blogPageDoctorCardBox {
+  display: flex;
+  align-items: flex-start;
+  gap: 25px;
+  overflow-x: auto; /* Enable horizontal scrolling */
+  overflow-y: hidden;
+  padding-bottom: 15px;
+  scroll-behavior: smooth;
+  white-space: nowrap; /* Prevent cards from wrapping */
+}
+
+.OurProductsDC-blogPageDoctorCardBox::-webkit-scrollbar {
+  height: 4.5px;
+}
+
+.OurProductsDC-blogPageDoctorCardBox::-webkit-scrollbar-thumb {
+  background-color:rgba(219, 219, 219, 1);
+  border-radius: 40px;
+}
+
+.OurProductsDC-blogPageDoctorCard {
+  flex: 0 0 298px; /* Fixed card width */
+  height: 270px;
+  display: inline-flex; /* Aligns items horizontally */
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+  cursor: pointer;
+  margin-top: 60px;
+  border-radius: 12px;
+  transition: all 0.2s ease;
+  background: rgba(255, 255, 255, 1);
+  border: 0.4px solid rgba(1, 103, 255, 0.4);
+  box-shadow: 0px 2px 4px rgba(1, 103, 255, 0.08);
+}
+
+.OurProductsDC-blogPageDoctorCard:hover {
+  border: 0.4px solid #0167ff;
+}
+
+.OurProductsDC-blogPageDoctorCardImgBox {
+  position: relative;
+  top: -33%;
+  bottom: 0;
+  margin: 0 auto;
+}
+
+.OurProductsDC-blogPageDoctorCardImgBox > a > img {
+  width: 184px;
+  height: 106px;
+  padding: 1px;
+  object-fit: cover;
+  border-radius: 6px;
+  background-color: #ff7f50;
+}
+
+.OurProductsDC-blogPageVerifiedTick {
+  position: absolute;
+  right: 0.06vw;
+  bottom: 0.3vw;
+}
+
+.OurProductsDC-blogPageDoctorCard-content {
+  position: relative;
+  top: -30%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.OurProductsDC-blogPageDoctorCardHeader {
+  display: flex;
+  justify-content: space-between;
+}
+
+.OurProductsDC-blogPageDoctorCardName {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 19.2px;
+  color: rgba(0, 0, 0, 1);
+}
+
+.OurProductsDC-blogPageDoctorCardRating {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  color: white;
+  font-size: 10px;
+  font-weight: 400;
+  width: 41px;
+  height: 18px;
+  border-radius: 5px;
+  align-items: center;
+  background-color: #ff7f50;
+}
+
+.OurProductsDC-blogPageDoctorCardSpecialist,
+.OurProductsDC-blogPageDoctorCardExp {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.OurProductsDC-blogPageDoctorCardSpecialist p,
+.OurProductsDC-blogPageDoctorCardExp p {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14.4px;
+  color: rgba(68, 68, 68, 1);
+  margin: 0;
+}
+
+.OurProductsDC-blogPageDoctorCardDesc {
+  max-width: 258px;
+  height: fit-content;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 13.5px;
+  color: rgba(0, 0, 0, 1);
+  white-space: normal; 
+}
+
+.OurProductsDC-blogPageDoctorCard-content .OurProductsDC-blogPageDoctorCardBtn {
+  width: 145px;
+  height: 37px;
+  border: none;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 5px;
+  background-color: #0167ff;
+  text-align: center;
+  line-height: 37px;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.OurProductsDC-blogPageDoctorCard-content .OurProductsDC-blogPageDoctorCardBtn:hover {
+  background-color: #edf3ff;
+  border: 0.4px solid #0167ff;
+  color: #0167ff;
+  transform: scale(1.05);
+}
+
+
+@media (max-width: 1440px) and (min-width: 1200px) {
+ 
+    .OurProductsDC-blogPage-Doctors-container {
+      max-width: 100%; 
+      padding: 0 20px; 
+    }
+  
+    .OurProductsDC-blogPageDoctorCard {
+      flex-basis: calc(40.5% - 100px);
+    }
+} 
+
+
+@media (max-width: 768px) {
+    
+    .OurProductsDC-blogPage-Doctors-container {
+      max-width: 100%; 
+      padding: 0 10px;
+      margin-top: 30px;
+    }
+    
+    .OurProductsDC-blogPageDoctorCard {
+      flex: 0 0 calc(100% - 0px);
+    } 
+    .OurProductsDC-blogPageDoctorCardDesc {
+      max-width:100%;
+      height: auto;
+      font-size: 10px;
+      font-weight: 400;
+      line-height: 13.5px;
+      color: rgba(0, 0, 0, 1);
+    }
+} 
+
+@media (max-width: 480px) {
+
+    .OurProductsDC-blogPage-Doctors-title-head h2 {
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 33.6px;
+        color: rgba(39, 40, 72, 1);
+    }
+    .OurProductsDC-blogPage-Doctors-title-head .OurProductsDC-See-more-btn {
+        width: 100px;
+        height: 30px;
+        padding: 0px 5px;
+        font-size: 14px;
+    }
+}

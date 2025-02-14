@@ -1,0 +1,146 @@
+/* Popup Overlay */
+.share-popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    animation: fadeIn 0.3s ease-in-out;
+  }
+  
+  /* Popup Box */
+  .share-popup {
+    /* background: linear-gradient(135deg, #FF7F50, #feb47b); */
+    background: white;
+    border-radius: 15px;
+    padding: 30px;
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+    animation: scaleUp 0.4s ease-in-out;
+  }
+  
+  /* Popup Title */
+  .share-popup-title {
+    font-size: 1.8rem;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  /* Social Icons Container */
+  .social-icons-container {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+  
+  /* Social Icon Styles */
+  .social-icon {
+    text-decoration: none;
+    color: white;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+  }
+  
+  .social-icon:hover {
+    transform: scale(1.2);
+    opacity: 0.8;
+  }
+  
+  .whatsapp {
+    background-color: #25D366;
+    border-radius: 50%;
+    padding: 10px;
+  }
+  
+  .instagram {
+    background-color: #C13584;
+    border-radius: 50%;
+    padding: 10px;
+  }
+  
+  .facebook {
+    background-color: #3b5998;
+    border-radius: 50%;
+    padding: 10px;
+  }
+  
+  .linkedin {
+    background-color: #0077b5;
+    border-radius: 50%;
+    padding: 10px;
+  }
+  
+  .twitter {
+    background-color: #1DA1F2;
+    border-radius: 50%;
+    padding: 10px;
+  }
+  
+  /* Close Button */
+  .close-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .close-btn:hover {
+    background-color: #007bff;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes scaleUp {
+    from {
+      transform: scale(0.8);
+    }
+    to {
+      transform: scale(1);
+    }
+  }
+  
+  /* Button Styles for Share Button */
+  .share-button-container {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .share-button {
+    background-color: #FF7F50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .share-button:hover {
+    background-color: #FF7F50;
+  }
+  
+  .share-button svg {
+    margin-right: 8px;
+  }
+  

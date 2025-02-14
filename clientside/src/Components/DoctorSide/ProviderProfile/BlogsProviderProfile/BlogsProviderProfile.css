@@ -1,0 +1,202 @@
+.Blogs-PP-list-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 20px;
+    max-width: 1279px;
+    width: 100%;
+    margin-top: 20px;
+    box-sizing: border-box;
+    height: fit-content;
+    border-radius: 16px;
+    border: 1px solid rgba(193, 193, 193, 1);
+    background: rgba(255, 255, 255, 1);
+    padding: 20px 40px;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+}
+
+.Blogs-PP-list-container h2 {
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 33.6px;
+    color: rgba(39, 40, 72, 1);
+}
+
+.Blogs-PP-cards{
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    overflow-y: hidden;
+    padding-bottom: 15px;
+    width: 100%;
+    scroll-behavior: smooth;
+    white-space: nowrap; /* Prevent cards from wrapping */
+}
+
+.Blogs-PP-cards::-webkit-scrollbar {
+    height: 4.5px;
+}
+  
+.Blogs-PP-cards::-webkit-scrollbar-thumb {
+    background-color:rgba(1, 103, 255, 1);
+    border-radius: 40px;
+}
+
+.Blogs-PP-card-item-container{
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    gap:20px;
+    max-width: 341px;
+    width: 100%;
+    max-height: fit-content;
+    border-radius: 12px;
+    padding: 15px;
+    box-shadow: 0px 3.06px 15.32px 0px rgba(0, 0, 0, 0.06);
+    border: 0.77px solid rgba(195, 207, 224, 1);
+}
+.Blogs-PP-card-item-container .Blogs-PP-image{
+    width: 285px;
+    height:186px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.Blogs-PP-content{
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    gap:10px;
+}
+.Blogs-PP-content .Blogs-PP-category{
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 15px;
+    color: rgba(1, 103, 255, 1);
+    margin: 0;
+}
+.Blogs-PP-content .Blogs-PP-meta-container{
+    display: flex;
+    align-items: start;
+    gap:5px;
+}
+.Blogs-PP-meta-container .Blogs-PP-meta-content{
+    color: rgba(113, 113, 113, 1);
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 15px;
+    margin: 0;
+}
+
+.Blogs-PP-content .Blogs-PP-title{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22.21px;
+    color: rgba(0, 0, 0, 1);
+    white-space: normal; 
+    max-width: 300px;
+}
+
+.Blogs-PP-content .Blogs-PP-description{
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 19.15px;
+    color: rgba(97, 97, 97, 1);
+    white-space: normal; 
+    max-width: 300px;  
+}
+
+ .Blogs-PP-read-more-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90px;
+    height: 30px;
+    border: none;
+    color: white;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 11.03px;
+    border-radius:4px;
+    background-color: #0167ff;
+    text-align: center;
+    line-height: 37px;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+ .Blogs-PP-read-more-btn:hover {
+    background-color: #edf3ff;
+    border: 0.4px solid #0167ff;
+    color: #0167ff;
+    transform: scale(1.05);
+}
+
+
+@media (max-width: 1440px) and (min-width: 1200px) {
+ 
+    .Blogs-PP-list-container {
+      max-width: 100%; 
+      padding: 0 20px; 
+    }
+  
+    .Blogs-PP-card-item-container{
+      flex-basis: calc(40.5% - 100px);
+    }
+} 
+
+@media (max-width: 768px) {
+    .Blogs-PP-list-container {
+        max-width: 100%;
+        padding: 10px;
+        margin-top: 30px;
+        gap: 15px;
+    }
+    .Blogs-PP-content .Blogs-PP-title {
+        max-width:100%;
+    }
+
+    .Blogs-PP-content .Blogs-PP-description {
+        max-width:100%;
+    }
+
+    .Blogs-PP-card-item-container {
+        max-width: 100%;
+        flex: 0 0 calc(100% - 0px);
+    }
+
+    .Blogs-PP-card-item-container .Blogs-PP-image {
+        max-width: 100%;
+        width:100%;
+        height: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .Blogs-PP-list-container{
+        padding:10px;
+    }
+
+    .Blogs-PP-list-container h2 {
+        font-size: 20px;
+    }
+
+    .Blogs-PP-card-item-container {
+        padding: 10px;
+    }
+
+    .Blogs-PP-card-item-container .Blogs-PP-image {
+        width: 100%;
+        object-fit: cover;
+        border-radius: 8px;
+    }
+
+    .Blogs-PP-content .Blogs-PP-title {
+        font-size: 14px;
+    }
+
+    .Blogs-PP-content .Blogs-PP-description {
+        font-size: 11px;
+    }
+}

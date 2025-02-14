@@ -1,0 +1,121 @@
+.medx-entry-page-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 90px;
+  padding: 70px;
+  background-image: linear-gradient(
+    180deg,
+    rgba(228, 237, 255, 0.8) -17.3%,
+    rgba(255, 255, 255, 0) 80.46%
+  );
+}
+
+.medx-entry-page-image-container {
+  max-width: 450px;
+}
+
+.medx-entry-page-image {
+  width: 100%;
+}
+
+.medx-entry-content-header {
+  display: flex;
+  flex-direction: column;
+  gap:15px;
+  width: 50%;
+}
+
+.medx-entry-content-header h2 {
+  font-size: 35px;
+  font-weight: 600;
+  line-height: 30px;
+  text-align: left;
+  color: #272848;
+}
+
+.medx-entry-content-header h3 {
+  font-size: 30px;
+  font-weight: 600;
+  line-height:28px;
+  text-align: left;
+  color: #007bff;
+}
+
+.medx-entry-content-header p {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 25.5px;
+  text-align: start;
+  color: #535353;
+}
+
+.medx-entry-button {
+  width: 143px;
+  height: 39px;
+  padding: 5px 20px;
+  text-align: center;
+  background: #0167ff;
+  color: #ffffff;
+  font-size:14px;
+  font-weight: 600;
+  line-height: 25px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.medx-entry-button:hover {
+  border: 1px solid #0167ff;
+  background-color: #edf3ff;
+  color: #0167ff;
+  transform: scale(1.05);
+}
+
+.medx-entry-button:active {
+  background-color: #003f7f;
+  transform: translateY(0);
+}
+
+@media screen and (max-width: 998px) {
+  .medx-entry-page-container {
+    flex-direction: column;
+  }
+
+  .medx-entry-content-header {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .medx-entry-page-container {
+    padding:70px  40px;
+    gap:50px;
+  }
+
+  .medx-entry-content-header h2 {
+    font-size: 28px;
+  }
+  .medx-entry-content-header h3 {
+    font-size: 1.3em;
+  }
+  .medx-entry-content-header p {
+    font-size: 15px;
+  }
+
+}
+
+@media screen and (max-width: 480px) {
+  .medx-entry-page-container {
+    padding:70px  20px;
+    gap:50px;
+  }
+  .medx-entry-content-header h2 {
+    font-size: 24px;
+  }
+  .medx-entry-content-header p {
+    font-size: 14px;
+  }
+ 
+}

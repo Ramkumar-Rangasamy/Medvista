@@ -1,0 +1,220 @@
+.Corporate-vd-view-doctor {
+    padding: 0px 20px;
+}
+
+
+
+.Corporate-vd-doctor-search-head-part{
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+}
+
+/* ===============Only for view Booking======Start======= */
+
+.Corporate-vd-doctor-search-head-part 
+.Corporate-vd-doctor-bk-and-title{
+    display: flex;
+    align-items: center;
+    justify-content:start;
+    gap:10px;
+    padding: 20px 10px 0 5px;
+    margin-bottom: 20px;
+}
+
+.Corporate-vd-doctor-bk-and-title .C-vd-bk-arrow {
+    font-size: 24px;
+    cursor: pointer;
+    color: #272848;
+    margin-top:3px;
+}
+  
+.Corporate-vd-doctor-bk-and-title .Corporate-vd-book-head-title {
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 28.8px;
+    color: #272848;
+    display: inline-block;
+    margin: 0;
+}
+
+
+.Corporate-vd-hospiatl-name{ /* Targets the Hospital column */
+    max-width: 300px; /* Adjust as needed */
+    text-align: start;
+    overflow-wrap: break-word;
+}
+
+/* ===============Only for view Booking======End======= */
+
+
+
+.Corporate-vd-view-doctor .Corporate-vd-doctor-search-head-part .Corporate-vd-doctor-head-title{
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 28.8px;
+    color: #272848;
+    display: inline-block;
+    padding: 20px 10px 0 5px;
+    margin-bottom: 30px;
+}
+.Corporate-vd-search-bar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #F3F6FF;
+    padding: 10px;
+    width: 400px;
+    height: 35px;
+    border-radius:50px;
+    transition: width 0.3s ease;
+}
+
+.Corporate-vd-search-bar input::placeholder {
+    color: #7979B2;
+}
+
+.Corporate-vd-search-bar input {
+    border: none;
+    background: none;
+    outline: none;
+    color: #7979B2;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.2px;    
+}
+
+.Corporate-vd-search-bar .Corporate-vd-search-bar-icon {
+    color: #42427D;
+    width: 17px;
+    height: 17px;
+    cursor: pointer;
+}
+
+
+.Corporate-vd-view-doctor-table-container {
+    overflow-y: auto;
+    height: calc(100vh - 180px);
+}
+
+.Corporate-vd-view-doctor-table-container::-webkit-scrollbar {
+    width: 0px;
+}
+
+.Corporate-vd-view-doctor-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.Corporate-vd-view-doctor-table thead tr {
+    background: #fbfbfb;
+    color: #272848;
+    border: 1px solid #0000001a;
+}
+
+.Corporate-vd-view-doctor-table thead tr th {
+    padding: 5px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #272848;
+}
+
+.Corporate-vd-view-doctor-table tbody tr td {
+    color: #272848;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 15px;
+    border-bottom: 4px solid #f0f0f5;
+}
+
+.Corporate-vd-view-doctor-edit-button {
+    display: inline-block;
+    overflow: hidden;
+    background: none;
+    color: #272848;
+    border: 1.5px solid #0163F7;
+    border-radius: 4px;
+    padding: 5px 20px;
+    font-weight: 600;
+    font-size: 16px;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.Corporate-vd-view-doctor-edit-button:hover {
+    background-color: #0163F7;
+    color: #ffffff;
+    transform: scale(1.05);
+}
+
+.Corporate-vd-view-doctor-delete-button {
+    display: inline-block;
+    overflow: hidden;
+    background: none;
+    color: #272848;
+    border: 1.5px solid orange;
+    border-radius: 4px;
+    padding: 5px 20px;
+    font-weight: 600;
+    font-size: 16px;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.Corporate-vd-view-doctor-delete-button:hover {
+    background-color: orange;
+    color: #ffffff;
+    transform: scale(1.05);
+}
+
+@media screen and (max-width: 1440px) {
+    .Corporate-vd-view-doctor 
+    .Corporate-vd-doctor-search-head-part 
+    .Corporate-vd-doctor-head-title {
+        font-size: 22px;
+    }
+
+    .Corporate-vd-view-doctor-table thead tr th {
+        font-size: 14px;
+    }
+
+    .Corporate-vd-view-doctor-table tbody tr td {
+        font-size: 13.5px;
+        padding: 18px 8px;
+    }
+
+    .Corporate-vd-view-doctor-edit-button,
+    .Corporate-vd-view-doctor-delete-button{
+        border-radius: 4px;
+        padding: 5px 6px;
+        font-size: 13.5px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .Corporate-vd-view-doctor 
+    .Corporate-vd-doctor-search-head-part 
+    .Corporate-vd-doctor-head-title {
+        font-size: 20px;
+    }
+
+    .Corporate-vd-view-doctor-table thead tr th {
+        font-size: 13px;
+    }
+
+    .Corporate-vd-view-doctor-table tbody tr td {
+        font-size: 12.5px;
+        padding: 15px 5px;
+    }
+
+    .Corporate-vd-view-doctor-edit-button,
+    .Corporate-vd-view-doctor-delete-button{
+        border-radius: 3.5px;
+        padding: 5px 5px;
+        font-size: 12.5px;
+        width: 100%;
+    }
+}
+
+

@@ -1,0 +1,487 @@
+.appointments-container {
+  border-radius: 12px;
+  background-color: #ffffff;
+  padding:20px;
+  width: 100%;
+  height: fit-content;
+}
+
+.appointments-container h2 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28.8px;
+  color: #272848;
+  display: inline-block;
+  padding:10px;
+}
+
+.tabs-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+  border-bottom: 4px solid #f0f0f5;
+}
+
+.tabs{
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  gap: 3rem;
+}
+
+.tab{
+  font-weight: 700;
+  padding:10px 15px;
+  font-size: 16px;
+  color: #272848;
+  border: none;
+  background: none;
+  cursor: pointer;
+  position: relative;
+}
+
+.tab.active::after {
+  content: '';
+  display: block;
+  margin: auto;
+  height: 3px;
+  width: 100%;
+  border-bottom: 4px solid #1e90ff;
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+}
+
+.user-search-bar{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #F3F6FF;
+  padding: 10px;
+  width: 340px;
+  height: 35px;
+  border-radius:50px;
+  transition: width 0.3s ease;
+}
+
+.user-search-bar input::placeholder {
+  color: #7979B2;
+}
+
+.user-search-bar input {
+  border: none;
+  background: none;
+  outline: none;
+  color: #7979B2;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.2px;       
+}
+
+.user-search-bar .user-search-bar-icon {
+  color: #42427D;
+  width: 17px;
+  height: 17px;
+  cursor: pointer;
+}
+
+.appointments-table-container {
+  max-height: calc(100vh - 310px); 
+  overflow-y: auto;
+}
+
+.appointments-table-container::-webkit-scrollbar {
+  width: 14px;
+}
+
+.appointments-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+.appointments-table thead tr {
+  background: #fbfbfb;
+  color: #272848;
+  border: 1px solid #0000001a;
+}
+
+.appointments-table thead tr th {
+  padding: 5px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #272848;
+}
+
+.appointments-table tbody tr td {
+  color: #272848;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 15px;
+  border-bottom: 4px solid #f0f0f5;
+}
+
+.status-dot {
+  display: inline-block;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+}
+
+.status-dot.green {
+  background-color: green;
+}
+
+.status-dot.orange {
+  background-color: orange;
+}
+.status-dot.blue {
+  background-color: blue;
+}
+.status-dot.red {
+  background-color: red;
+}
+
+
+.view-button {
+  background-color: #0067FF;
+  border: 2px solid #14BEF0;
+  border-radius: 4px;
+  color: #FFFFFF;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.view-all-button {
+  display: block;
+  margin: 30px auto;
+  border-radius: 5px;
+  background-color: #0067FF;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 19.2px;
+  letter-spacing: 0.02em;
+}
+
+.add-review-button{
+  background-color: #0067FF;
+  border: 2px solid #14BEF0;
+  border-radius: 4px;
+  color: #FFFFFF;
+  padding: 5px 28.3px;
+  cursor: pointer;
+  font-weight: 500;
+;}
+
+
+/* Modal Styles */
+.view-appointment-modal {
+  position: fixed; 
+  top: 50%; 
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 80%;
+  max-width: 600px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.custom-overlay {
+  position: fixed; /* Ensure overlay covers the whole viewport */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.appointment-modal-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align:center !important;
+}
+
+.close-modal-button {
+  margin-top: 20px;
+  background-color: orange;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.close-modal-button:hover {
+  background-color: #0056b3;
+}
+
+.review-custom-modal{
+  position: fixed; 
+  top: 50%; 
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 80%;
+  max-width: 600px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.review-modal-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Styles for Add Review Modal */
+.review-custom-modal .review-modal-content {
+  padding: 20px;
+}
+
+.review-custom-modal .review-modal-content form div {
+  margin-bottom: 15px; 
+}
+
+.review-custom-modal .review-modal-content form label {
+  display: block; 
+  margin-bottom: 5px; 
+}
+
+.review-custom-modal .review-modal-content form input,
+.review-custom-modal .review-modal-content form textarea {
+  width: 100%; 
+  padding: 10px;
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+  box-sizing: border-box; 
+}
+
+.review-custom-modal .review-modal-content form input:focus,
+.review-custom-modal .review-modal-content form textarea:focus {
+  outline: none; 
+}
+
+.review-custom-modal .review-modal-content form .submit-review-button {
+  background-color: #007bff; 
+  color: white; 
+  padding: 10px 20px; 
+  border: none; 
+  cursor: pointer; 
+  border-radius: 4px; 
+  transition: background-color 0.3s;
+}
+
+.review-custom-modal .review-modal-content form .submit-review-button:hover {
+   background-color: #0056b3;
+}
+
+.review-custom-modal .review-modal-content form .close-modal-button {
+  background-color: #ff7f50; 
+  color: white; 
+  padding: 10px 20px; 
+  border: none; 
+  cursor: pointer;
+  border-radius: 4px; 
+  transition: background-color 0.3s; 
+  margin-left: 10px; 
+}
+
+.review-custom-modal .review-modal-content form .close-modal-button:hover {
+  background-color: #cb6a47; 
+}
+
+.star-rating {
+  display: inline-flex; 
+  padding:10px 10px 10px 10px;
+}
+
+.star {
+  font-size: 24px; 
+  color: #ccc; 
+  cursor: pointer; 
+  transition: color 0.3s; 
+}
+
+.star.filled {
+  color: #FFD700; /* Color for filled stars */
+}
+
+
+.toast-center {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  padding: 16px;
+  color: #0067FF;
+  border-radius: 8px;
+  font-size: 16px;
+  text-align: center;
+}
+.toast-center .Toastify__close-button {
+  color: #0067FF; 
+}
+
+.toast-center .Toastify__progress-bar {
+  color: #0067FF !important;
+}
+.toast-center .Toastify__toast-icon {
+  color: #0067FF; 
+}
+
+@media (max-width: 1400px) {
+  .tabs{
+    gap:11px;
+  }
+
+  .tab{
+    font-size: 15px;
+  }
+
+  .user-search-bar{
+    width: 280px;
+  }
+}
+
+@media (max-width: 1200px) {
+ 
+  .tabs-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap:20px;
+    border: none;
+  }
+
+  .tabs {
+    width: 100%;
+    border-bottom: 4px solid #f0f0f5;
+  }
+
+  .tab {
+    width: 100%;
+  }
+
+  .user-search-bar {
+    width: 100%;
+    height: 35px;
+  }
+
+  .user-search-bar input {
+    font-size: 15px;
+  }
+
+}
+
+@media (max-width: 768px) {
+ 
+  .appointments-container h2 {
+    font-size: 20px;
+    padding: 10px 5px;
+  }
+  .appointments-table-container {
+    max-height: calc(95vh - 200px);
+  }
+
+  .appointments-table thead tr th {
+    font-size: 14px;
+  }
+
+  .appointments-table tbody tr td {
+    font-size: 10px;
+    padding: 10px;
+  }
+
+  .view-button {
+    padding: 3px 5px;
+    font-size: 10px;
+  }
+
+  .view-all-button {
+    padding: 7px 15px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .appointments-container {
+    padding: 5px 5px;
+  }
+
+  .appointments-container h2 {
+    font-size: 18px;
+    padding: 5px 5px;
+  }
+
+  .appointments-table-container {
+    max-height: calc(95vh - 150px);
+  }
+
+  .appointments-table thead tr th {
+    font-size: 12px;
+  }
+
+  .appointments-table tbody tr td {
+    font-size: 8px;
+    padding: 5px;
+  }
+
+  .view-button {
+    padding: 2px 3px;
+    font-size: 8px;
+  }
+
+  .view-all-button {
+    padding: 5px 10px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 300px) {
+  .appointments-container {
+    padding: 5px 5px;
+  }
+
+  .appointments-container h2 {
+    font-size: 16px;
+    padding: 5px 5px;
+  }
+
+
+  .appointments-table-container {
+    max-height: calc(95vh - 130px);
+  }
+
+  .appointments-table thead tr th {
+    font-size: 10px;
+  }
+
+  .appointments-table tbody tr td {
+    font-size: 6px;
+    padding: 5px;
+  }
+
+  .view-button {
+    padding: 2px 3px;
+    font-size: 6px;
+  }
+
+  .view-all-button {
+    padding: 5px 10px;
+    font-size: 10px;
+  }
+}

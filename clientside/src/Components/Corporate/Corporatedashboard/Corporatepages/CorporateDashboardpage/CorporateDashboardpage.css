@@ -1,0 +1,600 @@
+.Corporate-DBD-main-dashboard-page {
+  padding: 0 20px;
+}
+
+.Corporate-DBD-main-dashboard-page .Corporate-DBD-heading-dashboard-page {
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 28.8px;
+  color: #272848;
+  display: inline-block;
+  padding: 20px 10px 0 5px;
+  margin-bottom: 20px;
+}
+
+.Corporate-DBD-scoll-head {
+  overflow-y: auto;
+  height: calc(100vh - 170px);
+}
+
+.Corporate-DBD-scoll-head::-webkit-scrollbar {
+  width: 0px;
+}
+
+.Corporate-DBD-gird-layout {
+  display: grid;
+  grid-template-areas:
+    "insight-patient income-head dashboard-blogs-patient"
+    "consultation booking-rate booking-rate"
+    "reviews booking-rate booking-rate";
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 330px 170px auto;
+  grid-gap: 20px;
+  margin: 5px 5px 15px 5px;
+}
+
+.Corporate-DBD-insight-patient {
+  grid-area: insight-patient;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #0000001a;
+  height: 100%;
+}
+
+.Corporate-DBD-income-head {
+  grid-area: income-head;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #0000001a;
+  height: 100%;
+}
+
+.Corporate-DBD-blogs-patient {
+  grid-area: dashboard-blogs-patient;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #0000001a;
+  height: 100%;
+}
+
+.Corporate-DBD-consultation {
+  grid-area: consultation;
+  background: #5577d1;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 0 10px #0000001a;
+  height: 100%;
+}
+
+.Corporate-DBD-booking-rate {
+  grid-area: booking-rate;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #0000001a;
+  height: 100%;
+}
+
+.Corporate-DBD-reviews {
+  grid-area: reviews;
+  background: #2a3f74;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 0 10px #0000001a;
+  height: 100%;
+}
+
+/* Desktop view: 1280px and above */
+
+@media (max-width: 1440px) and (min-width: 1310px) {
+  .Corporate-DBD-dashboard-gird-layout {
+    grid-template-areas:
+      "insight-patient income-head dashboard-blogs-patient"
+      "consultation booking-rate booking-rate"
+      "reviews booking-rate booking-rate";
+    grid-template-columns: repeat(1fr, 1fr, 1fr);
+    gap: 20px;
+  }
+  .Corporate-DBD-insight-patient,
+  .Corporate-DBD-income-head,
+  .Corporate-DBD-dashboard-blogs-patient {
+    max-width: 1200px;
+  }
+  .Corporate-DBD-consultation,
+  .Corporate-DBD-reviews {
+    width: 100%;
+  }
+  .Corporate-DBD-booking-rate {
+    width: 100%;
+  }
+  .Corporate-DBD-chart-area {
+    width: 300px;
+    height: 200px;
+  }
+}
+
+@media (max-width: 1280px) {
+
+  .Corporate-DBD-scoll-head {
+    overflow-y: auto;
+    height: calc(100vh - 154px);
+  }
+
+  .Corporate-DBD-gird-layout {
+    grid-template-areas:
+      "insight-patient income-head dashboard-blogs-patient"
+      "consultation booking-rate booking-rate"
+      "reviews booking-rate booking-rate";
+    grid-template-columns: repeat(1fr, 1fr, 1fr);
+    grid-template-rows: 330px 170px auto;
+    gap: 20px;
+  }
+  .Corporate-DBD-insight-patient,
+  .Corporate-DBD-income-head,
+  .Corporate-DBD-blogs-patient {
+    width: 300px;
+  }
+  .Corporate-DBD-consultation,
+  .Corporate-DBD-reviews {
+    width: 300px;
+  }
+  .Corporate-DBD-booking-rate {
+    width: 620px;
+  }
+
+
+}
+
+/*======================insight-patient =========start======================*/
+.Corporate-DBD-insight-patient .Corporate-DBD-head-common {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.Corporate-DBD-insight-patient .Corporate-DBD-head-common p {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 26.4px;
+  color: #272848;
+}
+
+.Corporate-DBD-insight-patient .Corporate-DBD-head-common .Corporate-DBD-select-container .Corporate-DBD-select-box-common {
+  padding: 5px 50px 5px 10px;
+  background: #f7faff;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 12px;
+  color: #272848;
+  cursor: pointer;
+  -webkit-appearance: none; /* For Chrome */
+  -moz-appearance: none; /* For Firefox */
+  appearance: none; /* For modern browsers */
+  outline: none;
+}
+
+.Corporate-DBD-insight-patient .Corporate-DBD-insight-item {
+  background: #f7faff;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin: 10px 0px 20px 0px;
+  padding: 5px;
+}
+
+.Corporate-DBD-insight-item .Corporate-DBD-insight-img-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-left: 10px;
+}
+
+.Corporate-DBD-insight-item .Corporate-DBD-insight-img-container.Corporate-DBD-blue-color {
+  background-color: #007bff;
+}
+
+.Corporate-DBD-insight-item .Corporate-DBD-insight-img-container.Corporate-DBD-dark-blue-color {
+  background-color: #2a3f74;
+}
+
+.Corporate-DBD-insight-item .Corporate-DBD-insight-img-container.Corporate-DBD-green-color {
+  background-color: #4caf50;
+}
+.Corporate-DBD-insight-item .Corporate-DBD-insight-img-container .Corporate-DBD-image-insight {
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+}
+
+.Corporate-DBD-insight-info h4 {
+  color: #a0aac8;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 30px;
+  margin: 0;
+}
+
+.Corporate-DBD-insight-info p {
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+  font-weight: 600;
+  margin: 0;
+}
+/*======================insight-patient =========End======================*/
+
+/*======================your income =========start======================*/
+.Corporate-DBD-income-content {
+  position: relative;
+}
+
+.Corporate-DBD-income-content .Corporate-DBD-head-common {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.Corporate-DBD-income-content .Corporate-DBD-head-common p {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 26.4px;
+  color: #272848;
+}
+
+.Corporate-DBD-income-content 
+.Corporate-DBD-head-common 
+.Corporate-DBD-income-select-container 
+.Corporate-DBD-income-select-box-common {
+  padding: 5px 50px 5px 10px;
+  background: #f7faff;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: 12px;
+  color: #272848;
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+}
+
+.Corporate-DBD-income-select-container
+.Corporate-DBD-income-down-arrow-icon{
+  position: absolute;
+  top: 15px;
+  right: 10px;
+  transform: translateY(-50%);
+  font-size: 20px;
+  color: #ff7f50;
+  pointer-events: none;
+}
+
+.Corporate-DBD-income-chart-area {
+  max-width: 340px;
+  height: 200px;
+  margin-top: 40px;
+  position: relative;
+  right: 15px;
+}
+
+.Corporate-DBD-income-coming-soon-overlay {
+  position: absolute;
+  top: -20px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: 600;
+  color: #272848;
+  z-index: 1;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+/*====================== your income end =========End======================*/
+
+/*====================== blogs =========start======================*/
+.Corporate-DBD-blogs-patient .Corporate-DBD-head-common {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.Corporate-DBD-blogs-patient .Corporate-DBD-head-common p {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 26.4px;
+  color: #272848;
+}
+
+.Corporate-DBD-blogs-patient
+.Corporate-DBD-head-common
+.Corporate-DBD-select-container
+.Corporate-DBD-select-box-common {
+  padding: 5px 50px 5px 10px;
+  background: #f7faff;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 12px;
+  color: #272848;
+  cursor: pointer;
+  -webkit-appearance: none; /* For Chrome */
+  -moz-appearance: none; /* For Firefox */
+  appearance: none; /* For modern browsers */
+  outline: none;
+}
+
+.Corporate-DBD-blogs-patient .Corporate-DBD-blogs-item {
+  background: #f7faff;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin: 10px 0px 20px 0px;
+  padding: 5px;
+}
+
+.Corporate-DBD-blogs-item .Corporate-DBD-blog-img-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-left: 10px;
+}
+
+
+.Corporate-DBD-blogs-item .Corporate-DBD-blog-img-container.Corporate-DBD-dark-blue-color {
+  background-color: #2a3f74;
+}
+
+.Corporate-DBD-blogs-item .Corporate-DBD-blog-img-container.Corporate-DBD-orange-color {
+  background-color: orange;
+}
+
+.Corporate-DBD-blogs-item .Corporate-DBD-blog-img-container.Corporate-DBD-green-color {
+  background-color: #4caf50;
+}
+.Corporate-DBD-blogs-item .Corporate-DBD-blog-img-container .Corporate-DBD-image-blogs {
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+}
+
+.Corporate-DBD-blog-image {
+  width: 30px;
+  height: 30px;
+}
+
+.Corporate-DBD-blogs-info h4 {
+  color: #a0aac8;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 30px;
+  margin: 0;
+}
+
+.Corporate-DBD-blogs-info p {
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+  font-weight: 600;
+  margin: 0;
+}
+/*====================== blogs end =========End======================*/
+
+/*====================== consultation =========start======================*/
+.Corporate-DBD-consultation .Corporate-DBD-consultation-coverarea {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Corporate-DBD-consultation-coverarea .Corporate-DBD-consultation-info .Corporate-DBD-consultation-count {
+  font-size: 62px;
+  font-weight: 600;
+  line-height: 90px;
+  color: #ffffff;
+  margin: 0;
+}
+
+.Corporate-DBD-consultation-coverarea .Corporate-DBD-consultation-info .Corporate-DBD-consultation-label {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  color: #ffffff;
+  text-align: left;
+  margin-top: -10px;
+}
+
+.Corporate-DBD-consultation-coverarea .Corporate-DBD-consultation-img {
+  width: 165px;
+  height: 150px;
+}
+
+
+@media (max-width: 1280px) {
+  
+  .Corporate-DBD-consultation-coverarea 
+  .Corporate-DBD-consultation-info 
+  .Corporate-DBD-consultation-label {
+    font-size: 1rem;
+  }
+}
+
+/*====================== consultation end =========End======================*/
+
+/*====================== Review =========start======================*/
+.Corporate-DBD-reviews .Corporate-DBD-reviews-coverarea {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Corporate-DBD-reviews-coverarea .Corporate-DBD-reviews-info .Corporate-DBD-reviews-count {
+  font-size: 62px;
+  font-weight: 600;
+  line-height: 90px;
+  color: #ffffff;
+  margin: 0;
+}
+
+.Corporate-DBD-reviews-coverarea .Corporate-DBD-reviews-info .Corporate-DBD-reviews-label {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  color: #ffffff;
+  text-align: left;
+  margin-top: -10px;
+}
+
+.Corporate-DBD-reviews-coverarea .Corporate-DBD-reviews-img {
+  width: 140px;
+  height: 130px;
+}
+
+@media (max-width: 1280px) {
+  
+  .Corporate-DBD-reviews-coverarea 
+  .Corporate-DBD-reviews-info 
+  .Corporate-DBD-reviews-label {
+    font-size: 1rem;
+  }
+}
+
+/*====================== review end =========End======================*/
+
+/*====================== booking rate =========start======================*/
+.Corporate-DBD-booking-rate .Corporate-DBD-booking-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.Corporate-DBD-booking-header .Corporate-DBD-booking-title {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 26.4px;
+  color: #272848;
+}
+
+/*select box down arrow css*/
+.Corporate-DBD-select-container {
+  position: relative;
+  display: inline-block;
+}
+
+.Corporate-DBD-select-container .Corporate-DBD-recently {
+  padding: 5px 50px 5px 10px;
+  background: #f7faff;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: 12px;
+  color: #272848;
+  cursor: pointer;
+  -webkit-appearance: none; /* For Chrome */
+  -moz-appearance: none; /* For Firefox */
+  appearance: none; /* For modern browsers */
+  outline: none;
+}
+
+.Corporate-DBD-arrow-icon-filter {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  font-size: 20px;
+  color: #ff7f50;
+  pointer-events: none;
+}
+
+
+.Corporate-DBD-booking-area {
+  margin: 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap:10px;
+}
+
+.Corporate-DBD-rate {
+  flex: 1 1 250px;
+  display: flex;
+  flex-direction: column;
+  gap:20px;
+}
+
+.Corporate-DBD-rate h1 {
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 30px;
+  color: #00a500;
+  margin: 0;
+}
+
+.Corporate-DBD-booking-description {
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 28.8px;
+  color: #272848;
+  margin: 0;
+}
+
+.Corporate-DBD-increase {
+  font-size: 14px;
+  font-weight: 500;
+  width: 70%;
+  line-height: 16.8px;
+  color: #a0aac8;
+  margin: 0;
+}
+
+.Corporate-DBD-chart {
+  flex: 2 1 350px;
+  max-width: 600px;
+  padding-top: 50px;
+}
+
+@media (max-width: 768px) {
+  .Corporate-DBD-rate {
+    flex: 1 1 100px;
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+
+  .Corporate-DBD-rate h1 {
+    font-size: 2rem;
+  }
+
+  .Corporate-DBD-rate .Corporate-DBD-booking-description {
+    font-size: 1rem;
+    line-height: 20px;
+  }
+  .Corporate-DBD-rate .Corporate-DBD-increase {
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  .Corporate-DBD-chart {
+    flex: 2 1 250px;
+    max-width: 300px;
+  }
+}
+
+/*====================== booking rate =========End======================*/
+

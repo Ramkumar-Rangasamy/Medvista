@@ -1,0 +1,143 @@
+.healthcare-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap:100px;
+  padding: 70px;
+  background-image: linear-gradient(180deg, rgba(228, 237, 255, 0.8) -17.3%, rgba(255, 255, 255, 0) 80.46%);
+}
+
+.images-section {
+  display: flex;
+  align-items: end;
+  justify-content: end;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.images-section .image-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.images-section .image-row  .image-item {
+  max-width: 240px;
+  max-height: 220px;
+  border-radius:5px;
+  object-fit: cover;
+}
+
+.text-section {
+  max-width: 632px;
+}
+
+.text-section h2 {
+  font-size: 35px;
+  font-weight: 600;
+  line-height: 54.25px;
+  color: rgba(39, 40, 72, 1); 
+}
+
+.text-section .highlight {
+  color: #007bff; 
+}
+
+.text-section p {
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 25.5px;
+  text-align: justify;
+  color: rgba(82, 82, 91, 1); 
+}
+
+
+@media (max-width: 1200px) {
+  .healthcare-section {
+    padding: 50px;
+    gap: 50px;
+  }
+
+  .images-section {
+    align-items: center;
+    justify-content: center;
+  }
+
+
+  .images-section .image-row {
+    gap: 15px;
+  }
+
+  .images-section .image-row  .image-item {
+    max-width: 200px;
+    max-height: 180px;
+    border-radius:5px;
+    object-fit: cover;
+  }
+  .text-section h2 {
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 54.25px;
+    color: rgba(39, 40, 72, 1); 
+  }
+}
+
+@media (max-width: 998px) {
+  .healthcare-section {
+    flex-direction: column;
+    padding: 50px;
+    gap: 50px;
+  }
+
+  .images-section {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .images-section .image-row {
+    gap: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .text-section {
+    max-width: 100%;
+    padding: 0 10px;
+  }
+
+  .text-section h2 {
+    font-size: 28px;
+    line-height: 42px;
+  }
+
+  .text-section p {
+    font-size: 15px;
+  }
+
+  .images-section .image-row .image-item {
+    max-width: 180px;
+    max-height: 160px;
+  }
+}
+
+@media (max-width: 576px) {
+  .healthcare-section {
+    padding: 50px 20px 20px 20px;
+  }
+
+  .text-section h2 {
+    font-size: 20px;
+    line-height: 35px;
+  }
+
+  .text-section p {
+    font-size: 14px;
+    line-height: 23px;
+  }
+
+  .images-section .image-row .image-item {
+    max-width: 140px;
+    max-height: 120px;
+  }
+}

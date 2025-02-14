@@ -1,0 +1,45 @@
+.commission-container {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .commission-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .commission-label {
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .commission-input {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100px;
+    margin-bottom: 20px;
+  }
+  
+  .commission-submit-btn {
+    background-color: #42427D;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .commission-submit-btn:hover {
+    background-color: #2b2b6d;
+  }
+  
+  .commission-current-fee {
+    margin-top: 20px;
+    font-size: 1.2em;
+  }
+  

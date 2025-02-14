@@ -1,0 +1,411 @@
+/*==============common tabs and search bar and css desgin===================Start==================*/
+.admin-dashboard-appointments-tabs-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    border-bottom: 4px solid #f0f0f5;
+}
+  
+.admin-dashboard-appointments-tabs{
+    display: flex;
+    gap: 3rem;
+}
+  
+.admin-tab {
+    font-weight: 700;
+    padding:10px 15px;
+    font-size: 16px;
+    color: #272848;
+    border: none;
+    background: none;
+    cursor: pointer;
+    position: relative;
+}
+  
+.admin-tab.admin-active::after {
+    content: '';
+    display: block;
+    margin: auto;
+    height: 3px;
+    width: 100%;
+    border-bottom: 4px solid #1e90ff;
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+}
+
+.admin-search-bar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #F3F6FF;
+    padding: 10px;
+    width: 340px;
+    height: 35px;
+    border-radius:50px;
+    transition: width 0.3s ease;
+}
+
+.admin-search-bar input::placeholder {
+    color: #7979B2;
+}
+
+.admin-search-bar input {
+    border: none;
+    background: none;
+    outline: none;
+    color: #7979B2;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.2px;    
+}
+
+.admin-search-bar .admin-search-bar-icon {
+    color: #42427D;
+    width: 17px;
+    height: 17px;
+    cursor: pointer;
+}
+
+/*==============common tabs and search bar and css desgin===================End==================*/
+
+/*Start adminappoinments.css*/
+.admin-dashboard-appointments{
+    padding: 0px 20px;
+}
+
+.admin-dashboard-appointments .admin-manage-title {
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 28.8px;
+  color: #272848;
+  display: inline-block;
+  padding:20px 10px 0 5px;
+  margin-bottom: 20px;
+}
+  
+.admin-manage-appointments-table-container {
+    overflow-y: auto;
+    height:calc(100vh - 250px);
+}
+  
+.admin-manage-appointments-table-container::-webkit-scrollbar {
+    width: 0px;
+}
+  
+.admin-manage-appointments-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.admin-manage-appointments-table thead tr {
+    background: #fbfbfb;
+    color: #272848;
+    border: 1px solid #0000001a;
+}
+
+.admin-manage-appointments-table thead tr th {
+    padding: 5px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #272848;
+}
+
+.admin-manage-appointments-table tbody tr td {
+    color: #272848;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 20px;
+    border-bottom: 4px solid #f0f0f5;
+    
+}
+
+
+/* Status dot styles */
+.admin-status-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 8px;
+}
+  
+/* Color-coded status dots */
+.admin-status-dot.waiting {
+    background-color: orange;
+}
+  
+.admin-status-dot.accepted {
+    background-color:green;
+}
+  
+.admin-status-dot.rejected {
+    background-color: red;
+}
+  
+.admin-status-dot.completed {
+    background-color: blue;
+}
+ 
+.admin-manage-appointments-table tbody .admin-status-dot {
+    display: inline-block;
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+}
+
+.admin-manage-appointments-table .admin-manage-appointments-select-container {
+    position: relative;
+    display: inline-block; 
+}
+
+.admin-manage-appointments-table .admin-manage-appointments-select-container .admin-manage-appointments-status-select {
+    border: 1px solid #78798d;
+    font-weight: 600;
+    padding: 5px 30px 5px 20px;
+    border-radius: 4px;
+    -webkit-appearance: none; /* For Chrome */
+    -moz-appearance: none; /* For Firefox */
+    appearance: none; /* For modern browsers */
+    outline: none;
+    width: 150px;
+    color: #272848;
+    cursor: pointer;
+}
+
+.admin-manage-appointments-table .admin-manage-appointments-select-container .admin-manage-arrow-icon {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-45%);
+    font-size: 20px;
+    color: #2AA7FF;
+    pointer-events: none;
+}
+
+.admin-manage-update-button{
+    background: none;
+    color: #272848;
+    border: 1.5px solid orange;
+    border-radius:5px;
+    padding: 5px 20px;
+    font-weight: 600;
+}
+
+.admin-manage-update-button:hover{
+    background-color: orange;
+    color:#ffffff;
+}
+
+/* Responsive styles */
+@media (max-width: 1300px) {
+    .admin-dashboard-appointments .admin-manage-title {
+        font-size: 23px;  
+    }
+
+    .admin-dashboard-appointments-tabs{
+        gap:7px;
+    }
+
+    .admin-search-bar{
+        width: 300px;
+    }
+
+    .admin-manage-appointments-table thead tr th{
+        font-size: 13px;
+        padding: 5px; 
+    }
+
+    .admin-manage-appointments-table tbody tr td {
+        font-size: 13px;
+        padding: 10px;
+    }
+
+    .admin-manage-appointments-table-container {
+        height: calc(100vh - 250px); 
+    }
+
+    .admin-manage-appointments-table tbody .admin-status-dot {
+        width: 10px;
+        height:10px;
+    }
+
+    .admin-manage-appointments-table 
+    .admin-manage-appointments-select-container 
+    .admin-manage-appointments-status-select {
+        width: 125px;
+    }
+
+    .admin-manage-update-button {
+        padding: 5px 17px;
+    }
+}
+
+
+@media (max-width: 1024px) {
+    .admin-dashboard-appointments .admin-manage-title {
+        font-size: 21px;  
+    }
+
+    .admin-manage-appointments-table thead tr th{
+        font-size: 10px;
+        padding: 5px; 
+    }
+    .admin-manage-appointments-table tbody tr td {
+        font-size: 10px;
+        padding: 10px;
+    }
+
+    .admin-manage-appointments-table-container {
+        height: calc(100vh - 300px); 
+    }
+
+    .admin-manage-appointments-table tbody .admin-status-dot {
+        width: 8px;
+        height:8px;
+    }
+
+    .admin-manage-appointments-table 
+    .admin-manage-appointments-select-container 
+    .admin-manage-appointments-status-select {
+        width: 90px;
+    }
+
+    .admin-manage-update-button {
+        padding: 5px 17px;
+    }
+}
+
+@media (max-width: 998px) {
+    .admin-dashboard-appointments .admin-manage-title{
+        font-size: 20px;
+        margin-left: 15px;
+        margin-bottom: 10px;
+    }
+
+    .admin-manage-appointments-table thead tr th,
+    .admin-manage-appointments-table tbody tr td {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    .admin-manage-appointments-table .select-container .status-select {
+        width: 100px;
+        padding: 5px 20px 5px 10px;
+    }
+
+    .admin-manage-appointments-table .select-container .arrow-icon {
+        right: 5px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .admin-dashboard-appointments .admin-manage-title {
+        font-size: 18px;
+        margin-left: 10px;
+        margin-bottom: 8px;
+    }
+
+    .admin-manage-appointments-table thead tr th,
+    .admin-manage-appointments-table tbody tr td {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    .admin-manage-appointments-table .select-container .status-select {
+        width: 80px;
+        padding: 5px 15px 5px 5px;
+    }
+
+    .admin-manage-appointments-table .select-container .arrow-icon {
+        right: 3px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 576px) {
+    .admin-dashboard-appointments .admin-manage-title {
+        font-size: 18px;
+        margin-left: 10px;
+        margin-bottom: 8px;
+    }
+
+    .admin-manage-appointments-table thead tr th,
+    .admin-manage-appointments-table tbody tr td {
+        font-size: 10px;
+        padding: 5px;
+    }
+
+    .admin-manage-appointments-table .select-container .status-select {
+        width: 80px;
+        padding: 5px 15px 5px 5px;
+    }
+
+    .admin-manage-appointments-table .select-container .arrow-icon {
+        right: 3px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .admin-dashboard-appointments{
+        padding: 0px 0px;
+      }
+    .admin-dashboard-appointments .admin-manage-title {
+        font-size: 16px;
+        margin-left: 5px;
+        margin-bottom: 6px;
+    }
+
+    .admin-manage-appointments-table thead tr th,
+    .admin-manage-appointments-table tbody tr td {
+        font-size: 8px;
+        padding: 4px;
+    }
+    .admin-manage-appointments-table-container {
+        height: calc(100vh - 210px); 
+    }
+
+    .admin-manage-appointments-table .select-container .status-select {
+        width: 60px;
+        padding: 3px 10px 3px 3px;
+    }
+
+    .admin-manage-appointments-table .select-container .arrow-icon {
+        right: 2px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 320px) {
+    .admin-dashboard-appointments .admin-manage-title {
+        font-size: 14px;
+        margin-left: 5px;
+        margin-bottom: 4px;
+    }
+
+    .admin-manage-appointments-table thead tr th,
+    .admin-manage-appointments-table tbody tr td {
+        font-size: 6px;
+        padding: 2px;
+    }
+
+    .admin-manage-appointments-table-container {
+        height: calc(100vh - 200px);
+    }
+
+    .admin-manage-appointments-table .select-container .status-select {
+        width: 50px;
+        padding: 3px 8px 3px 3px;
+    }
+
+    .admin-manage-appointments-table .select-container .arrow-icon {
+        right: 1px;
+        font-size: 10px;
+    }
+}

@@ -1,0 +1,244 @@
+.sidebar-container {
+  width: 40%;
+  background-color: #fbfbfb;
+  height: 75vh;
+  border-right: 0.25px solid #AFB8CF;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 20px;
+  background-color: #ffffff;
+  border-top-left-radius: 12px;
+  border-bottom: 0.25px solid #AFB8CF;
+}
+
+.sidebar-header select {
+  background: transparent;
+  border: none;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+  margin-left: 10px;
+  background-color: #f8f9fd;
+  font-size: 0.7rem;
+}
+
+.user-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex-grow: 1;
+  overflow-y: auto; 
+  max-height: calc(75vh - 80px);
+}
+
+.user-list::-webkit-scrollbar {
+  width:5px;
+}
+
+.user-list::-webkit-scrollbar-thumb {
+  background-color:#ebeaea;
+  height: 50px;
+  border-radius: 2px;
+}
+
+.user-list-item {
+  display: flex;
+  align-items:start;
+  justify-content: center;
+  gap:10px;
+  padding: 16px 20px 16px 24px;
+  border-bottom: 0.25px solid #AFB8CF;
+  cursor: pointer;
+  transition: background-color 0.3s;
+
+}
+
+.user-list-item:hover {
+  background: #F8F9FD;
+}
+
+.user-avatar img {
+  width: 35px;
+  height:35px;
+  border-radius:5px;
+}
+
+.user-info {
+  flex: 1;
+}
+
+.user-name {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 18px;
+  text-align: left;
+  color: #000000;
+  margin-bottom: 4px;
+}
+
+.user-message {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+  color: #636363;
+}
+
+.message-time {
+  font-size: 11px;
+  padding-top: 5px;
+  font-weight: 400;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap:5px;
+  color: #9FA7BE;
+}
+
+.clock-icon-user-message-time{
+  width: 13.33px;
+  height: 13.33px;
+}
+
+/* Tablet View */
+@media (max-width: 1024px) {
+  .sidebar-container {
+    width: 50%; /* Adjust width for tablet screens */
+    height: 70vh; /* Adjust height for tablets */
+  }
+
+  .user-list-item {
+    padding: 8px; /* Smaller padding for list items */
+    gap: 8px; /* Adjust gap between elements */
+  }
+
+  .user-avatar img {
+    width: 30px; /* Smaller avatar image */
+    height: 30px;
+  }
+
+  .user-name {
+    font-size: 14px; /* Smaller font for user name */
+  }
+
+  .user-message {
+    font-size: 11px; /* Smaller font for message */
+  }
+
+  .message-time {
+    font-size: 10px; /* Smaller font for time */
+  }
+
+  .clock-icon-user-message-time {
+    width: 12px;
+    height: 12px;
+  }
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+  .sidebar-container {
+    width: 100%; /* Full width for mobile */
+    height: 60vh; /* Adjust height for mobile */
+    border-radius: 0; /* Remove border-radius */
+  }
+
+  .sidebar-header {
+    padding: 15px 5px; /* Reduce padding for header */
+  }
+
+  .sidebar-header select {
+    font-size: 0.9rem; /* Smaller font size */
+  }
+
+  .search-bar {
+    padding: 8px; /* Adjust padding for search bar */
+  }
+
+  .search-bar input {
+    padding: 8px; /* Adjust padding inside input */
+    font-size: 0.6rem; /* Adjust font size */
+  }
+
+  .user-list-item {
+    padding: 6px; /* Smaller padding for list items */
+    gap: 5px;
+  }
+
+  .user-avatar img {
+    width: 25px; /* Smaller avatar image */
+    height: 25px;
+  }
+
+  .user-name {
+    font-size: 13px; /* Smaller font for user name */
+  }
+
+  .user-message {
+    font-size: 10px; /* Smaller font for message */
+  }
+
+  .message-time {
+    font-size: 9px; /* Smaller font for time */
+  }
+
+  .clock-icon-user-message-time {
+    width: 10px;
+    height: 10px;
+  }
+}
+
+/* Small Mobile View */
+@media (max-width: 480px) {
+  .sidebar-container {
+    height: 55vh; /* Further reduce height */
+  }
+
+  .user-list-item {
+    padding: 5px; /* Even smaller padding for small mobile */
+  }
+
+  .user-avatar img {
+    width: 20px; /* Even smaller avatar */
+    height: 20px;
+  }
+
+  .user-name {
+    font-size: 12px;
+  }
+
+  .user-message {
+    font-size: 9px;
+  }
+
+  .message-time {
+    font-size: 8px;
+  }
+
+  .clock-icon-user-message-time {
+    width: 9px;
+    height: 9px;
+  }
+}

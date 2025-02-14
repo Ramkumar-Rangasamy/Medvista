@@ -1,0 +1,612 @@
+@keyframes upDown {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+@keyframes disappear {
+  0%, 10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%, 100% {
+    opacity: 0.7;
+  }
+  5%, 15%, 25%, 35%, 45%, 55%, 65%, 75%, 85%, 95% {
+    opacity: 0;
+  }
+}
+.signupnew--total-container{
+  background: rgba(244, 247, 252, 1);
+  margin:0 auto;
+  height:fit-content;
+  width: 100%;
+}
+
+.signupnew--close-custom-container{
+  display: flex;
+  justify-content: end;
+  padding: 30px 40px;
+}
+
+.signupnew--close-custom {
+  color: rgb(0, 0, 0);
+  outline: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.signupnew--container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.smile-emoji{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+.brand-image-logo{
+  width: 150px;
+  height: 35px;
+  position: absolute;
+  top: 8%; /* 70px / 700px */
+  left: 5%; /* 120px / 800px */
+}  
+
+.emoji-ring {
+  width: 36px;
+  height: 18px;
+  position: absolute;
+  top: 25%; /* 180px / 700px */
+  left: 25.5%; /* 380px / 800px */
+  font-size: 36px;
+  font-weight: 900;
+  line-height: 18px;
+  text-align: right;
+  animation: upDown 2s infinite, disappear 25s infinite;
+}
+
+.calender-emoji {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 40.4%; /* 290px / 700px */
+  left: 6.25%; /* 138px / 800px */
+  animation: upDown 2s infinite, disappear 22s infinite;
+}
+
+.speech-bubble-container {
+  background-image: url('../Assets/curvedesign.svg'); 
+  background-repeat: no-repeat;
+  background-size: cover; 
+  background-position: center; 
+  height: 120px;
+  position: absolute;
+  top: 47%; /* 350px / 700px */
+  left: 6.25%; /* 138px / 800px */
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+}
+
+.speech-bubble {
+  position: relative;
+  padding: 5px 8px;
+  color: #272848; 
+  font-size: 16px; 
+  font-weight: 500; 
+}
+
+.typing-animation {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap; 
+  animation: typing 4s steps(30, end) infinite;
+}
+
+.speech-bubble-container-std {
+  background-image: url('../Assets/curvedsigntwo.svg'); 
+  background-repeat: no-repeat;
+  background-size: cover; 
+  background-position: center; 
+  height: 120px;
+  position: absolute;
+  top: 19%; /* 150px / 700px */
+  left: 76.75%; /* 1150px / 800px */
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+}
+
+.speech-bubble-std {
+  position: relative;
+  padding: 5px 8px;
+  color: #272848; 
+  font-size: 16px; 
+  font-weight: 500; 
+}
+
+.typing-animation-std {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap; 
+  animation: typing 4s steps(30, end) infinite;
+}
+
+.band-aid-emoji {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 65%; /* 490px / 700px */
+  left: 27.25%; /* 450px / 800px */
+  animation: upDown 2s infinite, disappear 25s infinite;
+}
+
+.stethoscope-emoji {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 75%; /* 668px / 700px */
+  left: 4.25%; /* 130px / 800px */
+  animation: upDown 2s infinite, disappear 28s infinite;
+}
+
+.scheduletwo-emoji {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 95%; /* 542px / 700px */
+  left: 12.75%; /* -70px / 800px */
+  animation: upDown 2s infinite, disappear 40s infinite; 
+}
+
+.handsucking {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 48%; /* 350px / 700px */
+  left: 67%; /* 1000px / 800px */
+  font-size: 36px;
+  font-weight: 900;
+  line-height: 18px;
+  animation: upDown 2s infinite, disappear 35s infinite; 
+}
+
+.consultation-emoji {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 55.3%; /* 450px / 700px */
+  left: 87.5%; /* 1300px / 800px */
+  animation: upDown 2s infinite, disappear 33s infinite;
+}
+
+.heartbeat-emoji {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 74%; /* 550px / 700px */
+  left: 68%; /* 1014px / 800px */
+  animation: upDown 2s infinite, disappear 32s infinite;
+}
+
+.medicalexam-emoji {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 90.9%;
+  left: 79.75%;
+  animation: upDown 2s infinite, disappear 30s infinite;
+}
+
+@keyframes typing {
+  0% {
+    width: 0; /* Start with no visible text */
+  }
+  50% {
+    width: 100%; /* Fully typed out */
+  }
+  100% {
+    width: 0; /* Reset to no visible text */
+  }
+}
+
+
+/* form style .css */
+.form-overall-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap:10px;
+}
+
+.form-overall-container label {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 14.4px;
+  text-align: left;
+  display: block;
+  margin-bottom: 0.5rem;
+  color: rgba(39, 40, 72, 1);
+}
+
+.form-overall-container .form-control-custom {
+  border-radius: 7px;
+  padding:10px 20px;
+  box-shadow: none;
+  transition: border-color 0.3s ease;
+  background-color: #ffffff;
+  outline: none;
+  width: 307px;
+  border: 1px solid #272848;
+}
+
+.form-overall-container .form-control-custom:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+.form-overall-container .form-control-custom-phone-container{
+  width: 307px;
+  border: 1px solid #272848;
+  transition: border-color 0.3s ease;
+  border-radius: 7px;
+  padding:7px 20px;
+  background-color: #ffffff;
+  box-shadow: none;
+}
+
+.form-overall-container .form-control-custom-phone-container:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+.form-control-custom-phone  .selected-flag{
+  border: none !important;    
+  box-shadow: none !important;
+  background-color: transparent !important;
+}
+
+.form-control-custom-phone input {
+  border: none !important;    
+  box-shadow: none !important;
+  background-color: transparent !important;
+}
+
+.form-control-custom-phone .flag-dropdown {
+  border: none !important;    
+  box-shadow: none !important; 
+  background-color: transparent !important; 
+}
+
+.form-overall-container .btn-custom-first {
+  width: 306px;
+  height: 49px;
+  border: 1px solid rgba(86, 140, 176, 1);
+  border-radius:50px;
+  background: #0067FF;
+  padding: 0.5rem 2rem;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  border: none;
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+
+.form-overall-container .btn-custom-first:hover {
+  border: 1px solid #0167ff;
+  background-color: #edf3ff;
+  color: #0167ff;
+  transform: scale(1.05);
+}
+
+
+
+
+
+
+
+
+.signup-center-container{
+  display: flex;
+  flex-direction: column;
+  gap:30px;
+  margin-top:10%;
+}
+
+.signup-center-container-head{
+  display: flex;
+  flex-direction: column;
+  gap:10px;
+}
+
+.signup-center-container-head .header-fisrt-title{
+  font-size:26px;
+  font-weight: 600;
+  line-height: 19.2px;
+  text-align: left;
+  color: #272848;
+  border-bottom: none;
+  display: flex;
+}
+
+.signup-center-container-head .header-std-sub-title{
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 19.2px;
+  text-align: left;
+  color: #272848;
+  border-bottom: none;
+}
+
+
+
+.or-sign-up-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap:10px;
+  margin-bottom: 30%;
+}
+
+.or-line-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:20px;
+}
+
+.or-sign-up{
+  font-size: 10.5px;
+  font-weight: 600;
+  line-height: 12.6px;
+  text-align: left;
+  color: #272848;
+}
+
+.end-line-sign-up{
+  width: 116px;
+  height: 4px;
+  border-bottom: 2px solid #F0F0F5;
+}
+
+.end-line-sign-up-two{
+  width: 116px;
+  height: 4px;
+  border-bottom: 2px solid #F0F0F5;
+}
+
+/* 
+.button-sign-up-container{
+  display: flex;
+  align-items: center;
+  gap:10px;
+}
+
+.google-button-sign-up,
+.apple-button-sign-up{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 30px;
+  border-radius: 22px ;
+  background: rgba(254, 254, 254, 1);
+  border: 1px solid rgba(172, 172, 172, 1);   
+}
+
+.google-sign-up-image{
+  width: 15px;
+  height: 15px;
+}
+
+.apple-sign-up-image{
+  width: 15.17px;
+  height: 18px;
+} */
+
+
+.login-option-container{
+  display: flex;
+  align-items: center;
+  gap:7px;
+}
+
+.account-sign-up{
+  font-size: 10.5px;
+  font-weight: 600;
+  line-height: 12.6px;
+  text-align: left;
+  color: #272848;
+}
+
+.login-link-signup{
+  font-size: 9.5px;
+  font-weight: 600;
+  line-height: 11.4px;
+  text-align: left;
+  text-decoration: none;
+  color: #0067FF;
+}
+
+
+.provider-option-container{
+  display: flex;
+  align-items: center;
+  gap:13px;
+}
+
+.account-sign-up-provider{
+  width: 146px;
+  height: 35px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 35px;
+  text-align: center;
+  color: #000000; 
+}
+
+.provider-link-signup{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width:95px;
+  height:29px;
+  padding-top:3px ;
+  border-radius: 5px;
+  border: 1px solid #FF7F50;
+  background: #ffffff;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: center;
+  color: #FF7F50;
+}
+.provider-link-signup:hover{
+  background: #FF7F50;
+  color: #ffffff;
+}
+
+/* Role Selection Container */
+.role-selection-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+/* Role Selection Grid */
+.role-selection-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 15px;
+  max-width: 550px;
+  width: 100%;
+}
+
+/* Role Card Styling */
+.role-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  border: 2px solid #eaeaea;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+}
+
+.role-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Active Role Styling */
+.active-role {
+  border-color: #0167ff;
+  background-color: #eef6ff;
+  box-shadow: 0 4px 15px rgba(1, 103, 255, 0.3);
+}
+
+/* Role Icon */
+.role-icon {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 10px;
+}
+
+/* Role Label */
+.role-label {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+  text-align: center;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .role-selection-grid {
+    gap: 10px;
+    max-width: 100%;
+  }
+
+  .role-card {
+    padding: 10px;
+    border-radius: 8px;
+  }
+
+  .role-icon {
+    width: 35px;
+    height: 35px;
+  }
+
+  .role-label {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .role-selection-container {
+    padding: 5px;
+  }
+
+  .role-selection-grid {
+    gap: 8px;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns for smaller screens */
+  }
+
+  .role-card {
+    padding: 8px;
+  }
+
+  .role-icon {
+    width: 30px;
+    height: 30px;
+  }
+
+  .role-label {
+    font-size: 12px;
+  }
+}
+
+
+/* Responsive Adjustments */
+@media (max-width: 900px) {
+  .smile-emoji-container-one{
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .role-selection-grid {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  }
+
+  .role-card {
+    padding: 10px;
+  }
+
+  .role-icon {
+    width: 50px;
+    height: 50px;
+  }
+
+  .role-label {
+    font-size: 14px;
+  }
+}
+

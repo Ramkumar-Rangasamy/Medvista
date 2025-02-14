@@ -1,0 +1,292 @@
+.my-schedule-container h2{
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 28.8px;
+  color: #272848;
+  display: inline-block;
+  padding:20px 10px 0 25px;
+}
+
+
+  .schedule-page {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 1.5rem;
+  }
+ 
+
+
+.allandcal{
+  display: flex;
+  width: 100%;
+  height:calc(100vh - 200px);
+  justify-content:space-evenly;
+}
+.calender{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  color:#0167FF;
+  padding: 20px;
+  border:1px solid #3C485826;
+}
+
+.calender .toolbar{
+  padding: 0px 10px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.rbc-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+div.rbc-header {
+  overflow: hidden;
+  flex: 1 0;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding:4px;
+  text-align: center;
+  vertical-align: middle;
+  font-weight:500;
+  font-size: 15px;
+  min-height: 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.rbc-toolbar .rbc-toolbar-label {
+  flex-grow: 1;
+  color:#212529;
+  font-size: 18px;
+  font-weight: 600;
+  padding:20px;
+  text-align: center;
+}
+div.rbc-toolbar button {
+  color:#0167FF;
+}
+
+.calender .rbc-today {
+  background-color: rgb(255, 255, 220);
+}
+
+.calender .rbc-event{
+  color: #fff;
+  font-size: 12px;
+  padding: 1px;
+  height: 100%;
+}
+.calender .rbc-event.booked{
+  background-color: grey;
+}
+.calender .rbc-event.free{
+  background-color: #0067FF;
+}
+.calender .rbc-event.rbc-selected{
+  background: rgb(49, 104, 255);
+  color: white;
+}
+
+.calender .rbc-event-content{
+  white-space: normal !important;
+}
+.calender .rbc-event-content.booked{
+  background-color: grey !important;
+}
+.calender .rbc-event-content.free{
+  /* white-space: normal !important; */
+  background-color: #0067FF !important;
+}
+.swal2-popup{
+  padding: 1rem 2rem;
+  border-radius: none !important;
+}
+.swal2-title{
+  font-size: 18px;
+  padding: 0px;
+  text-align: center;
+  color: #000;
+}
+
+.swal2-html-container{
+  padding: 2rem 0px 0px 0px !important;
+}
+
+.swal2-html-container .addtimeslot{
+  display: flex; 
+  flex-direction: column;
+  width: 100%;
+  gap: 2rem;
+}
+
+.swal2-html-container .addtimeslot #lineargroup{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.input-radio-button {
+  display: flex;
+  gap: 20px; /* Space between the radio button groups */
+  align-items: center;
+}
+
+.input-radio-button div {
+  display: flex;
+  align-items: center;
+}
+
+.input-radio-button label {
+  margin-left: 5px; /* Space between the radio button and its label */
+  margin-top: 5px;
+}
+
+.schedule-sidebar-delete{
+  font-size: 20px;
+  margin-left: 5px;
+  margin-top: 5px;
+  color: orange;
+  cursor: pointer;
+}
+
+.swal2-html-container .addtimeslot .inputgroup{
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  gap: 5px;
+  width: 100%;
+}
+.swal2-html-container .addtimeslot .inputgroup label{
+  text-align: start;
+  font-size: 16px;
+  color: black;
+}
+.swal2-html-container .addtimeslot .inputgroup input{
+  border: 1px solid rgb(193, 193, 193);
+  padding: 7px 10px;
+  border-radius: 8px;
+}
+
+.swal2-html-container .addtimeslot #lineargroup .inputgroup{
+  width: 49%;
+}
+
+.swal2-actions{
+  margin: 1rem 0px 0px 0px ;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.swal2-confirm{
+  background: rgb(49, 104, 255);
+  border-radius: none !important;
+  text-align: start;
+}
+
+
+.schedule-sidebar {
+  width: 250px;
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  padding: 15px;
+  height: 50%;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 0px;
+  margin-right: 10px;
+}
+
+.schedule-sidebar h3 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #333;
+  font-family: Matter;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 38.4px;
+
+}
+
+.schedule-sidebar-list {
+  list-style-type: none;
+  /* padding: 0;
+  margin: 0; */
+}
+
+.schedule-sidebar-list li {
+  color: #fff;
+  margin-bottom: 10px;
+  padding: 5px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  overflow-y: auto; /* Add this line */
+  /* font-family: Poppins; */
+font-size: 12px;
+font-weight: 400;
+line-height: 19.13px;
+}
+.schedule-sidebar-list li.booked{
+  background-color: grey !important;
+}
+.schedule-sidebar-list li.free{
+  background-color: #0167FF !important;
+}
+
+/* scroll for schedule sidebar */
+.schedule-sidebar .schedule-sidebar-list {
+  max-height: 260px; 
+  overflow-y: auto;
+}
+
+.schedule-sidebar .schedule-sidebar-list::-webkit-scrollbar {
+  width: 0px;
+}
+
+.schedule-sidebar .schedule-sidebar-list::-webkit-scrollbar-thumb {
+  background: #5577d1;
+  border-radius: 1px;
+  opacity: 0.9;
+}
+
+
+.remove-option {
+  display: flex;
+  /* font-family: Poppins; */
+  font-size: 12px;
+  font-weight: 500;
+/* line-height: 25.13px; */
+}
+
+.remove-option input {
+  margin-right: 10px;
+  
+}
+#remove{
+  margin-top: -5px;
+}
+
+.Schedule-TimeSlot-button{
+  border-radius: 5px;
+  background-color: #0067FF;
+  color: white;
+  border: none;
+  padding: 10px 30px;
+  cursor: pointer;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 19.2px;
+  letter-spacing: 0.02em;
+}
+
+@media (max-width:1024px){
+  .allandcal{
+   height: 24rem;
+  }
+}

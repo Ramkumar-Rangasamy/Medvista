@@ -1,0 +1,634 @@
+.Corporate-DIS-main-dashboard-page {
+  padding: 0 20px;
+}
+
+.Corporate-DIS-main-dashboard-page
+.Corporate-DIS-bk-hg-container {
+  display: flex;
+  align-items: center;
+  justify-content:start;
+  gap:10px;
+  padding: 20px 10px 0 5px;
+  margin-bottom: 20px;
+}
+
+.Corporate-DIS-bk-hg-container .C-DIS-bk-arrow {
+  font-size: 24px;
+  cursor: pointer;
+  color: #272848;
+  margin-top:3px;
+}
+
+.Corporate-DIS-bk-hg-container .Corporate-DIS-heading-dashboard-page {
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 28.8px;
+  color: #272848;
+  display: inline-block;
+  margin: 0;
+}
+
+.Corporate-DIS-scoll-head {
+  overflow-y: auto;
+  height: calc(100vh - 170px);
+}
+
+.Corporate-DIS-scoll-head::-webkit-scrollbar {
+  width: 0px;
+}
+
+.Corporate-DIS-gird-layout {
+  display: grid;
+  grid-template-areas:
+    "insight-patient income-head Corporate-DIS-profiles-head"
+    "consultation booking-rate booking-rate"
+    "reviews booking-rate booking-rate";
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 330px 170px auto;
+  grid-gap: 20px;
+  margin: 5px 5px 15px 5px;
+}
+
+.Corporate-DIS-insight-patient {
+  grid-area: insight-patient;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #0000001a;
+  height: 100%;
+}
+
+.Corporate-DIS-income-head {
+  grid-area: income-head;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #0000001a;
+  height: 100%;
+}
+
+.Corporate-DIS-profiles-head {
+  grid-area: Corporate-DIS-profiles-head;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 0 10px #0000001a;
+  height: 100%;
+}
+
+.Corporate-DIS-consultation {
+  grid-area: consultation;
+  background: #5577d1;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 0 10px #0000001a;
+  height: 100%;
+}
+
+.Corporate-DIS-booking-rate {
+  grid-area: booking-rate;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #0000001a;
+  height: 100%;
+}
+
+.Corporate-DIS-reviews {
+  grid-area: reviews;
+  background: #2a3f74;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 0 10px #0000001a;
+  height: 100%;
+}
+
+/* Desktop view: 1280px and above */
+
+@media (max-width: 1440px) and (min-width: 1310px) {
+  .Corporate-DIS-dashboard-gird-layout {
+    grid-template-areas:
+      "insight-patient income-head Corporate-DIS-profiles-head"
+      "consultation booking-rate booking-rate"
+      "reviews booking-rate booking-rate";
+    grid-template-columns: repeat(1fr, 1fr, 1fr);
+    gap: 20px;
+  }
+  .Corporate-DIS-insight-patient,
+  .Corporate-DIS-income-head,
+  .Corporate-DIS-profiles-head {
+    max-width: 350px;
+    width: 100%;
+  }
+  .Corporate-DIS-consultation,
+  .Corporate-DIS-reviews {
+    width: 100%;
+  }
+  .Corporate-DIS-booking-rate {
+    width: 100%;
+  }
+  .Corporate-DIS-chart-area {
+    width: 300px;
+    height: 200px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .Corporate-DIS-scoll-head {
+    overflow-y: auto;
+    height: calc(100vh - 154px);
+  }
+
+  .Corporate-DIS-gird-layout {
+    grid-template-areas:
+      "insight-patient income-head Corporate-DIS-profiles-head"
+      "consultation booking-rate booking-rate"
+      "reviews booking-rate booking-rate";
+    grid-template-columns: repeat(1fr, 1fr, 1fr);
+    grid-template-rows: 330px 170px auto;
+    gap: 20px;
+  }
+  .Corporate-DIS-insight-patient,
+  .Corporate-DIS-income-head,
+  .Corporate-DIS-profiles-head {
+    max-width: 300px;
+    width: 100%;
+  }
+  .Corporate-DIS-consultation,
+  .Corporate-DIS-reviews {
+    width: 300px;
+  }
+  .Corporate-DIS-booking-rate {
+    width: 620px;
+  }
+}
+
+/*======================insight-patient =========start======================*/
+.Corporate-DIS-insight-patient .Corporate-DIS-head-common {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.Corporate-DIS-insight-patient .Corporate-DIS-head-common p {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 26.4px;
+  color: #272848;
+}
+
+.Corporate-DIS-insight-patient
+  .Corporate-DIS-head-common
+  .Corporate-DIS-select-container
+  .Corporate-DIS-select-box-common {
+  padding: 5px 50px 5px 10px;
+  background: #f7faff;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 12px;
+  color: #272848;
+  cursor: pointer;
+  -webkit-appearance: none; /* For Chrome */
+  -moz-appearance: none; /* For Firefox */
+  appearance: none; /* For modern browsers */
+  outline: none;
+}
+
+.Corporate-DIS-insight-patient .Corporate-DIS-insight-item {
+  background: #f7faff;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin: 10px 0px 20px 0px;
+  padding: 5px;
+}
+
+.Corporate-DIS-insight-item .Corporate-DIS-insight-img-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-left: 10px;
+}
+
+.Corporate-DIS-insight-item
+  .Corporate-DIS-insight-img-container.Corporate-DIS-blue-color {
+  background-color: #007bff;
+}
+
+.Corporate-DIS-insight-item
+  .Corporate-DIS-insight-img-container.Corporate-DIS-dark-blue-color {
+  background-color: #2a3f74;
+}
+
+.Corporate-DIS-insight-item
+  .Corporate-DIS-insight-img-container.Corporate-DIS-green-color {
+  background-color: #4caf50;
+}
+.Corporate-DIS-insight-item
+  .Corporate-DIS-insight-img-container
+  .Corporate-DIS-image-insight {
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+}
+
+.Corporate-DIS-insight-info h4 {
+  color: #a0aac8;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 30px;
+  margin: 0;
+}
+
+.Corporate-DIS-insight-info p {
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+  font-weight: 600;
+  margin: 0;
+}
+/*======================insight-patient =========End======================*/
+
+/*======================your income =========start======================*/
+.Corporate-DIS-income-content {
+  position: relative;
+}
+
+.Corporate-DIS-income-content .Corporate-DIS-head-common {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.Corporate-DIS-income-content .Corporate-DIS-head-common p {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 26.4px;
+  color: #272848;
+}
+
+.Corporate-DIS-income-content
+  .Corporate-DIS-head-common
+  .Corporate-DIS-income-select-container
+  .Corporate-DIS-income-select-box-common {
+  padding: 5px 50px 5px 10px;
+  background: #f7faff;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: 12px;
+  color: #272848;
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+}
+
+.Corporate-DIS-income-select-container .Corporate-DIS-income-down-arrow-icon {
+  position: absolute;
+  top: 15px;
+  right: 10px;
+  transform: translateY(-50%);
+  font-size: 20px;
+  color: #ff7f50;
+  pointer-events: none;
+}
+
+.Corporate-DIS-income-chart-area {
+  max-width: 340px;
+  height: 200px;
+  margin-top: 40px;
+  position: relative;
+  right: 15px;
+}
+
+.Corporate-DIS-income-coming-soon-overlay {
+  position: absolute;
+  top: -20px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: 600;
+  color: #272848;
+  z-index: 1;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+/*====================== your income end =========End======================*/
+
+/*====================== view-profile =========start======================*/
+.Corporate-DIS-profiles-head .Corporate-DIS-profiles-imgage {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.Corporate-DIS-profiles-head .Corporate-DIS-name-head {
+  color: #272848;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+}
+
+.Corporate-DIS-profiles-head .Corporate-DIS-subtitle {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 10px;
+  color: #a0aac8;
+}
+
+.Corporate-DIS-profiles-head .Corporate-DIS-dashboardprofile-logo {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 16px;
+}
+
+.Corporate-DIS-dashboardprofile-logo .Corporate-DIS-content-background {
+  background: #f7faff;
+  padding: 8px;
+  border-radius: 5px;
+  width: 100px;
+  height: 90px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.Corporate-DIS-content-background .Corporate-DIS-logo-background {
+  background: linear-gradient(180deg, #004ec4 0%, #0167ff 100%);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Corporate-DIS-content-background
+  .Corporate-DIS-logo-background
+  .Corporate-DIS-profiles-icons {
+  color: #ffffff;
+}
+
+.Corporate-DIS-dashboardprofile-logo
+  .Corporate-DIS-content-background
+  .Corporate-DIS-logo-name {
+  font-size: 12px;
+  font-weight: 600;
+  margin: 0;
+  color: #272848;
+}
+
+.Corporate-DIS-dashboardprofile-logo
+  .Corporate-DIS-content-background
+  .Corporate-DIS-logo-count {
+  font-size: 12px;
+  font-weight: 400;
+  color: #a0aac8;
+  margin: 0;
+}
+
+.Corporate-DIS-profiles-head .Corporate-DIS-button-profiles {
+  margin: 15px auto;
+}
+.Corporate-DIS-profiles-head .Corporate-DIS-button-profiles button {
+  border: 1.5px solid #0163f7;
+  border-radius: 4px;
+  background: none;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 21px;
+  color: #0163f7;
+  width: 150px;
+  height: 38px;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.Corporate-DIS-profiles-head .Corporate-DIS-button-profiles button:hover {
+  background-color: #0163f7;
+  border: 1.5px solid #0163f7;
+  color: #ffffff;
+  transform: scale(1.05);
+}
+
+/*======================view profile end =========End======================*/
+
+/*====================== consultation =========start======================*/
+.Corporate-DIS-consultation .Corporate-DIS-consultation-coverarea {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Corporate-DIS-consultation-coverarea
+  .Corporate-DIS-consultation-info
+  .Corporate-DIS-consultation-count {
+  font-size: 62px;
+  font-weight: 600;
+  line-height: 90px;
+  color: #ffffff;
+  margin: 0;
+}
+
+.Corporate-DIS-consultation-coverarea
+  .Corporate-DIS-consultation-info
+  .Corporate-DIS-consultation-label {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  color: #ffffff;
+  text-align: left;
+  margin-top: -10px;
+}
+
+.Corporate-DIS-consultation-coverarea .Corporate-DIS-consultation-img {
+  width: 165px;
+  height: 150px;
+}
+
+@media (max-width: 1280px) {
+  .Corporate-DIS-consultation-coverarea
+    .Corporate-DIS-consultation-info
+    .Corporate-DIS-consultation-label {
+    font-size: 1rem;
+  }
+}
+
+/*====================== consultation end =========End======================*/
+
+/*====================== Review =========start======================*/
+.Corporate-DIS-reviews .Corporate-DIS-reviews-coverarea {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Corporate-DIS-reviews-coverarea
+  .Corporate-DIS-reviews-info
+  .Corporate-DIS-reviews-count {
+  font-size: 62px;
+  font-weight: 600;
+  line-height: 90px;
+  color: #ffffff;
+  margin: 0;
+}
+
+.Corporate-DIS-reviews-coverarea
+  .Corporate-DIS-reviews-info
+  .Corporate-DIS-reviews-label {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  color: #ffffff;
+  text-align: left;
+  margin-top: -10px;
+}
+
+.Corporate-DIS-reviews-coverarea .Corporate-DIS-reviews-img {
+  width: 140px;
+  height: 130px;
+}
+
+@media (max-width: 1280px) {
+  .Corporate-DIS-reviews-coverarea
+    .Corporate-DIS-reviews-info
+    .Corporate-DIS-reviews-label {
+    font-size: 1rem;
+  }
+}
+
+/*====================== review end =========End======================*/
+
+/*====================== booking rate =========start======================*/
+.Corporate-DIS-booking-rate .Corporate-DIS-booking-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.Corporate-DIS-booking-header .Corporate-DIS-booking-title {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 26.4px;
+  color: #272848;
+}
+
+/*select box down arrow css*/
+.Corporate-DIS-select-container {
+  position: relative;
+  display: inline-block;
+}
+
+.Corporate-DIS-select-container .Corporate-DIS-recently {
+  padding: 5px 50px 5px 10px;
+  background: #f7faff;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: 12px;
+  color: #272848;
+  cursor: pointer;
+  -webkit-appearance: none; /* For Chrome */
+  -moz-appearance: none; /* For Firefox */
+  appearance: none; /* For modern browsers */
+  outline: none;
+}
+
+.Corporate-DIS-arrow-icon-filter {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  font-size: 20px;
+  color: #ff7f50;
+  pointer-events: none;
+}
+
+.Corporate-DIS-booking-area {
+  margin: 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.Corporate-DIS-rate {
+  flex: 1 1 250px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.Corporate-DIS-rate h1 {
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 30px;
+  color: #00a500;
+  margin: 0;
+}
+
+.Corporate-DIS-booking-description {
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 28.8px;
+  color: #272848;
+  margin: 0;
+}
+
+.Corporate-DIS-increase {
+  font-size: 14px;
+  font-weight: 500;
+  width: 70%;
+  line-height: 16.8px;
+  color: #a0aac8;
+  margin: 0;
+}
+
+.Corporate-DIS-chart {
+  flex: 2 1 350px;
+  max-width: 600px;
+  padding-top: 50px;
+}
+
+@media (max-width: 768px) {
+  .Corporate-DIS-rate {
+    flex: 1 1 100px;
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+
+  .Corporate-DIS-rate h1 {
+    font-size: 2rem;
+  }
+
+  .Corporate-DIS-rate .Corporate-DIS-booking-description {
+    font-size: 1rem;
+    line-height: 20px;
+  }
+  .Corporate-DIS-rate .Corporate-DIS-increase {
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  .Corporate-DIS-chart {
+    flex: 2 1 250px;
+    max-width: 300px;
+  }
+}
+
+/*====================== booking rate =========End======================*/

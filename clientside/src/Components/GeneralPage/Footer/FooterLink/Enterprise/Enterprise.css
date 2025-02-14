@@ -1,0 +1,579 @@
+.enterprise-whole-container-section{
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(180deg, rgba(238, 244, 255, 0.3) 0%, #FFFFFF 100%);
+    gap: 50px;
+}
+
+.enterprise-firstsection-area {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 120px;
+    padding: 40px 100px !important;
+    border-radius: 10px;
+  }
+  
+  /* .enterprise-firstsection-content {
+    max-width: 47%;
+  } */
+  
+  .enterprise-firstsection-content h1 {
+    font-size: 35px;
+    font-weight: 600;
+    line-height: 42px;
+    color: rgba(0, 0, 0, 1);    
+    margin-bottom: 25px;
+  }
+  
+  .enterprise-section-highlight {
+    color: rgba(1, 103, 255, 1);
+  }
+  
+  .enterprise-firstsection-subtitle {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19.2px;
+    color: rgba(0, 0, 0, 1);    
+    margin-bottom: 25px;
+
+  }
+  
+  .enterprise-firstsection-description {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18.9px;
+    color: rgba(83, 83, 83, 1);
+
+  }
+  
+  /* .enterprise-firstsection-image {
+    max-width: 50%;
+  } */
+  
+  .enterprisefirst-image-style {
+    width: 462px;
+    height: 474px;
+    border-radius: 0px 100px 0px 100px;
+    object-fit: contain;
+  }
+
+  /* --------------------------------------------------------------first section code end------------------------------------------------------- */
+  
+  
+  /* Second section code start */
+  
+  .enterprise-secondsection {
+    padding: 40px 100px;
+  }
+  
+  .enterprise-secondsection h2 {
+    color: rgba(0, 0, 0, 1);    
+    /* font-family: Matter; */
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 36.6px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .enterprise-section-highlight {
+    color: rgba(1, 103, 255, 1);
+  }
+  
+  .enterprise-secondsection-subtitle {
+    /* font-family: Matter; */
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22.26px;
+    text-align: center;    
+    margin-bottom: 2rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    color: rgba(83, 83, 83, 1);
+  }
+  
+  .enterprise-gridcard-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 2rem;
+  }
+  
+  .enterprise-gridcard-section {
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    border-radius: 8px;
+    justify-content: flex-start;
+    padding: 20px;
+    border: 0.5px solid rgba(1, 103, 255, 0.5);  
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .enterprise-gridcard-section:hover {
+    transform: translateY(-5px);
+    background: rgba(242, 246, 255, 1);
+    
+  }
+  
+  .enterprise-gridcard-icon {
+    margin-bottom: 20px;
+  }
+
+  .enterprise-gridcard-icon-img{
+    width: 45px;
+    height: 45px;
+  }
+  
+  .enterprise-gridcard-section h3 {
+    /* font-family: Matter; */
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21.6px;
+    color: rgba(2, 48, 71, 1);
+    margin-bottom: 16px;
+  }
+  
+  .enterprise-gridcard-section p {
+    /* font-family: Matter; */
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18.9px;
+    color: rgba(83, 83, 83, 1);
+    
+  }
+  
+/* --------------------------------------------------------------second section code end------------------------------------------------------- */
+  
+  /* Third section styles srart */
+
+  .enterprise-thirdsection-container {
+    padding: 40px 100px;
+  }
+  
+  .enterprise-thirdsection-heading {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .enterprise-section-highlight {
+    color: #007bff; /* Change to your desired highlight color */
+  }
+  
+  .enterprise-thirdsection-content-area{
+    display: flex;
+    gap: 100px;
+    justify-content:center;
+    align-items: center;
+  }
+  .enterprise-gridsection-card {
+   display: flex;
+   flex-direction: column;
+  }
+  
+   .enterprise-benefit-card{
+    margin-bottom: 35px;
+  } 
+  .enterprise-benefit-card h3{
+    /* font-family: Matter; */
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19.2px;
+    color: rgba(2, 48, 71, 1);
+    
+  }
+  
+  .enterprise-benefit-card p{
+    font-family: Matter;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.8px;
+    color: rgba(83, 83, 83, 1);
+    
+  }
+  .enterprise-benefit-icon {
+    margin-bottom: 35px;
+  }
+  
+.enterprise-benefit-icon-img{
+  width: 35px;
+  height: 35px;
+}
+  
+  .enterprise-benefit-image img {
+width: 590px;
+height: 560px;
+filter: drop-shadow(2px 2px 2px #1A0F011F);
+
+  }
+  
+/* --------------------------------------------------------------third section code end------------------------------------------------------- */
+  
+.enterprise-fourthsection {
+  background: linear-gradient(to bottom, #007BFF 70%, transparent 30%);
+  padding: 40px 100px;
+  width: 100%; 
+}
+
+
+.enterprise-fourthsection-heading {
+  font-family: Matter;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 33.6px;
+  text-align: center;  
+  color: rgba(255, 255, 255, 1);
+  margin-bottom: 20px;
+}
+
+.enterprise-fourthsection-description {
+  /* font-family: Matter; */
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 17.55px;
+  text-align: center;  
+  color: rgba(255, 255, 255, 1);
+  max-width: 800px;
+  margin: 0 auto 30px;
+}
+
+.enterprise-fourthsection-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.enterprise-fourthsection-card {
+  background: rgba(245, 248, 255, 1);
+  color: #333;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.enterprise-fourthsection-card:hover {
+  transform: translateY(-10px); 
+  border: 0.3px solid rgba(1, 103, 255, 1);
+  filter: drop-shadow(0px 2px 2px rgba(1, 103, 255, 0.12));
+  outline: none; 
+}
+
+.enterprise-fourthsection-icon {
+  margin-bottom: 20px;
+}
+
+.enterprise-fourthsection-img{
+  width: 30px;
+  height: 30px;
+}
+
+.enterprise-fourthsection-title {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  color: rgba(2, 48, 71, 1);
+  margin-bottom: 10px;
+}
+
+.enterprise-fourthsection-card-description {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: left;  
+  color:  rgba(83, 83, 83, 1);
+  ;
+}
+
+/* --------------------------------------------------------------fourth section code end------------------------------------------------------- */
+  
+  /* fifth section styles srart */
+
+  /* Fifth Section styles */
+.enterprise-fifthsection {
+  padding: 60px 0px;
+}
+
+.enterprise-fifthsection-heading {
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 33.6px;
+  text-align: center;
+  color: rgba(0, 0, 0, 1);
+  margin-bottom: 20px;
+}
+
+.enterprise-section-highlight {
+  color: rgba(1, 103, 255, 1);
+}
+
+.enterprise-fifthsection-description {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22.26px;  
+  color: rgba(102, 102, 102, 1);
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto 30px;
+}
+
+.enterprise-fifthsection-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.enterprise-button {
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+}
+
+/* .enterprise-signup-button {
+  font-family: Matter;
+font-size: 16px;
+font-weight: 600;
+line-height: 25px;
+  background-color: transparent;
+  color: rgba(1, 103, 255, 1);
+  border: 2px solid rgba(1, 103, 255, 1);
+}
+
+.enterprise-signup-button:hover {
+  background: rgba(1, 103, 255, 1);
+  color: #FFFFFF;
+
+} */
+.enterprise-demo-button {
+  /* font-family: Matter; */
+font-size: 16px;
+font-weight: 600;
+line-height: 25px;
+  background-color: transparent;
+  color: rgba(1, 103, 255, 1);
+  border: 2px solid rgba(1, 103, 255, 1);
+}
+
+.enterprise-demo-button:hover {
+  background: rgba(1, 103, 255, 1);
+  color: #FFFFFF;
+}
+
+/* @media (max-width: 768px) {
+  .enterprise-gridcard-container {
+    grid-template-columns: repeat(2, minmax(150px, 1fr));
+  }
+
+  .enterprise-fourthsection-cards {
+    grid-template-columns: repeat(1, minmax(200px, 1fr));
+  }
+
+
+} */
+
+@media (max-width: 1200px) {
+  .enterprise-fourthsection-cards {
+    grid-template-columns: repeat(1, minmax(220px, 1fr));
+  }
+
+  .enterprise-gridcard-container {
+    grid-template-columns: repeat(2, minmax(180px, 1fr));
+  }
+}
+@media (max-width: 1024px) {
+  .enterprise-whole-container-section {
+    gap: 0px;
+  }
+
+  .enterprise-firstsection-area {
+    flex-direction: column;
+    padding: 30px 40px !important;
+    gap: 30px;
+  }
+
+  .enterprise-firstsection-content {
+    max-width: 100%;
+    order: 2;
+  }
+
+  .enterprise-firstsection-content h1 {
+    text-align: center;
+    font-size: 32px;
+    line-height: 38px;
+  }
+
+  .enterprise-firstsection-subtitle {
+    text-align: center;
+    font-size: 15px;
+    padding-right: 0;
+  }
+
+  .enterprise-firstsection-description {
+    font-size: 13px;
+    text-align: center;
+
+  }
+
+  .enterprise-firstsection-image {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    order: 1;
+  }
+
+  .enterprisefirst-image-style {
+    width: 100%;
+    height: 65vh;
+  }
+
+  .enterprise-secondsection {
+    padding: 30px;
+  }
+
+  .enterprise-thirdsection-container,
+  .enterprise-fourthsection,
+  .enterprise-fifthsection {
+    padding: 30px;
+  }
+
+  .enterprise-thirdsection-content-area {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .enterprise-grid-section{
+    order: 2;
+  }
+  .enterprise-benefit-image{
+    order: 1;
+
+  }
+  .enterprise-benefit-image img {
+    width: 100%;
+    height: auto;
+  }
+
+
+  .enterprise-fourthsection-cards {
+    grid-template-columns: repeat(1, minmax(220px, 1fr));
+  }
+
+  .enterprise-fifthsection-description {
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  .enterprise-fifthsection-buttons {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  /* .enterprise-whole-container-section {
+    gap: 10px;
+  } */
+
+  .enterprise-firstsection-area {
+    flex-direction: column;
+    padding: 20px !important;
+    gap: 20px;
+  }
+
+  .enterprise-firstsection-content {
+    max-width: 100%;
+  }
+
+  .enterprise-firstsection-content h1,.enterprise-secondsection h2,.enterprise-thirdsection-heading,.enterprise-fourthsection-heading,.enterprise-fifthsection-heading{
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .enterprise-firstsection-subtitle {
+    font-size: 14px;
+    padding-right: 0;
+  }
+
+  .enterprise-firstsection-description {
+    font-size: 12px;
+  }
+
+  .enterprise-firstsection-image {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .enterprisefirst-image-style {
+    width: 100%;
+    height: auto;
+  }
+
+  .enterprise-secondsection {
+    padding: 20px;
+  }
+
+  .enterprise-thirdsection-container,
+  .enterprise-fourthsection,
+  .enterprise-fifthsection {
+    padding: 20px;
+  }
+
+  .enterprise-thirdsection-content-area {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .enterprise-benefit-image img {
+    width: 100%;
+    height: auto;
+  }
+
+  .enterprise-gridcard-container {
+    grid-template-columns: repeat(1, minmax(150px, 1fr));
+  }
+
+
+
+  .enterprise-fifthsection-description {
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .enterprise-fifthsection-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+@media (min-width: 1441px) {
+  .enterprise-whole-container-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+  }
+
+  .enterprise-firstsection-area,
+  .enterprise-secondsection,
+  .enterprise-thirdsection-container,
+  .enterprise-fourthsection,
+  .enterprise-fifthsection {
+    max-width: 1440px;
+    width: 100%; 
+    padding: 40px;
+  }
+
+  .enterprise-firstsection-content,
+  .enterprise-firstsection-image,
+  .enterprise-secondsection-subtitle,
+  .enterprise-thirdsection-content-area,
+  .enterprise-fourthsection-cards,
+  .enterprise-fifthsection-buttons {
+    align-self: center; 
+  }
+}

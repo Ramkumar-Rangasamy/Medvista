@@ -1,0 +1,231 @@
+.admin-subscription{
+    padding: 0px 20px;
+ }
+ 
+.admin-subscription .admin-subscription-title {
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 28.8px;
+  color: #272848;
+  display: inline-block;
+  padding:20px 10px 0 5px;
+  margin-bottom: 20px;
+}
+     
+  
+.admin-subscription-table-container {
+  overflow-y: auto;
+  height:calc(100vh - 250px);
+}
+
+.admin-subscription-table-container::-webkit-scrollbar {
+  width: 0px;
+}
+     
+ .Admin-subscription-table{
+     width: 100%;
+     border-collapse: collapse;
+     text-align: center;
+ }
+     
+   
+ .Admin-subscription-table thead tr {
+     background: #fbfbfb;
+     color: #272848;
+     border: 1px solid #0000001a;
+ }
+     
+ .Admin-subscription-table thead tr th {
+     padding: 5px;
+     font-size: 16px;
+     font-weight: 700;
+     color: #272848;
+ }
+     
+ .Admin-subscription-table tbody tr td {
+     color: #272848;
+     font-size: 16px;
+     font-weight: 500;
+     padding: 15px;
+     border-bottom: 4px solid #f0f0f5;
+ }
+     
+ /* Scrollbar styles */
+   
+ 
+ /*not deleted importanted*/ 
+ 
+ /*.appointments-table-container::-webkit-scrollbar-thumb {
+     background-color: #4c835f;
+     opacity: 90%;
+     border-radius: 2px;
+ }*/
+ 
+ .Admin-subscription-table .admin-select-container {
+     position: relative;
+     display: inline-block; /*the container wraps around select and icon */
+ }
+   
+ .Admin-subscription-table  .admin-select-container .admin-status-select {
+     border: 1px solid #78798d;
+     font-weight: 600;
+     padding: 5px 30px 5px 20px;
+     border-radius: 4px;
+     -webkit-appearance: none; /* For Chrome */
+     -moz-appearance: none; /* For Firefox */
+     appearance: none; /* For modern browsers */
+     outline: none;
+     width: 150px;
+ }
+
+ .status-dot {
+    display: inline-block;
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+  }
+
+  .status-dot.verified {
+    background-color: green;
+  }
+  
+  .status-dot.pending {
+    background-color: orange;
+  }
+  
+  .status-dot.rejected {
+    background-color: red;
+  }
+
+.Admin-subscription-table  .admin-select-container .arrow-icon {
+  position: absolute;
+  top: 50%;
+  right:10px;
+  transform: translateY(-45%);
+  font-size: 20px;
+  color: #2AA7FF;
+  pointer-events: none; /* Ensure icon does not interfere with select */
+}
+
+.subscription-submit{
+  background: none;
+  color: #272848;
+  border: 1.5px solid orange;
+  border-radius:5px;
+  padding: 5px 20px;
+  font-weight: 600;
+}
+
+.subscription-submit:hover{
+  background-color: orange;
+  color:#ffffff;
+}
+ 
+.subscription-View{
+    background: none;
+    color: #272848;
+    border: 1.5px solid #0163F7;
+    border-radius:5px;
+    padding: 5px 20px;
+    font-weight: 600;
+ }
+
+.subscription-View:hover{
+    background-color: #0163F7;
+    color:#ffffff;
+}
+
+ 
+.adminsubscription-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+   
+.adminsubscription-modal-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 30px;
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
+  max-width:550px;
+  width: 100%;
+  text-align: center;
+}
+
+  
+.subscription-modal-View{
+  background: none;
+  color: #272848;
+  border: 1.5px solid #0163F7;
+  border-radius:5px;
+  padding: 3px 25px;
+  font-weight: 600;
+}
+
+.subscription-modal-View:hover{
+  background-color: #0163F7;
+  color:#ffffff;
+}
+
+.adminsubscription-modal-close {
+  border: 1.5px solid #272848;
+  background: none;
+  color: #272848;    
+  border-radius:5px;
+  padding: 3px 25px;
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+.adminsubscription-modal-close:hover{
+    background-color: #272848;
+    color:#ffffff;
+}
+
+   /* Modal Table Styles */
+.adminsubscription-modal-content table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    text-align: center;
+    color: #272848;
+  }
+  
+  .adminsubscription-modal-content th,
+  .adminsubscription-modal-content td {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #272848;
+   
+  }
+  
+  .adminsubscription-modal-content thead {
+    background: #fbfbfb;
+    color: #272848;
+    border: 1px solid #0000001a;
+  }
+  
+  .adminsubscription-modal-content th {
+    font-weight: 700;
+    font-size: 16px;
+  }
+  
+  .adminsubscription-modal-content tbody tr {
+    border-bottom: 4px solid #f0f0f5;
+  }
+  
+  .adminsubscription-modal-content tbody td {
+    color: #272848;
+  }
+  

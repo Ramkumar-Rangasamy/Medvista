@@ -1,0 +1,82 @@
+.admin-view-doctor {
+    padding: 0px 20px;
+}
+
+.doctor-head-part-title-search{
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+}
+.admin-view-doctor .doctor-head-part-title-search .doctor-head-title{
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 28.8px;
+    color: #272848;
+    display: inline-block;
+    padding: 20px 10px 0 5px;
+    margin-bottom: 30px;
+}
+
+.admin-view-doctor-table-container {
+    overflow-y: auto;
+    height: calc(100vh - 180px);
+}
+
+.admin-view-doctor-table-container::-webkit-scrollbar {
+    width: 0px;
+}
+
+.admin-view-doctor-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.admin-view-doctor-table thead tr {
+    background: #fbfbfb;
+    color: #272848;
+    border: 1px solid #0000001a;
+}
+
+.admin-view-doctor-table thead tr th {
+    padding: 5px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #272848;
+}
+
+.admin-view-doctor-table tbody tr td {
+    color: #272848;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 15px;
+    border-bottom: 4px solid #f0f0f5;
+}
+
+.admin-view-doctor-edit-button {
+    background: none;
+    color: #272848;
+    border: 1.5px solid #0163F7;
+    border-radius: 5px;
+    padding: 5px 20px;
+    font-weight: 600;
+}
+
+.admin-view-doctor-edit-button:hover {
+    background-color: #0163F7;
+    color: #ffffff;
+}
+
+.admin-view-doctor-delete-button {
+    background: none;
+    color: #272848;
+    border: 1.5px solid orange;
+    border-radius: 5px;
+    padding: 5px 20px;
+    font-weight: 600;
+}
+
+.admin-view-doctor-delete-button:hover {
+    background-color: orange;
+    color: #ffffff;
+}

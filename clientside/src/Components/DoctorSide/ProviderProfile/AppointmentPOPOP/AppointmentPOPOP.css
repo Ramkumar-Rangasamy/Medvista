@@ -1,0 +1,513 @@
+.AppointmentPOPOP-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.836);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  padding: 10px;
+}
+
+.AppointmentPOPOP-content {
+  background: #fff;
+  padding: 20px 10px 20px 20px;
+  border-radius: 8px;
+  max-width: 800px;
+  width: 100%;
+  height: 90vh; /* Occupy most of the viewport height */
+}
+
+.AppointmentPOPOP-close-btn-container {
+  display: flex;
+  justify-content: end;
+  cursor: pointer;
+}
+
+.AppointmentPOPOP-close-btn-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 1);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s;
+  color: rgba(1, 103, 255, 1);
+  font-size: 20px;
+}
+.AppointmentPOPOP-close-btn-icon:hover {
+  background: rgba(133, 133, 133, 1);
+}
+.AppointmentPOPOP-close-btn-container:hover .AppointmentPOPOP-close-btn-icon {
+  color: #ffffff;
+}
+
+.AppointmentPOPOP-content .AppointmentPOPOP-title {
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 33.6px;
+  color: rgba(39, 40, 72, 1);
+  margin-bottom: 20px;
+}
+
+.APOPOP-general-container {
+  max-height: 72vh; /* Adjust based on layout */
+  overflow-y: auto;
+  padding-right: 20px;
+}
+
+/* Scrollbar Styling */
+.APOPOP-general-container::-webkit-scrollbar {
+  width: 8px;
+}
+.APOPOP-general-container::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 4px;
+}
+
+/* Consultation Buttons - Container */
+.APOPOP-consultation-selection {
+  display: flex;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-bottom: 25px;
+  width: fit-content;
+}
+
+/* Individual Buttons */
+.APOPOP-consultation-btn {
+  flex: 1;
+  width: 200px;
+  height: 42px;
+  padding: 10px;
+  border: none;
+  background-color: white;
+  color: #00000080;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 18px;  
+  text-align: center;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: all 0.3s ease;
+
+}
+
+/* Active Button Styling */
+.APOPOP-consultation-btn.active {
+  background-color: #007bff;
+  color: white;
+  font-weight: 500;
+}
+
+/* Hover Effect (Optional for Non-Active States) */
+.APOPOP-consultation-btn:not(.active):hover {
+  background-color: #f5f5f5;
+  color: #00000080;
+
+}
+
+/* Icon Styling */
+.APOPOP-consultation-icon {
+  font-size: 1.2rem;
+}
+
+
+.APOPOP-select-box-group-container {
+  margin-bottom: 20px;
+  max-width:510px;
+  width:100%;
+  position: relative;
+}
+
+.APOPOP-select-box-group-container  label {
+  display: block;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #272848;
+  margin-bottom:15px;
+}
+
+
+.APOPOP-select-box {
+  width: 100%;
+  padding: 10px;
+  border: 0.4px solid #0167FF80;
+  border-radius: 5px;
+  color: #00000080;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+}
+
+.APOPOP-select-box-arrow-icon{
+  position: absolute;
+  top:57px;
+  right: 20px;
+  transform: translateY(-50%);
+  font-size: 24px;
+  color: #00000080;
+  pointer-events: none;
+}
+
+/* Date Select Overall Container */
+.APOPOP-date-total-container {
+  display: flex;
+  flex-direction: column;
+  margin: 40px 40px 40px 0;
+}
+
+.APOPOP-date-total-container h2{
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #272848;
+  margin-bottom:15px;
+}
+
+.APOPOP-date-sub-container{
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+}
+
+/* Arrow Buttons */
+.APOPOP-arrow-button {
+  background: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 0.5px solid #FF7F50;
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: #FF7F50;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.APOPOP-arrow-button:hover {
+  background-color: #FF7F50;
+  color: #fff;
+}
+
+.APOPOP-arrow-button.disabled {
+  border: 1px solid #FF7F504D;
+  color:#FF7F504D;
+  cursor: not-allowed;
+}
+
+/* Container for Date Buttons */
+
+
+.APOPOP-date-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 15px;
+  cursor: pointer;
+  color: #333;
+  transition: all 0.3s ease;
+}
+
+.APOPOP-date-button.active {
+  color: #007bff; /* Blue text for active state */
+  font-weight: bold;
+}
+
+/* Date Label and Slots */
+.APOPOP-date-button span:first-child {
+  font-size: 16px;
+  font-weight:550;
+  line-height: 14.4px;
+  color: #272848;
+  margin-bottom: 15px;
+}
+
+.APOPOP-date-button span:last-child {
+  font-size: 0.85rem;
+  font-weight: 400px;
+  line-height: 9.6px;
+  color: #007bff; /* Blue color for slots */
+}
+
+/* Scroll Bar */
+.APOPOP-scroll-bar {
+  height: 4px;
+  background-color: #e0e0e0; /* Default background */
+  border-radius: 8px;
+  margin:5px 100px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Blue Active Bar */
+.APOPOP-scroll-bar-active {
+  height: 100%;
+  background-color: #007bff;
+  border-radius: 8px;
+  transition: width 0.3s ease-in-out;
+  
+}
+
+
+.APOPOP-time-slots .APOPOP-slot-group {
+  margin-bottom: 20px;
+}
+
+.APOPOP-slot-header {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #272848;
+  margin-bottom:20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.APOPOP-slot-icon {
+  width: 25px;
+  height: 25px;
+  object-fit:contain;
+}
+
+.APOPOP-slot-row {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.APOPOP-slot-row button {
+  width: 166px;
+  height: 40px;
+  border: 1.5px solid #E0E0E4;
+  border-radius: 3px;
+  background: #f9f9f9;
+  cursor: pointer;
+  color: #272848;
+
+}
+
+.APOPOP-slot-row button.active {
+  background: #0067FF;
+  color: #fff;
+  border: 1.5px solid #E0E0E4;
+}
+
+.APOPOP-book-now-button-container{
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  margin:30px 40px;
+}
+
+.APOPOP-book-now-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height:40px;
+  padding: 12px;
+  background: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19.2px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.APOPOP-book-now-button:hover {
+  background-color: white;
+  border: 0.4px solid #0167ff;
+  color: #0167ff;
+  transform: scale(1.05);
+}
+
+.AppointmentPOPOP-custom-error {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+  background: #ffe6e6;
+  padding: 8px;
+  border-radius: 5px;
+}
+.AppointmentPOPOP-savebutton {
+  position: relative;  /* Make the button a positioning context */
+  border-radius: 5px;
+  background: #2489FF;
+  color: white;
+  padding: 8px 30px;
+  border: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.AppointmentPOPOP-savebutton:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.AppointmentPOPOP-savebutton-text {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+}
+
+/* Spinner overlay */
+.AppointmentPOPOP-spinner-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.5);  /* Optional: Semi-transparent background */
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;  /* Match button's border radius */
+}
+
+/* Small spinner style */
+.AppointmentPOPOP-small-spinner {
+  width: 24px;
+  height: 24px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-top-color: white;
+  border-radius: 50%;
+  animation: spin 0.6s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .APOPOP-consultation-selection {
+    flex-wrap: wrap; /* Allow buttons to wrap in smaller screens */
+    justify-content: center;
+  }
+
+  .AppointmentPOPOP-content .AppointmentPOPOP-title {
+    font-size: 18px;
+  } 
+
+  .APOPOP-date-total-container {
+    margin:2px;
+  }
+
+  .APOPOP-arrow-button {
+    width: 30px;
+    height: 30px;
+    font-size: 1.2rem;
+  }
+
+  .APOPOP-scroll-bar {
+    margin: 5px 50px;
+  }
+
+  .APOPOP-slot-row button {
+    width: 140px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .APOPOP-consultation-btn {
+    width: 150px; /* Further reduce width */
+    font-size: 0.7rem;
+  }
+
+  .APOPOP-consultation-icon {
+    font-size: 0.8rem;
+  }
+
+}
+
+
+.APOPOP-dropdown-container {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.APOPOP-dropdown-label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #555;
+}
+
+.APOPOP-dropdown {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background: #fff;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.APOPOP-dropdown:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+.APOPOP-popup-overlay {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.APOPOP-popup-content {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.APOPOP-popup-content p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.APOPOP-popup-content button {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.APOPOP-popup-content button:hover {
+  background: #0056b3;
+}

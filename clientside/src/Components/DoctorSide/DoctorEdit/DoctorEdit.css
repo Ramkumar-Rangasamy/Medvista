@@ -1,0 +1,637 @@
+.edit-your-profile-container {
+    padding: 5rem;
+    background: linear-gradient(180deg, #EDF3FF 0%, #FFFFFF 100%);  
+  }
+  
+  .edit-doctor-our-profile-header {
+    display: flex;
+    align-items: center;
+    justify-content:start;
+    gap:25px;
+  
+  }
+  
+  .edit-doctor-our-profile-header .back-arrow {
+    font-size: 24px;
+    cursor: pointer;
+    color: #272848;
+    
+  }
+  
+  .edit-doctor-our-profile-header .title-head-to-title{
+    font-size: 24px;
+    font-weight: 500;
+    color: #272848;
+  }
+  
+  
+  /*================== support-to-support in css ================= */
+  .edit-your-profile-support-to-support-conatiner {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    gap: 3rem;
+    margin-top:40px;
+  }
+  
+  
+  /*=================== profile-picture-section === Start =================== */
+  .profile-picture-section {
+    width: 357px;
+    height: 300px;
+    border-radius: 12px;
+    border: 0.5px solid #0167FF80;
+    background: #F8FAFF;
+    padding: 20px;
+  }
+  
+  .profile-picture-title {
+    font-size: 18px;
+    font-weight: 500;
+    text-align: left;
+    line-height: 21.6px;
+    color: #000000;
+  }
+  
+  .profile-picture-flex-direction {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+  }
+  
+  .profile-picture {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    border-radius: 100%;
+    object-fit: cover;
+    margin-bottom: 15px;
+  }
+  
+  .profile-text {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16.8px;
+  }
+  
+  .profile-picture-all-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+  }
+  
+  .profile-picture-all-buttons .upload-btn,
+  .profile-picture-all-buttons .delete-btn {
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 25px;
+    width: 137px;
+    height: 42px;
+  }
+  
+  .profile-picture-all-buttons .upload-btn {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .profile-picture-all-buttons .delete-btn {
+    background: none;
+    border: 1px solid #0167FF;
+    color: #0167FF;
+  }
+  /*=================== profile-picture-section === End =================== */
+  
+  
+  /*=================== personal-details-section === Start ================ */
+  .edit-doctor-scroll-conatiner{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    width: 100%;
+    /* padding-bottom: 20px;
+    overflow-y: auto;
+    height:calc(100vh - 220px); */
+  }
+  
+  /* .edit-doctor-scroll-conatiner::-webkit-scrollbar {
+    width: 0px;
+  } */
+  
+  .edit-your-profile-all-input-details-header {
+    display: flex;
+    justify-content: center;
+    align-items:satrt;
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+  }
+  
+  .edit-your-profile-details-section {
+    border-radius: 12px;
+    border: 0.5px solid #0167FF80;
+    background: #F8FAFF;
+    width: 100%;
+    transition: height 0.3s ease;
+  }
+  
+  .edit-your-profile-details-section.open {
+    height: auto;
+  }
+  
+  .edit-your-profile-details-section.closed {
+    height: 60px;
+    overflow: hidden;
+  }
+  
+  .edit-your-profile-section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 20px;
+    background: #F2F6FF;
+    border-radius: 12px 12px 0 0;
+    cursor: pointer;
+  }
+  
+  .edit-your-profile-section-header h3 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21.6px;
+    text-align: left;
+  }
+  
+  .toggle-arrow {
+    width: 25px;
+    height: 25px;
+    color:orange;
+    
+  }
+  
+  .edit-your-profile-section-content {
+    padding: 10px 0;
+  }
+  
+  .edopds-form-rows-single {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 30px;
+  }
+  
+  .edop-form-group {
+    width: 48%;
+  }
+  
+  .edop-full-width {
+    width: 100%;
+  }
+  
+  .edop-form-group label {
+    display: block;
+    padding-left:2px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+    color: #000000;
+  }
+  
+  .edop-form-group input,
+  .edop-form-group select{
+    width: 100%;
+    height: 50px;
+    border-radius:5px;
+    font-size: 14px;
+    padding: 8px 20px;
+    border: 2px solid #2E37A41A;
+    outline: none;
+  }
+  .edop-form-group textarea{
+    width: 100%;
+    height: 100px;
+    border-radius:5px;
+    font-size: 14px;
+    padding: 8px 20px;
+    border: 2px solid #2E37A41A;
+    outline: none;
+  }
+  
+  textarea {
+    resize: vertical;
+  }
+  
+  .edop-select-box-header {
+    position: relative;
+  }
+  
+  .edop-select-box-input {
+    width: 100%;
+    height: 50px;
+    border-radius: 8px;
+    padding: 0 20px;
+    border: 2px solid #2E37A41A;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    cursor: pointer;
+  }
+  
+  .edop-select-box-arrow-icon{
+    position: absolute;
+    top:55px;
+    right: 20px;
+    transform: translateY(-50%);
+    font-size: 22px;
+    color:#000000;
+    pointer-events: none;
+  }
+  
+  /*=================== personal-details-section === End ================ */
+  
+  /*=================== Doctor-details-section === Start ================ */
+  .edopds-form-rows-single {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+  }
+  
+  .edop-form-group {
+    flex: 1;
+  }
+  
+  .tag-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+  }
+  
+  .tag-edit-doctor {
+    display: inline-flex;
+    align-items: center;
+    background-color: #e8f0fe;
+    padding: 5px 10px;
+    border-radius:3px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0.01em;
+  }
+  
+  .tag-edit-doctor button {
+    margin-left: 10px;
+    background: none;
+    border: none;
+    color:#FF7F50;
+    cursor: pointer;
+  }
+  
+  .doctor-details-tag-input {
+    padding: 10px;
+    border: 1px solid #dfe3e8;
+    border-radius: 5px;
+    outline: none;
+  } 
+  
+  /*=================== Doctor-details-section === End ================ */
+  
+  /*=================== Fees-details-section === Start ================ */
+  .edit-doctor-fees-details-conatiner{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 30px 30px 30px;
+    flex-direction: column;
+    gap:20px;
+  }
+  .edit-doctor-fees-details-feestext{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+  }
+  
+  .icon-double{
+    color:orange;
+  }
+  
+  .edit-doctor-fees-details-conatiner span{
+    display: block;
+    padding-left:2px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+    color: #000000;
+  }
+  
+  .fees-input-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap:20px;
+  }
+  
+  .currency-dropdown{
+    width: 100%;
+    height: 50px;
+    border-radius:5px;
+    font-size: 14px;
+    padding: 8px 20px;
+    border: 2px solid #2E37A41A;
+    outline: none;
+  }
+  
+  .fees-input{
+    border-radius:5px;
+    font-size: 14px;
+    padding: 8px 10px;
+    border: 2px solid #2E37A41A;
+    outline: none;
+  }
+  /*=================== Fees-details-section === End ================ */
+  
+  /*=================== Hospital Details Section === Start ================ */
+  .edit-another-hospital-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+    cursor: pointer;
+  }
+  
+  .edit-another-hospital-container-icon-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border: 0.5px solid #0167FF80;
+    height:32px;
+    padding: 7px 10px;
+    border-radius: 5px;
+    background: #FFFFFF;
+    color: #0167FF;
+  
+  }
+  .edit-another-hospital-container-text{
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 25px;
+    text-align: left;
+    color: #0167FF;
+  }
+  
+  .edit-doctor-location-button{
+    padding: 20px 30px;
+  }
+  /*=================== Hospital Details Section === End ================ */
+  
+  /*=================== Hospital Details buttons and update button same css === Satrt ================ */
+  .checkbox-container-edit-profile{
+    display:flex;
+    align-items: center;
+    gap:8px;
+  }
+  .edit-doctor-Update-container{
+    display:flex;
+    place-items: start;
+    gap:20px;
+  }
+  
+  .edit-doctor-Update-btn{
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 25px;
+    width:185px;
+    height:42px;
+    border-radius: 5px;
+    background-color: #0167FF;
+    color: #FFFFFF;
+    transition: background-color 0.3s ease;
+  }
+  
+  .edit-doctor-Update-btn:disabled {
+    background-color: #ccc; 
+    cursor: not-allowed;
+    color: #000000; 
+  }
+  
+  
+  .edit-doctor-Remove-btn{
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 25px;
+    width:130px;
+    height:42px;
+    border-radius: 5px;
+    background: none ;
+    border: 0.5px solid orange;
+    color:orange;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap:15px;
+  }
+  /*=================== Hospital Details buttons and update button same css === End ================ */
+  
+  /*=================== Document verification Section === Satrt ================ */
+  .edit-doctor-profile-doc-Proof-file{
+    position: relative;
+    border-radius:5px;
+    border: 2px solid #2E37A41A;
+    outline: none;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding: 0 18px;
+  }
+  .edit-doctor-profile-doc-Proof-input{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  .edit-doctor-profile-doc-Proof-file-name{
+    margin-top: 18px;
+    font-size: 15px;
+    font-weight: 400;
+    color: #333;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .edit-doctor-profile-doc-Proof-choose-file{
+    position: absolute;
+    right: 10px;
+    width: 90px;
+    height: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3.5px ;
+    border-left: 1px solid #2E37A41A;
+    cursor: pointer;
+    background-color: #0167FF;
+    color: #FFFFFF;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: 0.01em;
+  }
+  
+  .edop-form-padding-or-magin{
+    display: flex;
+    justify-content:space-between;
+    flex-direction: column;
+    padding: 30px 0px 30px 30px;
+  }
+  /*=================== Document verification Section === End ================ */
+  
+  /*=================== FAQ question Section === Start ================ */
+  .edop-qustion-container {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    gap: 20px; 
+    width: 100%;
+  }
+  
+  .edop-qustion-item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; 
+    padding:5px 20px;
+    border: 2px solid #2E37A41A;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out; 
+  }
+  
+  .accordion-question {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px; 
+    cursor: pointer;
+  }
+  
+  
+  .edop-count-text-conatiner{
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .plus-icon-less-icon {
+    font-size: 20px;
+    font-weight: 500;
+    color: #2E37A4; 
+    transition: color 0.3s ease-in-out; 
+  }
+  
+  .plus-icon-less-icon:hover {
+    color: #ff6347; 
+  }
+  
+  .accordion-question.active .plus-icon-less-icon {
+    color: #ff6347;
+  }
+  
+  .edop-count-question {
+    color: #000;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  
+  .editable-text {
+    font-size: 14px;
+    color: #333;
+    padding: 10px;
+    width:100%;
+    border-radius: 5px;
+    outline:none;
+    overflow: hidden;
+  }
+  
+  .accordion-answer {
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    box-shadow: 0 0px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  /* For smaller screens */
+  @media (max-width: 998px) {
+    .edit-your-profile-container {
+      padding: 2rem;
+    }
+  
+    .edit-your-profile-support-to-support-conatiner {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .profile-picture-section {
+      width: 100%;
+    }
+  
+    .details-section {
+      width: 100%;
+    }
+  
+    .edopds-form-rows-single {
+      flex-direction: column;
+    }
+  
+    .edop-form-group {
+      width: 100%;
+    }
+  }
+  /* Responsive Media Queries */
+  @media (max-width: 768px) {
+    .edopds-form-rows-single {
+      flex-direction: column;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .edit-your-profile-title-head .profile-header .title {
+      font-size: 18px;
+    }
+  
+    .profile-picture {
+      width: 80px;
+      height: 80px;
+    }
+  
+    .profile-picture-all-buttons .upload-btn,
+    .profile-picture-all-buttons .delete-btn {
+      font-size: 14px;
+    }
+  }

@@ -1,0 +1,33 @@
+.Corporate-DBD-layout-container {
+  display: flex;
+  min-height: 100vh;
+  background-color: #f7faff;
+}
+
+.Corporate-DBD-layout-main-content {
+  flex-grow: 1;
+  width: calc(100% - 270px);
+  transition: width 0.3s;
+  margin: 20px 20px 0px 0px;
+  border-top-right-radius: 60px;
+  border-top-left-radius: 60px;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+}
+
+.Corporate-DBD-layout-main-content .Corporate-DBD-layout-content-area {
+  flex-grow: 1;
+  height: 100%;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .Corporate-DBD-layout-main-content {
+    padding: 0px 10px;
+    margin: 15px 15px 0px 0px;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    margin-left: 60px;
+  }
+}

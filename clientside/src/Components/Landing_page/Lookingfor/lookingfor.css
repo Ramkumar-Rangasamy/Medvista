@@ -1,0 +1,178 @@
+.looking-container {
+  background-color: #ffffff;
+  padding: 70px;
+}
+
+.looking-container h2 {
+  font-size: 35px;
+  font-weight: 600;
+  line-height: 42px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.looking-container .looking-highlight {
+  color: #0167FF;
+}
+
+.looking-container .looking-content{
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  color: rgba(82, 82, 91, 1);
+}
+
+.looking-card-container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 30px;
+  margin: 50px auto;
+  width: 100%;
+  max-width: 1440px;
+  position: relative; /* for manage the width of the underline */
+}
+
+/* Card styles */
+.looking-card {
+  background: #F3F8FF;
+  border-radius: 10px;
+  padding: 27px 5px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 40px;
+  align-items: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.looking-card:hover {
+  transform: translateY(-5px);
+  background-color: #007bff;
+  color: #ffffff;
+}
+
+/* Card icon */
+.looking-card-icon {
+  width: 74px;
+  height: 72px; 
+  margin-bottom: 10px;
+  transition: filter 0.3s ease;
+}
+
+.looking-card:hover .looking-card-icon {
+  filter: brightness(0) invert(1);
+}
+
+.looking-card-text {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 21.6px;
+  text-align: center;  
+  color: #272848;
+}
+.looking-card:hover .looking-card-text{
+  color: #ffffff;
+}
+
+/* Default underline */
+.looking-container-underline {
+  position: absolute;
+  bottom: -20px;
+  height: 6px;
+  border-radius: 20px;
+  width: 100%;
+  background-color: rgba(217, 217, 217, 1); 
+  transition: all 0.3s ease;
+}
+
+/* Hover underline */
+.looking-container-underline-hover {
+  position: absolute;   /* important for underline*/
+  bottom: -20px;
+  height: 6px;
+  border-radius: 20px;
+  background-color: rgba(1, 103, 255, 1);
+  transition: all 0.3s ease;
+  left: 0;
+  width: 0; /* Initially hidden */
+}
+
+@media (max-width: 1200px) {
+  .looking-card-container {
+    grid-template-columns: repeat(6, 1fr); 
+  }
+  .looking-card {
+    padding: 18px 5px;
+  }  
+  .looking-card-icon {
+    width: 40px;
+    height: 42px; 
+  }
+  
+  .looking-card-text {
+    font-size: 14px;
+  
+  }
+}  
+
+@media (max-width: 1024px) {
+  .looking-card-container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 30px;
+    margin: 50px auto;
+    width: 100%;
+    max-width: 1000px;
+  }
+
+  .looking-card-container {
+    grid-template-columns: repeat(3, 1fr); 
+  }
+  .looking-card {
+    padding: 18px 5px;
+  }  
+  .looking-card-icon {
+    width: 40px;
+    height: 42px; 
+  }
+  
+  .looking-card-text {
+    font-size: 14px;
+  
+  }
+} 
+
+@media (max-width: 768px) {
+  .looking-card-container {
+    grid-template-columns: repeat(2, 1fr); 
+  }
+
+  .looking-container h2 {
+    font-size: 28px; 
+  }
+}
+
+@media (max-width: 480px) {
+  .looking-container {
+    padding: 20px 20px 40px 20px;
+  }
+
+  .looking-card-container {
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 20px;
+    margin: 40px auto;
+    max-width: 600px;
+  }
+
+  .looking-card {
+    padding: 18px 30px;
+    margin-bottom: 0px;
+  }
+
+  .looking-container h2 {
+    font-size: 16px;
+  }
+}

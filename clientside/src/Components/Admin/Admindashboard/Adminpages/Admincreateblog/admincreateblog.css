@@ -1,0 +1,204 @@
+.admin-create-blog {
+    padding: 0px 20px;
+}
+.admin-create-blog .admin-create-blog-title{
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 28.8px;
+    color: #272848;
+    display: inline-block;
+    padding:20px 10px 0 25px;
+    margin-bottom: 20px;
+}
+
+.admin-create-blog-form-gap {
+    display: flex;
+    flex-wrap: wrap;
+    gap:30px;
+    justify-content:space-around;
+    padding:10px 18px;
+}
+
+.admin-create-blog-header{
+    position: relative;
+    width:510px;
+    height: 45px;
+}
+
+.admin-create-blog-input {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    padding:0 18px;
+    border: 2px solid #2E37A41A;
+    outline: none;
+}
+
+.admin-create-blog-placeholder {
+    position: absolute;
+    top: -0.8rem;
+    left: 1rem;
+    padding: 0 0.5rem;
+    transition: all 200ms ease-in-out;
+    font-weight: 500;
+    pointer-events: none;
+    background: #ffffff;
+}
+
+/*High and Low container css=============Start--------------*/
+.admin-create-blog-placeholder-status {
+    position: absolute;
+    top: -0.6rem;
+    left: 5px;
+    font-weight: 500;
+    padding: 0 18px;
+}
+
+.admin-create-blog-check-hilo {
+    display: flex;
+    align-items:end;
+    justify-content:flex-start;
+    gap:20px;
+    margin-top: 16px;
+    margin-left: 5px;
+    padding: 0 18px;
+}
+
+.admin-create-blog-check-hilo .admin-create-blog-radio-input-header{
+    display: flex;
+    gap: 5px;
+}
+
+.admin-create-blog-check-hilo .admin-create-blog-radio-input-header .admin-create-blog-radio-radio-label {
+    color: #33344880;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/*High and Low container css=============End--------------*/
+
+.admin-create-blog-editor-and-file-container {
+    display: flex;
+    flex-direction: column;
+    gap:5rem;
+    padding: 10px 3rem;
+}
+
+.admin-create-blog-editor-box{
+    width: 100%;
+}
+
+/* Editor */
+.editor-text-box {
+    height: 8rem;
+}
+
+.admin-create-blog-header-file{
+    position: relative;
+    border-radius: 10px;
+    padding:0 18px;
+    border: 2px solid #2E37A41A;
+    outline: none;
+}
+
+.admin-create-blog-file-input{
+    width: 100%;
+    height: 2.5rem;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.admin-create-blog-file-name{
+    position: absolute;
+    left: 1rem;
+    top: 0;
+    width: fit-content;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.choose-file-admin-create-blog {
+    position: absolute;
+    right: 0;
+    width: 8rem;
+    top: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background: #F7FAFF;
+    border-radius: 8px;
+}
+
+.choose-file-admin-create-blog span {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px; 
+    color:#0167FF;  
+}
+
+.admin-create-blog-button {
+    width: 100%;
+    height: 2.5rem;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 20px;
+    padding: 0px 48px;
+    margin-top: 10px;
+}
+
+.admin-create-blog-button-inside {
+    width: 130px;
+    height: 43px;
+    border-radius:5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #2E37A4;
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.ql-toolbar.ql-snow {
+    border: 2px solid #2E37A41A;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.ql-container.ql-snow {
+    border: 2px solid #2E37A41A; 
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+@media (max-width: 1280px) {
+    .admin-create-blog-form-gap {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 35px;
+        justify-content: space-around;
+        padding: 10px 0;
+    }
+    .admin-create-blog-header {
+        position: relative;
+        width: 25rem;
+        height: 45px;
+    }
+
+    .admin-create-blog-editor-and-file-container {
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+        padding: 10px 2.3rem;
+    }
+
+    .admin-create-blog-button{
+        margin-top: 10px;
+        padding: 0px 35px;
+    }
+}

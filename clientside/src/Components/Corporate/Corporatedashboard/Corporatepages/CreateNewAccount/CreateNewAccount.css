@@ -1,0 +1,200 @@
+.CreateNewAccount-form-container {
+    padding: 0px 20px;
+}
+
+.CreateNewAccount-form-container .CreateNewAccount-title{
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 28.8px;
+    color: #272848;
+    display: inline-block;
+    padding:20px 10px 0 5px;
+    margin-bottom: 100px;
+}
+
+.CreateNewAccount-form-input-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:40px;
+}
+.CreateNewAccount-form-sub-container{
+    display: flex;
+    justify-content: center;
+    gap:40px;
+    max-width: 1200px;
+    width: 100%;
+
+}
+  
+.CreateNewAccount-form-input-header {
+    position: relative;
+    width:100%;
+    height:50px;
+}
+
+.CreateNewAccount-form-input {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    padding: 0 18px;
+    border: 2px solid #2E37A41A;
+    outline: none;
+}
+
+
+.CreateNewAccount-form-input-placeholder{
+    position: absolute;
+    top: -0.8rem;
+    left: 1rem;
+    padding: 0 0.5rem;
+    transition: all 200ms ease-in-out;
+    font-weight: 500;
+    background: #ffffff;
+}
+
+
+.CreateNewAccount-select-box-head{
+    position: relative;
+    display: inline-block;
+}
+
+.CreateNewAccount-select-box-head .CreateNewAccount-select-box-input {
+    -webkit-appearance: none; /* For Chrome */
+    -moz-appearance: none; /* For Firefox */
+    appearance: none; /* For modern browsers */
+    outline: none;
+    cursor: pointer;
+
+}
+
+.CreateNewAccount-select-box-head  .CreateNewAccount-select-box-arrow-icon {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: orange;
+    pointer-events: none;
+}
+
+.CreateNewAccount-button-group{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap:30px;
+    margin-top:40px;
+}
+
+.Create-Account-button{
+    width: 160px;
+    height: 39px;
+    padding: 5px 20px;
+    text-align: center;
+    background: #0167ff;
+    color: #ffffff;
+    font-size:14px;
+    font-weight: 600;
+    line-height: 25px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+    position: relative;  /* Make the button a positioning context */
+    border-radius: 5px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+  
+.Create-Account-button:active {
+    background-color: #003f7f;
+    transform: translateY(0);
+}
+
+.Create-Account-button:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+  }
+  
+  .Create-Account-button-text {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+  }
+  
+  /* Spinner overlay */
+  .Create-Account-button-spinner-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.5);  /* Optional: Semi-transparent background */
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;  /* Match button's border radius */
+  }
+  
+  /* Small spinner style */
+  .Create-Account-button-small-spinner {
+    width: 24px;
+    height: 24px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-top-color: white;
+    border-radius: 50%;
+    animation: spin 0.6s linear infinite;
+  }
+  
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+.Create-Back-to-Accounts{
+    width: 190px;
+    height: 39px;
+    padding: 5px 20px;
+    text-align: center;
+    border:1px solid  #0167ff;
+    background-color:transparent;
+    color: #0167ff;
+    font-size:14px;
+    font-weight: 600;
+    line-height: 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;  
+}
+
+.Create-Back-to-Accounts:hover {
+    background-color: #edf3ff;
+    color: #0167ff;
+    transform: scale(1.05);
+}
+  
+
+
+/* Responsive Design */
+@media (max-width: 999px) {
+    .CreateNewAccount-form-container .CreateNewAccount-title{
+        margin-bottom: 20px;
+    }
+
+    .CreateNewAccount-form-input-header,
+    .CreateNewAccount-select-box-head {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .CreateNewAccount-form-sub-container {
+        flex-direction: column;
+        gap: 30px;
+    }
+}
+
+

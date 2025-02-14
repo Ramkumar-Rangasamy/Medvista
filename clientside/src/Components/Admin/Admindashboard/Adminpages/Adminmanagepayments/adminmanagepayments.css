@@ -1,0 +1,211 @@
+.adminpayment {
+    padding: 0px 20px;
+  }
+  
+  .adminpayment .adminpayment-title {
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 28.8px;
+    color: #272848;
+    display: inline-block;
+    padding: 20px 10px 0 5px;
+    margin-bottom: 20px;
+  }
+  
+  .adminpayment-table-container {
+    overflow-y: auto;
+    height: calc(100vh - 250px);
+  }
+  
+  .adminpayment-table-container::-webkit-scrollbar {
+    width: 0px;
+  }
+  
+  .Adminpayment-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+  }
+  
+  .Adminpayment-table thead tr {
+    background: #fbfbfb;
+    color: #272848;
+    border: 1px solid #0000001a;
+  }
+  
+  .Adminpayment-table thead tr th {
+    padding: 5px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #272848;
+  }
+  
+  .Adminpayment-table tbody tr td {
+    color: #272848;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 15px;
+    border-bottom: 4px solid #f0f0f5;
+  }
+  
+  .payment-View {
+    background: none;
+    color: #272848;
+    border: 1.5px solid #0163F7;
+    border-radius: 5px;
+    padding: 5px 20px;
+    font-weight: 600;
+  }
+  
+  .payment-View:hover {
+    background-color: #0163F7;
+    color: #ffffff;
+  }
+  
+  .adminpayment-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .adminpayment-modal-content {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 500px;
+    width: 100%;
+  }
+  
+
+  
+  .adminpayment-modal-header h2 {
+    font-size: 20px;
+    color: #272848;
+    text-align: center;
+    margin-bottom: 20px;
+
+  }
+  
+  
+  .adminpayment-modal-close:hover {
+    color: #0163F7;
+  }
+  
+  .adminpayment-modal-body {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px 10px;
+  }
+  
+  .adminpayment-modal-field {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .adminpayment-input-with-icon {
+    position: relative;
+    display: inline-block;
+  }
+  .adminpayment-input-with-icon input {
+    padding-right: 30px; 
+    width: 100%; 
+  }
+  
+  .adminpayment-input-icon {
+    font-size: 25px;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer; 
+  }
+  .adminpayment-modal-field label {
+    font-weight: 600;
+    color: #272848;
+    margin-bottom: 5px;
+  }
+  
+  .adminpayment-modal-field input {
+    padding: 10px;
+    box-shadow: 0px 2px 2px 0px #0000001A;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #272848;
+    outline: none;
+  }
+  /*Second className calling in desgin*/
+  .adminpayment-modal-select-box-container{
+    position: relative;
+    display: inline-block; 
+    display: flex;
+    flex-direction: column;
+  }
+
+  .adminpayment-modal-select-box{
+    padding: 10px;
+    border: 1px solid #ddd;
+    box-shadow: 0px 2px 2px 0px #0000001A;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #272848;
+    outline: none;
+    -webkit-appearance: none; /* For Chrome */
+    -moz-appearance: none; /* For Firefox */
+    appearance: none; /* For modern browsers */
+  }
+
+.adminpayment-modal-select-box-container  .adminpayment-modal-arrow-icon {
+    position: absolute;
+    top: 73%;
+    right: 10px;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: #2AA7FF;
+    pointer-events: none;
+}
+  
+  .adminpayment-modal-footer{
+    display: flex;
+    justify-content:flex-end ;
+    gap:20px ;
+
+  }
+  .adminpayment-savebutton {
+    border: 1.5px solid #272848;
+    background: none;
+    color: #272848;    
+    border-radius:5px;
+    padding: 5px 25px;
+    font-weight: 600;
+    margin-top: 20px;
+  }
+  
+  .adminpayment-savebutton:hover {
+    background-color: #272848;
+    color:#ffffff;
+  }
+  
+
+  .adminpayment-closebutton {
+    border: 1.5px solid orange;
+    background: none;
+    color: #272848;    
+    border-radius:5px;
+    padding: 5px 25px;
+    font-weight: 600;
+    margin-top: 20px;
+  }
+  
+  .adminpayment-closebutton:hover {
+    background-color: orange;
+    color:#ffffff;
+  }

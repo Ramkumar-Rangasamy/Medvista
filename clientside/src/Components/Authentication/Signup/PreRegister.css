@@ -1,0 +1,64 @@
+.pre-register-container {
+    padding: 2rem;
+    background: #f0f8ff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .logo-header .brand-logo {
+    width: 100px;
+    margin-bottom: 1rem;
+  }
+  
+  .title {
+    font-size: 2rem;
+    color: #0167FF;
+    margin-top: 1rem;
+  }
+  
+  .subtitle {
+    font-size: 1.2rem;
+    color: #6c757d;
+    margin-bottom: 2rem;
+  }
+  
+  .role-options {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  .role-card {
+    background: #fff;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .role-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .role-icon {
+    width: 80px;
+    margin-bottom: 1rem;
+  }
+  
+  .select-role-btn {
+    margin-top: 1rem;
+    background-color: #0167FF;
+    border: none;
+    padding: 0.5rem 1.5rem;
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  .select-role-btn:hover {
+    background-color: #004bb5;
+  }
+  

@@ -1,0 +1,124 @@
+.Adminview-blog {
+    padding: 0px 20px;
+}
+ 
+.Adminview-blog .Adminview-blog-title{
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 28.8px;
+    color: #272848;
+    display: inline-block;
+    padding:20px 10px 0 5px;
+    margin-bottom: 20px;
+}
+     
+.Adminview-blog-table-container {
+    overflow-y: auto;
+    height:calc(100vh - 250px);
+}
+     
+.Adminview-blog-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+     
+.Adminview-blog-table thead tr {
+    background: #fbfbfb;
+    color: #272848;
+    border: 1px solid #0000001a;
+}
+     
+.Adminview-blog-table thead tr th {
+    padding: 5px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #272848;
+}
+     
+.Adminview-blog-table tbody tr td {
+    color: #272848;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 15px;
+    border-bottom: 4px solid #f0f0f5;
+}
+     
+/* Scrollbar styles */
+.Adminview-blog-table-container::-webkit-scrollbar {
+    width: 0px;
+}
+ 
+.Adminview-blog-table .viewadmin-select-container {
+    position: relative;
+    display: inline-block; /* The container wraps around select and icon */
+}
+   
+.Adminview-blog-table .viewadmin-select-container .admin-status-select {
+    border: 1px solid #78798d;
+    font-weight: 600;
+    padding: 5px 30px 5px 20px;
+    border-radius: 4px;
+    -webkit-appearance: none; /* For Chrome */
+    -moz-appearance: none; /* For Firefox */
+    appearance: none; /* For modern browsers */
+    outline: none;
+    width: 150px;
+}
+
+.status-dot {
+    display: inline-block;
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+}
+
+.status-dot.verified {
+    background-color: green;
+}
+  
+.status-dot.pending {
+    background-color: orange;
+}
+  
+.status-dot.rejected {
+    background-color: red;
+}
+   
+.Adminview-blog-table .viewadmin-select-container .arrow-icon {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-45%);
+    font-size: 20px;
+    color: #2AA7FF;
+    pointer-events: none; /* Ensure icon does not interfere with select */
+}
+
+.Adminviewblogs-submit {
+    background: none;
+    color: #272848;
+    border: 1.5px solid orange;
+    border-radius: 5px;
+    padding: 5px 20px;
+    font-weight: 600;
+}
+
+.Adminviewblogs-submit:hover {
+    background-color: orange;
+    color: #ffffff;
+}
+
+.Adminviewblogs-View {
+    background: none;
+    color: #272848;
+    border: 1.5px solid #0163F7;
+    border-radius: 5px;
+    padding: 5px 20px;
+    font-weight: 600;
+}
+
+.Adminviewblogs-View:hover {
+    background-color: #0163F7;
+    color: #ffffff;
+}

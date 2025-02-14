@@ -1,0 +1,129 @@
+.filterpage-parent{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding-bottom: 30px;
+}
+.filter-edit {
+  width: 20% !important; /* Adjust this value to your preferred width */
+  padding-right: 0 !important;
+}
+/* .filter-edit.col-3{
+  display: flex;
+  justify-content: center;
+  max-width: 24%;
+} */
+.doctorMainCard-edit.col-lg-6{  
+  display: flex !important;
+  justify-content: start !important;
+}
+/* Adjust the width of other columns to balance the layout */
+.doctorMainCard-edit {
+  padding: 0;
+  width: 60%; /* Adjust this value accordingly */
+}
+.map-edit{
+  margin-top: 10px;
+}
+
+/* MOBILE VIEW OFFCANVAS FILTER */
+
+.filterpage-hamburger {
+  font-size: 1.5rem;
+}
+
+.filterpage-offcanvas {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  max-height: 63%;
+  overflow-y: auto;
+  background: #f8f9fa;
+  transition: transform 0.3s ease-in-out;
+  transform: translateY(100%);
+  z-index: 1050;
+  padding: 1rem;
+}
+
+.filterpage-offcanvas-show {
+  display: block;
+  transform: translateY(0);
+}
+
+.filterpage-offcanvas-close {
+  float: right;
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.filterpage-main {
+  display: flex;
+}
+
+.filterpage-sidebar {
+  padding: 15px;
+}
+
+.filterpage-doctors {
+  padding: 15px;
+}
+
+.filterpage-map {
+  padding: 15px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+  /* .container-fluid {
+    width: 90%;
+  } */
+}
+
+@media (max-width: 768px) {
+  .container-fluid {
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  .doctorMainCard-edit {
+    font-size: 14px;
+  }
+
+  .map-container {
+    width: 100%;
+    height: auto;
+  }
+
+  .filter-edit, .map-edit {
+    display: none;
+  }
+
+  .doctorMainCard-edit {
+    width: 100%;
+  }
+
+  .offcanvas {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .container-fluid {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .doctorMainCard-edit {
+    font-size: 12px;
+  }
+
+  .map-container {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+  }
+}

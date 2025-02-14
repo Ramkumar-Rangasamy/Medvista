@@ -1,0 +1,223 @@
+.ProductsCondition-blog-list-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 30px;
+    max-width: 1279px;
+    width: 100%;
+    margin-top: 50px;
+    box-sizing: border-box;
+}
+
+.ProductsCondition-blog-list-container h2 {
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 33.6px;
+    color: rgba(39, 40, 72, 1);
+}
+
+.ProductsCondition-blog-cards{
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    overflow-y: hidden;
+    padding-bottom: 15px;
+    width: 100%;
+    scroll-behavior: smooth;
+    white-space: nowrap; /* Prevent cards from wrapping */
+}
+
+.ProductsCondition-blog-cards::-webkit-scrollbar {
+    height: 4.5px;
+}
+  
+.ProductsCondition-blog-cards::-webkit-scrollbar-thumb {
+    background-color:rgba(219, 219, 219, 1);
+    border-radius: 40px;
+}
+
+.ProductsCondition-blog-card{
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    gap:20px;
+    max-width: 341px;
+    width: 100%;
+    max-height: fit-content;
+    border-radius: 12px;
+    padding: 15px;
+    box-shadow: 0px 3.06px 15.32px 0px rgba(0, 0, 0, 0.06);
+    border: 0.77px solid rgba(195, 207, 224, 1);
+}
+.ProductsCondition-blog-card .ProductsCondition-blog-image{
+    width: 285px;
+    height:186px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.ProductsCondition-blog-content{
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    gap:10px;
+}
+.ProductsCondition-blog-content .ProductsCondition-blog-category{
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 15px;
+    color: rgba(1, 103, 255, 1);
+    margin: 0;
+}
+.ProductsCondition-blog-content .ProductsCondition-blog-meta-container{
+    display: flex;
+    align-items: start;
+    gap:5px;
+}
+.ProductsCondition-blog-meta-container .ProductsCondition-blog-meta{
+    color: rgba(113, 113, 113, 1);
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 15px;
+    margin: 0;
+}
+
+.ProductsCondition-blog-content .ProductsCondition-blog-title{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22.21px;
+    color: rgba(0, 0, 0, 1);
+    white-space: normal; 
+    max-width: 300px;
+}
+
+.ProductsCondition-blog-content .ProductsCondition-blog-description{
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 19.15px;
+    color: rgba(97, 97, 97, 1);
+    white-space: normal; 
+    max-width: 300px;  
+}
+
+.ProductsCondition-blog-content .ProductsCondition-blog-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px; /* Adjust as necessary */
+    width: 100%;
+}
+
+.ProductsCondition-blog-footer .ProductsCondition-blog-footer-img-name-container{
+    display: flex;
+    align-items: center;
+    gap:10px;
+}
+
+.ProductsCondition-blog-footer-img-name-container img{
+    width: 29px;
+    height: 29px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.ProductsCondition-blog-footer-img-name-container .ProductsCondition-author-name{
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 15px;
+    color: rgba(14, 14, 14, 1);
+    margin: 0;
+}
+
+.ProductsCondition-blog-footer .ProductsCondition-read-more-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 81px;
+    height: 26px;
+    border: none;
+    color: white;
+    font-size: 9.19px;
+    font-weight: 600;
+    line-height: 11.03px;
+    border-radius:4px;
+    background-color: #0167ff;
+    text-align: center;
+    line-height: 37px;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+  
+.ProductsCondition-blog-footer .ProductsCondition-read-more-btn:hover {
+    background-color: #edf3ff;
+    border: 0.4px solid #0167ff;
+    color: #0167ff;
+    transform: scale(1.05);
+}
+
+
+@media (max-width: 1440px) and (min-width: 1200px) {
+ 
+    .ProductsCondition-blog-list-container {
+      max-width: 100%; 
+      padding: 0 20px; 
+    }
+  
+    .ProductsCondition-blog-card {
+      flex-basis: calc(40.5% - 100px);
+    }
+} 
+
+@media (max-width: 768px) {
+    .ProductsCondition-blog-list-container {
+        max-width: 100%;
+        padding: 0 10px;
+        margin-top: 30px;
+        gap: 15px;
+    }
+    .ProductsCondition-blog-content .ProductsCondition-blog-title {
+        max-width:100%;
+    }
+
+    .ProductsCondition-blog-content .ProductsCondition-blog-description {
+        max-width:100%;
+    }
+
+    .ProductsCondition-blog-card {
+        max-width: 100%;
+        flex: 0 0 calc(100% - 0px);
+    }
+
+    .ProductsCondition-blog-card .ProductsCondition-blog-image {
+        max-width: 100%;
+        width:100%;
+        height: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .ProductsCondition-blog-list-container{
+        padding:10px;
+    }
+
+    .ProductsCondition-blog-list-container h2 {
+        font-size: 20px;
+    }
+
+    .ProductsCondition-blog-card {
+        padding: 10px;
+    }
+
+    .ProductsCondition-blog-card .ProductsCondition-blog-image {
+        width: 100%;
+        object-fit: cover;
+        border-radius: 8px;
+    }
+
+    .ProductsCondition-blog-content .ProductsCondition-blog-title {
+        font-size: 14px;
+    }
+
+    .ProductsCondition-blog-content .ProductsCondition-blog-description {
+        font-size: 11px;
+    }
+}

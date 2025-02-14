@@ -1,0 +1,496 @@
+.admin-doctorprofileverification {
+    padding: 0px 20px;
+}
+
+.admin-doctorprofileverification .head-title {
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 28.8px;
+    color: #272848;
+    display: inline-block;
+    padding: 20px 10px 0 5px;
+    margin-bottom: 30px;
+}
+
+.admin-doctorprofileverification-container {
+    overflow-y: auto;
+    height: calc(100vh - 180px);
+}
+
+.admin-doctorprofileverification-container::-webkit-scrollbar {
+    width: 0px;
+}
+
+.admin-doctorprofileverification-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 20px;
+}
+
+.admin-doctorprofileverification-profile {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 5px solid #2E37A41A;
+    overflow: hidden;
+}
+
+.admin-verification-profile {
+    width: 250px;
+    height: 250px;
+    object-fit:cover;
+}
+
+.admin-doctorprofileverification-title {
+    width: 500px;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.admin-doctorprofileverification-title .name-clsn {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 28.8px;
+    color: #272848;
+    display: inline-block;
+}
+
+.admin-doctorprofileverification-title .about-us-clsn {
+    font-size: 16px;
+    font-weight: 400;
+    color: #272848;
+    display: inline-block;
+}
+
+.admin-dp-verification-pl-details {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin: 50px 0;
+    padding: 20px;
+}
+
+.admin-dp-verification-pd-itheader {
+    position: relative;
+    width: 450px;
+    max-width: 100%;
+}
+
+.admin-dp-verification-pd-itheader:last-child {
+    margin-bottom: 50px;
+}
+
+.admin-dp-verification-input {
+    width: 100%;
+    height: 50px;
+    border-radius: 8px;
+    padding: 0 22px;
+    border: 2px solid #2E37A41A;
+    outline: none;
+}
+
+.admin-dp-verification-input-placeholder {
+    position: absolute;
+    top: -0.9rem;
+    left: 1rem;
+    padding: 0 0.5rem;
+    transition: all 200ms ease-in-out;
+    font-weight: 500;
+    background: #ffffff;
+}
+
+.admin-dp-verification-input-placeholder span {
+    color: red;
+}
+
+/* Conditions Managed and Languages Spoken */
+.admin-dp-verification-pd-itheader-multi-input {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+ 
+}
+
+.admin-dp-verification-pd-itheader-multi-input .admin-dp-verification-input {
+    height: 50px;
+}
+
+/* Hospitals Details */
+.admin-dp-hospitals-verification-details-header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.admin-dp-hospitals-verification-details-header h2 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 700;
+    color: #272848;
+    display: inline-block;
+}
+
+.input-for-image-showing {
+    width: 100%;
+    height: 200px;
+    padding: 5px;
+    object-fit: contain;
+}
+
+/* Modal CSS */
+.admin-dp-verification-proof-conatiner{
+    position: relative;
+    outline: none;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;  
+    width:700px;
+}
+
+.admin-dp-verification-proof-input{
+    position: absolute;
+    top: 10;
+    left: 0;
+    cursor: pointer;
+}
+
+.admin-dp-verification-document-proof-view-button {
+    position: absolute;
+    right: 2px;
+    width: 8rem;
+    height: 46px;
+    color: #3b82f6;
+    font-weight: 600;
+    text-align: center;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: #f8f9fa;
+    border-radius: 0 8px 8px 0;
+
+
+}
+
+.doctorverification-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.doctorverification-modal-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 30px;
+    background: white;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+    max-width: 950px;
+    width: 100%;
+    text-align: center;
+    overflow: auto;
+    height: auto;
+}
+
+.doctorverification-modal-proof-heading {
+    font-weight: 700;
+    color: #272848;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+.doctorverification-document-area {
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+}
+
+.doctorverification-modal-close {
+    border: 1.5px solid #272848;
+    background: none;
+    color: #272848;
+    border-radius: 5px;
+    padding: 3px 25px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.doctorverification-modal-close:hover {
+    background-color: #272848;
+    color: #ffffff;
+}
+
+.admin-dp-verification-select-box-header {
+    position: relative;
+    cursor: pointer;
+}
+
+.admin-dp-verification-select-box-input {
+    width: 100%;
+    height: 50px;
+    border-radius: 8px;
+    padding: 0 22px;
+    border: 2px solid #2E37A41A;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.admin-dp-verification-select-box-arrow-icon {
+    position: absolute;
+    top: 28px;
+    right: 30px;
+    transform: translateY(-50%);
+    font-size: 23px;
+    color: #2AA7FF;
+    pointer-events: none;
+}
+
+.admin-dp-verification-pd-button-itheader {
+    display: flex;
+    justify-content:end;
+    flex-wrap: wrap;
+    width: 950px;
+    gap: 20px;
+}
+
+.admin-dp-verification-pd-button-itheader .submit-button {
+    background-color: #272848;
+    padding: 5px 57px;
+    height: 50px;
+    color: #ffffff;
+    font-weight: 600;
+    border: none;
+    border-radius: 10px;
+    display: flex;
+    place-items: center;
+    text-decoration: none;
+}
+
+.admin-dp-verification-pd-button-itheader .cancel-button {
+    background-color: aliceblue;
+    padding: 5px 40px;
+    height: 50px;
+    color: #272848;
+    font-weight: 600;
+    border: none;
+    border-radius: 10px;
+    display: flex;
+    place-items: center;
+    text-decoration: none;
+}
+
+@media (max-width: 1300px) {
+    .admin-dp-verification-pd-itheader {
+        width: 380px;
+    }
+
+    .admin-dp-verification-pd-button-itheader {
+        width: 800px;
+    }
+
+    .admin-dp-verification-proof-conatiner{
+        width:600px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .admin-doctorprofileverification-profile {
+        width: 200px;
+        height: 200px;
+    }
+    
+    .admin-verification-profile {
+        width: 200px;
+        height: 200px;
+    }
+
+    .admin-doctorprofileverification-title {
+        width: 400px;
+    }
+    
+    .admin-doctorprofileverification-title .about-us-clsn {
+        font-size: 14px;
+    }
+    
+    .admin-dp-verification-pd-itheader {
+        width: 300px;
+    }
+
+    .admin-dp-verification-pd-button-itheader {
+        width: 650px;
+    }
+
+    .admin-dp-verification-proof-conatiner{
+        width:500px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .admin-doctorprofileverification-profile {
+        width: 180px;
+        height: 180px;
+    }
+    
+    .admin-verification-profile {
+        width: 180px;
+        height: 180px;
+    }
+
+    .admin-doctorprofileverification-title {
+        width: 360px;
+    }
+    
+    .admin-doctorprofileverification-title .about-us-clsn {
+        font-size: 14px;
+    }
+    
+    .admin-dp-verification-pd-itheader {
+        width: 300px;
+    }
+
+    .admin-dp-verification-proof-conatiner{
+        width:400px;
+    }
+}
+
+@media (max-width: 999px) {
+    .admin-doctorprofileverification-header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .admin-doctorprofileverification-profile {
+        width: 250px;
+        height: 250px;
+    }
+
+    .admin-verification-profile {
+        width: 250px;
+        height: 250px;
+    }
+
+    .admin-doctorprofileverification-title {
+        text-align: center;
+    }
+
+
+    .admin-dp-verification-pd-itheader {
+        width: 450px;
+    }
+
+    .admin-dp-verification-pd-button-itheader {
+        width: 450px;
+    }
+}
+
+@media (max-width: 768px) {
+    .admin-doctorprofileverification {
+        padding: 0 10px;
+    }
+
+    .admin-doctorprofileverification .head-title {
+        font-size: 20px;
+        padding: 10px 5px 0 5px;
+        margin-bottom: 20px;
+    }
+
+    .admin-doctorprofileverification-container {
+        height: calc(100vh - 150px);
+    }
+
+    .admin-dp-verification-pd-itheader {
+        width: 100%;
+    }
+
+    .admin-doctorprofileverification-profile {
+        width: 200px;
+        height: 200px;
+    }
+
+    .admin-verification-profile {
+        width: 200px;
+        height: 200px;
+    }
+
+    .admin-doctorprofileverification-title .name-clsn {
+        font-size: 18px;
+    }
+
+    .admin-doctorprofileverification-title .about-us-clsn {
+        font-size: 14px;
+    }
+
+    .admin-dp-verification-pd-button-itheader {
+        width: 600px;
+    }
+}
+
+@media (max-width: 480px) {
+    .admin-doctorprofileverification {
+        padding: 0 5px;
+    }
+
+    .admin-doctorprofileverification .head-title {
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+
+    .admin-doctorprofileverification-container {
+        height: calc(100vh - 120px);
+    }
+
+    .admin-doctorprofileverification-header {
+        gap: 15px;
+    }
+
+    .admin-doctorprofileverification-profile {
+        width: 120px;
+        height: 120px;
+    }
+
+    .admin-verification-profile {
+        width: 120px;
+        height: 120px;
+    }
+
+    .admin-doctorprofileverification-title .name-clsn {
+        font-size: 16px;
+    }
+
+    .admin-doctorprofileverification-title .about-us-clsn {
+        font-size: 12px;
+    }
+
+    .admin-dp-verification-pd-button-itheader {
+        margin-left: 0;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .admin-dp-verification-pd-itheader {
+        width: 100%;
+    }
+
+    .admin-dp-verification-input {
+        padding: 0 10px;
+    }
+}

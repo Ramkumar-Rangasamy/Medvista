@@ -1,0 +1,151 @@
+.terms-container{
+    background: linear-gradient(180deg, #EDF3FF 0%, #FFFFFF 100%); 
+}
+.terms-content-contain {
+    width: 100%;
+    padding: 30px;
+    margin: 0 auto;
+   
+    text-align: justify;
+    max-width: 1440px;
+}
+
+.terms-header {
+    padding: 60px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-content {
+    max-width: 45%;
+}
+
+.header-content h1 {
+    font-size: 32px;
+    color: #272848;
+    margin-bottom: 25px;
+}
+
+.terms-image {
+    max-width: 55%;
+}
+
+.terms-image img {
+    width: 427px;
+    height: 284px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.last-updated {
+    background-color: #FF5A47;
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 20px 0;
+    text-align: left;
+}
+
+.terms-header p {
+    font-size: 18px;
+    color: #545454;
+    margin-top: 20px;
+    text-align: justify;
+}
+
+.terms-content {
+    padding: 60px;
+    margin-top: -40px;
+    text-align: justify;
+}
+
+.terms-left {
+    width: 100%;
+    text-align: justify;
+}
+
+.terms-section h2 {
+    font-size: 20px;
+    color: #272848;
+    margin-bottom: 10px;
+    text-align: left;
+    padding-bottom: 20px;
+}
+
+.terms-section p {
+    font-size: 16px;
+    color: #272848;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: justify;
+    padding-bottom: 20px;
+}
+
+.last-updatedpara {
+    max-width: 600px;
+    text-align: justify;
+}
+
+@media (max-width: 998px) {
+    .terms-header {
+        padding: 20px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header-content, .terms-image {
+        max-width: 100%;
+    }
+    .terms-image {
+        order: 1;
+        margin-bottom: 20px;
+    }
+
+    .header-content{
+        order: 2;
+    }
+    .header-content h1 {
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+
+    .terms-header p {
+        line-height: 1.5;
+        font-size: 14px;
+    }
+
+    .terms-image img {
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+    }
+
+    .terms-content {
+        padding: 20px;
+    }
+
+    .last-updated {
+        margin: 10px 0;
+        font-size: 14px;
+    }
+
+ 
+    .terms-section p {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    .terms-section h2 {
+        font-size: 18px;
+        padding-bottom: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .terms-content-contain {
+        padding: 15px;
+    }
+}

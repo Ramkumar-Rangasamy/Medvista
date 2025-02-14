@@ -1,0 +1,169 @@
+.ReviewPageProducts-review-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 30px;
+    max-width: 1279px;
+    width: 100%;
+    margin-top: 50px;
+    box-sizing: border-box;
+}
+
+.ReviewPageProducts-review-container h2 {
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 33.6px;
+    color: rgba(39, 40, 72, 1);
+}
+
+.ReviewPageProducts-review-card-box {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    overflow-y: hidden;
+    padding-bottom: 15px;
+    width: 100%;
+    scroll-behavior: smooth;
+    white-space: nowrap; /* Prevent cards from wrapping */
+}
+
+.ReviewPageProducts-review-card-box::-webkit-scrollbar {
+    height: 4.5px;
+}
+  
+.ReviewPageProducts-review-card-box::-webkit-scrollbar-thumb {
+    background-color: rgba(219, 219, 219, 1);
+    border-radius: 40px;
+}
+
+.ReviewPageProducts-review-card {
+    display: flex;
+    align-items: start;
+    gap: 20px;
+    max-width: 433px;
+    width: 100%;
+    height: fit-content;
+    border-radius: 16px;
+    padding: 15px;
+    border: 1px solid rgba(255, 127, 80, 0.5);
+}
+
+.ReviewPageProducts-review-avatar img {
+    width: 98px;
+    height: 98px;
+    border-radius: 12px;
+    background: rgba(217, 217, 217, 1);
+    margin-bottom: 8px;
+}
+
+.ReviewPageProducts-review-avatar p{
+    text-align: center;
+    color: rgba(0, 0, 0, 1);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19.2px;
+    margin: 0;
+}
+
+.ReviewPageProducts-review-content {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    width: 265px;
+    height: fit-content;
+}
+
+.ReviewPageProducts-review-header-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.ReviewPageProducts-review-content .ReviewPageProducts-review-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.ReviewPageProducts-review-content .ReviewPageProducts-review-header .ReviewPageProducts-review-date {
+    padding-top: 3.5px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 14.4px;
+    color: rgba(168, 168, 168, 1);
+}
+
+.ReviewPageProducts-review-text {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.4px;
+    color: rgba(85, 85, 85, 1);
+    margin: 0;
+    white-space: normal;
+    max-width: 300px;
+}
+
+
+/* Adjustments for larger screens */
+@media (max-width: 1440px) and (min-width: 1200px) {
+    .ReviewPageProducts-review-container {
+        max-width: 100%;
+        padding: 0 20px;
+    }
+  
+    .ReviewPageProducts-review-card {
+        flex-basis: calc(40.5% - 100px);
+    }
+}
+
+/* Responsive design for tablets and small screens */
+@media (max-width: 768px) {
+    .ReviewPageProducts-review-container {
+        max-width: 100%;
+        padding: 0 10px;
+        margin-top: 30px;
+        gap: 15px;
+    }
+    
+    .ReviewPageProducts-review-card {
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+
+    .ReviewPageProducts-review-avatar img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+    }
+    .ReviewPageProducts-review-content {
+        width: 100%;
+    }
+
+    .ReviewPageProducts-review-text {
+        max-width:100%;
+    } 
+
+    .ReviewPageProducts-review-text {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .ReviewPageProducts-review-container h2 {
+        font-size: 20px;
+    }
+
+    .ReviewPageProducts-review-card-box {
+        gap: 10px; 
+    }
+
+    .ReviewPageProducts-review-card {
+        padding: 10px; 
+    }
+
+    .ReviewPageProducts-review-text {
+        font-size: 10px;
+        max-width: 100%; 
+    }
+}

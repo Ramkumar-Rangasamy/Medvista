@@ -1,0 +1,101 @@
+.Accepted-Insurances-PP-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 1279px;
+    width: 100%;
+    margin: 20px auto;
+    height: fit-content;
+    border-radius: 16px;
+    border: 1px solid rgba(193, 193, 193, 1);
+    background: rgba(255, 255, 255, 1);
+    padding: 20px 40px;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.Accepted-Insurances-PP-container h2 {
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 25px;
+    color: #272848;
+    margin: 0;
+}
+
+.Accepted-Insurances-PP-image-direction {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+
+.Accepted-Insurances-PP-item {
+    border: 0.5px solid #0167FF80;
+    box-shadow: 0px 4px 3px 0px #0000000A;
+    padding: 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Accepted-Insurances-PP-item:hover {
+    background-color: #F2F6FF;
+}
+
+.Accepted-Insurances-PP-item img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .Accepted-Insurances-PP-container {
+        padding: 20px;
+    }
+    
+    .Accepted-Insurances-PP-item img {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+@media (max-width: 768px) {
+    .Accepted-Insurances-PP-container {
+        padding: 15px;
+    }
+    
+    .Accepted-Insurances-PP-image-direction {
+        gap: 15px;
+    }
+    
+    .Accepted-Insurances-PP-item {
+        padding: 0.8rem;
+    }
+
+    .Accepted-Insurances-PP-item img {
+        width: 70px;
+        height: 70px;
+    }
+}
+
+@media (max-width: 480px) {
+    .Accepted-Insurances-PP-container {
+        padding: 20px;
+        border-radius: 0px;
+    }
+
+    .Accepted-Insurances-PP-container h2 {
+        font-size: 18px;
+    }
+
+    .Accepted-Insurances-PP-item {
+        padding: 0.5rem;
+    }
+
+    .Accepted-Insurances-PP-item img {
+        width: 60px;
+        height: 60px;
+    }
+}

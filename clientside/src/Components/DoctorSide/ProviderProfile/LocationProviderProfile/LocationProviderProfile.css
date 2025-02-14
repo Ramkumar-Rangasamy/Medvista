@@ -1,0 +1,258 @@
+.Provider-Profile-location-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 1279px;
+    width: 100%;
+    margin-top: 20px;
+    height: fit-content;
+    border-radius: 16px;
+    border: 1px solid rgba(193, 193, 193, 1);
+    background: rgba(255, 255, 255, 1);
+    padding: 20px 40px;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.Provider-Profile-location-section h2 {
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 25px;
+    color: #272848;
+    margin: 0;
+}
+
+.doctor-profile-location-container {
+    border: 0.5px solid #0167FF80;
+    padding: 15px 40px;
+    border-radius: 8px;
+}
+
+.doctor-profile-location-container:hover {
+    background: #F2F6FF;
+}
+
+.doctor-profile-location-contain {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.doctor-profile-location-consult-fees-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.doctor-profile-location-name-image {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.doctor-profile-location-name-image h2 {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 21.6px;
+    color: #0167FF;
+    margin: 0;
+}
+
+.doctor-profile-location-rupee-consult {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.doctor-profile-location-rupee-consult h2 {
+    color: #272848;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 14.4px;
+    margin: 0;
+}
+
+.doctor-profile-location-rupee-consult p {
+    color: #B0B9C2;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 14.4px;
+    margin: 0;
+}
+
+.doctor-profile-location-address-details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 14px;
+    flex-wrap: wrap;
+}
+
+.hospital-image-dr {
+    width: 59px;
+    height: 60px;
+    border-radius: 15px;
+}
+
+.Dr-p-address-details-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.Dr-p-address-details-image-details {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.Dr-p-address-details-content .Dr-p-address {
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 15.4px;
+    color: #272848;
+}
+
+.Dr-p-address-details-call-direction {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.Dr-p-address-details-call-direction-inside {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #FF7F50;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 14.4px;
+}
+
+.Dr-p-address-details-final {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(1, 103, 255, 1);
+    width: 130px;
+    padding: 10px;
+    gap: 5px;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19.2px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.Dr-p-address-details-final:hover {
+    background-color: white;
+    border: 0.4px solid #0167ff;
+    color: #0167ff;
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 998px) {
+    .Provider-Profile-location-section {
+        padding: 20px;
+    }
+
+    .doctor-profile-location-container {
+        padding: 15px;
+    }
+
+    .doctor-profile-location-contain {
+        gap: 20px;
+    }
+
+    .Dr-p-address-details-content {
+        gap: 20px;
+    }
+
+    .Dr-p-address-details-call-direction {
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .Dr-p-address-details-final {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .Provider-Profile-location-section {
+        padding: 15px;
+    }
+
+    .doctor-profile-location-container {
+        padding: 10px;
+    }
+
+    .doctor-profile-location-name-image {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .Dr-p-address-details-content {
+        gap: 10px;
+    }
+
+
+    .Dr-p-address-details-final {
+        width: 100%;
+        padding: 8px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .Provider-Profile-location-section {
+        padding: 10px;
+        border-radius:0px;
+    }
+
+    .doctor-profile-location-container {
+        padding: 15px;
+        border-radius: 6px;
+    }
+
+    .doctor-profile-location-contain {
+        gap: 10px;
+    }
+
+    .doctor-profile-location-name-image h2 {
+        font-size: 16px;
+    }
+
+    .doctor-profile-location-rupee-consult h2 {
+        font-size: 12px;
+    }
+
+    .doctor-profile-location-rupee-consult p {
+        font-size: 11px;
+    }
+
+    .hospital-image-dr {
+        width: 45px;
+        height: 46px;
+    }
+
+    .Dr-p-address-details-content {
+        gap: 15px;
+    }
+
+    .Dr-p-address-details-final {
+        width: 100%;
+        padding: 6px;
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,205 @@
+.providers-profile-Abouts-container{
+    display: flex;
+    max-width: 1279px;
+    width: 100%;
+    gap: 24px;
+    margin-top: 20px;
+}
+
+.providers-profile-Abouts-sub-content {
+    max-width: 827px;
+    width: 100%;
+    height:fit-content;
+    border-radius: 16px;
+    border: 1px solid rgba(193, 193, 193, 1);
+    padding: 10px 20px 20px 40px;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.providers-profile-Abouts-sub-content h2 {
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 25px;
+    color: #272848;
+    margin: 0;
+}
+  
+.providers-profile-Abouts-sub-content .providers-profile-about-description {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 23.2px;
+    text-align:justify;
+    margin: 0;
+}
+
+.providers-profile-Abouts-sub-content .providers-profile-about-date-country-container{
+    display: flex;
+    align-items: center;
+    gap:15px;
+}
+  
+.providers-profile-about-about-icons-all{
+    width: 20px;
+    height: auto;
+    color: #0167FF;
+}
+  
+.providers-profile-about-date-country-container p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18px;
+    margin: 0;
+}
+  
+.providers-profile-about-one-line{
+    height: 20px;
+    border-left: 0.5px solid #CACACA;
+}
+
+.providers-profile-language-details{
+    display: flex;
+    gap:15px;
+    align-items: center;
+}
+  
+
+
+
+/*  Condition Libraries=========Start*/
+.PP-CL-container {
+    width: 426px;
+    height:fit-content;
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(193, 193, 193, 1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .PP-CL-container .PP-CL-activity-flex-head {
+    padding:20px 20px 15px 20px;
+  }
+  
+  .PP-CL-container .PP-CL-activity-flex-head h2 {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    color: rgba(37, 37, 37, 1);
+  }
+  
+  .PP-CL-activity-underline {
+    border-bottom: 1px solid rgba(210, 210, 210, 1);
+  }
+  
+  .PP-CL-post-card .PP-CL-activity-body-content {
+    display: flex;
+    align-items: center;
+    padding: 13px 20px;
+  }
+  
+  .PP-CL-activity-body-content p {
+    font-size: 13.37px;
+    font-weight: 400;
+    line-height: 16.05px;
+    color: rgba(37, 37, 37, 1);
+    margin: 0;
+  }
+  
+  .PP-CL-activity-body-content ul li {
+    font-size: 13.37px;
+    font-weight: 400;
+    line-height: 12px;
+    color: rgba(170, 170, 170, 1);
+  }
+  
+  .PP-CL-activity-body-image-content {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    padding: 10px 20px;
+  }
+  
+  .PP-CL-activity-body-image-content .post-image {
+    width: 98.07px;
+    height: 98.07px;
+    border-radius: 50%;
+  }
+  .PP-CL-activity-body-image-content-details h3 {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.8px;
+    color: rgba(37, 37, 37, 1);
+  }
+  
+  .PP-CL-activity-body-image-content-details p {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.4px;
+    color: rgba(158, 158, 158, 1);
+    margin: 0;
+  }
+  
+  .PP-CL-activity-body-image-content-details span {
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 14.4px;
+    color: rgba(109, 168, 255, 1);
+    cursor: pointer;
+  }
+  
+  .PP-CL-post-card h2 {
+    text-align: center;
+    color: rgba(1, 103, 255, 1);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19.2px;
+    cursor: pointer;
+    padding-bottom: 5px;
+  }
+  
+  .PP-CL-post-card h2 .show-all-conditions-icon {
+    color: rgba(108, 108, 108, 1);
+    margin-left: 10px;
+  }
+
+/*  Condition Libraries=========End*/  
+/* Responsive Design */
+@media (max-width: 1300px) {
+  .providers-profile-Abouts-sub-content {
+    max-width: 730px;
+  }
+  .PP-CL-container {
+    width: 520px;
+  }
+}
+
+@media (max-width: 998px) {
+  .providers-profile-Abouts-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 1279px;
+    width: 100%;
+    gap: 24px;
+    margin-top: 20px; 
+  }
+  .providers-profile-Abouts-sub-content {
+    max-width: 100%;
+  }
+  .PP-CL-container{
+    width: 100%;
+  }
+}
+
+
+@media (max-width: 480px) {
+  
+  .providers-profile-Abouts-sub-content{
+    border-radius: 0px;
+  }
+  .PP-CL-container{
+    border-radius: 0px;
+  }
+}

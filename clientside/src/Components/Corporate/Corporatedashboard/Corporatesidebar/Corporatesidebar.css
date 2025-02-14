@@ -1,0 +1,210 @@
+.Corporate-DBD-sidebar {
+  z-index: 1000;
+  width: 270px;
+  height: 100vh;
+  background-color: #F7FAFF;
+  border-left: 30px solid #F7FAFF;
+  transition: width 0.3s;
+  overflow: hidden;
+}
+
+.Corporate-DBD-sidebar.Corporate-DBD-closed {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 60px;
+}
+
+.Corporate-DBD-logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 45px 10px 0px 10px;
+}
+
+.Corporate-DBD-logo {
+  display: inline-block;
+  height: 40px;
+}
+
+.Corporate-DBD-toggle-button {
+  display: none;
+  background: none;
+  border: none;
+  color: #000000;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.Corporate-DBD-sidebar-menu{
+  list-style: none;
+  padding: 0;
+  margin-top: 15px;
+  flex-direction: column;
+  display: flex;
+  align-items: start;
+  justify-content: space-evenly;
+  height: calc(100vh - 505px);
+}
+
+.Corporate-DBD-menu-item {
+  display: flex;
+  align-items: start;
+  width: 100%;
+  margin: -50px 0px -10px 0px;
+  padding: 16px 0px 16px 20px;
+  color: #A0AAC8;
+}
+
+.Corporate-DBD-menu-item .Corporate-DBD-menu-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  white-space: nowrap;
+  font-weight: 400;
+  font-size: 16px;
+  color: inherit;
+  outline: none;
+  border: none;
+  width: 100%;
+}
+
+.Corporate-DBD-sidebar-icon {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+  font-size: 16px;
+}
+
+/* Curve design */
+.Corporate-DBD-menu-item:hover,
+.Corporate-DBD-menu-item.Corporate-DBD-active {
+  position: relative;
+  color: #42427D;
+  background-color: #FFFFFF;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.Corporate-DBD-menu-item:hover:before,
+.Corporate-DBD-menu-item.Corporate-DBD-active:before {
+  position: absolute;
+  content: '';
+  height: 40px;
+  width: 40px;
+  background-color: #F7FAFF;
+  right: 0;
+  bottom: 100%;
+  border-bottom-right-radius: 20px;
+  box-shadow: 0 17px 0 #FFFFFF;
+}
+
+.Corporate-DBD-menu-item:hover:after,
+.Corporate-DBD-menu-item.Corporate-DBD-active:after {
+  position: absolute;
+  content: '';
+  height: 40px;
+  width: 40px;
+  background-color: #F7FAFF;
+  right: 0;
+  top: 100%;
+  border-top-right-radius: 20px;
+  box-shadow: 0 -17px 0 #FFFFFF;
+}
+
+.Corporate-DBD-menu-item span {
+  flex-grow: 1;
+  outline: none;
+  border: none;
+}
+
+.Corporate-DBD-sidebar.Corporate-DBD-closed .Corporate-DBD-menu-item span {
+  display: none;
+}
+
+.Corporate-DBD-sidebar.Corporate-DBD-closed .Corporate-DBD-sidebar-icon {
+  margin-right: 0;
+}
+
+.Corporate-DBD-sidebar.Corporate-DBD-open .Corporate-DBD-close-icon {
+  display: none;
+}
+
+.Corporate-DBD-sidebar.Corporate-DBD-closed .Corporate-DBD-close-icon {
+  display: block;
+}
+
+@media (max-width: 1024px) {
+  .Corporate-DBD-sidebar {
+    width: 250px;
+  }
+
+  .Corporate-DBD-sidebar.Corporate-DBD-closed {
+    width: 60px;
+  }
+
+  .Corporate-DBD-logo-container {
+    margin: 38px 10px 0px 10px;
+  }
+
+  .Corporate-DBD-menu-item {
+    margin: -40px 0px -10px 0px;
+    padding: 12px 0px 12px 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .Corporate-DBD-sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    border-left: 15px solid #F7FAFF;
+  }
+
+  .Corporate-DBD-sidebar.Corporate-DBD-open {
+    width: 250px;
+  }
+
+  .Corporate-DBD-toggle-button {
+    display: block;
+  }
+
+  .Corporate-DBD-sidebar-menu .Corporate-DBD-menu-item span {
+    display: none;
+  }
+
+  .Corporate-DBD-sidebar.Corporate-DBD-open .Corporate-DBD-sidebar-menu .Corporate-DBD-menu-item span {
+    display: inline;
+  }
+
+  .Corporate-DBD-sidebar-menu {
+    margin-top: 10px;
+  }
+
+  .Corporate-DBD-menu-item {
+    padding: 15px 20px;
+  }
+
+  .Corporate-DBD-menu-item:hover,
+  .Corporate-DBD-menu-item.Corporate-DBD-active {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+
+  .Corporate-DBD-menu-item:hover:before,
+  .Corporate-DBD-menu-item.Corporate-DBD-active:before {
+    height: 20px;
+    width: 20px;
+    border-bottom-right-radius: 15px;
+    box-shadow: 0 9px 0 #FFFFFF;
+  }
+
+  .Corporate-DBD-menu-item:hover:after,
+  .Corporate-DBD-menu-item.Corporate-DBD-active:after {
+    height: 20px;
+    width: 20px;
+    border-top-right-radius: 15px;
+    box-shadow: 0 -9px 0 #FFFFFF;
+  }
+}

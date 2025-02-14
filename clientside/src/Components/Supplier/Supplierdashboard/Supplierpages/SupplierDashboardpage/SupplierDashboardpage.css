@@ -1,0 +1,554 @@
+.admin-main-dashboard-page {
+  padding: 0 20px;
+}
+
+.admin-main-dashboard-page .admin-heading-dashboard-page {
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 28.8px;
+  color: #272848;
+  display: inline-block;
+  padding: 20px 10px 0 5px;
+  margin-bottom: 30px;
+}
+
+.admin-dashboard-scoll-head {
+  overflow-y: auto;
+  height: calc(100vh - 180px);
+}
+
+.admin-dashboard-scoll-head::-webkit-scrollbar {
+  width: 0px;
+}
+
+.admin-dashboard-gird-layout {
+  display: grid;
+  grid-template-areas:
+    "insight-patient income-head dashboard-blogs-patient"
+    "consultation booking-rate booking-rate"
+    "reviews booking-rate booking-rate";
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 330px 170px auto;
+  grid-gap: 20px;
+  margin: 5px 5px 5px 5px;
+}
+
+.admin-insight-patient {
+  grid-area: insight-patient;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #0000001a;
+  height: 100%;
+}
+
+.admin-income-head {
+  grid-area: income-head;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #0000001a;
+  height: 100%;
+}
+
+.admin-dashboard-blogs-patient {
+  grid-area: dashboard-blogs-patient;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #0000001a;
+  height: 100%;
+}
+
+.admin-consultation {
+  grid-area: consultation;
+  background: #5577d1;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 0 10px #0000001a;
+  height: 100%;
+}
+
+.admin-booking-rate {
+  grid-area: booking-rate;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #0000001a;
+  height: 100%;
+}
+
+.admin-reviews {
+  grid-area: reviews;
+  background: #2a3f74;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 0 10px #0000001a;
+  height: 100%;
+}
+
+/* Desktop view: 1280px and above */
+
+@media (max-width: 1440px) and (min-width: 1310px) {
+  .admin-dashboard-gird-layout {
+    grid-template-areas:
+      "insight-patient income-head dashboard-blogs-patient"
+      "consultation booking-rate booking-rate"
+      "reviews booking-rate booking-rate";
+    grid-template-columns: repeat(1fr, 1fr, 1fr);
+    gap: 20px;
+  }
+  .admin-insight-patient,
+  .admin-income-head,
+  .admin-dashboard-blogs-patient {
+    max-width: 1200px;
+  }
+  .admin-consultation,
+  .admin-reviews {
+    width: 100%;
+  }
+  .admin-booking-rate {
+    width: 100%;
+  }
+  .admin-chart-area {
+    width: 300px;
+    height: 200px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .admin-dashboard-gird-layout {
+    grid-template-areas:
+      "insight-patient income-head dashboard-blogs-patient"
+      "consultation booking-rate booking-rate"
+      "reviews booking-rate booking-rate";
+    grid-template-columns: repeat(1fr, 1fr, 1fr);
+    grid-template-rows: 330px 170px auto;
+    gap: 20px;
+  }
+  .admin-insight-patient,
+  .admin-income-head,
+  .admin-dashboard-blogs-patient {
+    width: 300px;
+  }
+  .admin-consultation,
+  .admin-reviews {
+    width: 300px;
+  }
+  .admin-booking-rate {
+    width: 620px;
+  }
+}
+
+/*======================insight-patient =========start======================*/
+.admin-insight-patient .admin-dashboard-head-common {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.admin-insight-patient .admin-dashboard-head-common p {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 26.4px;
+  color: #272848;
+}
+
+.admin-insight-patient .admin-dashboard-head-common .admin-select-container .admin-select-box-common {
+  padding: 5px 50px 5px 10px;
+  background: #f7faff;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 12px;
+  color: #272848;
+  cursor: pointer;
+  -webkit-appearance: none; /* For Chrome */
+  -moz-appearance: none; /* For Firefox */
+  appearance: none; /* For modern browsers */
+  outline: none;
+}
+
+.admin-insight-patient .admin-insight-item {
+  background: #f7faff;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin: 10px 0px 20px 0px;
+  padding: 5px;
+}
+
+.admin-insight-item .admin-insight-img-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-left: 10px;
+}
+
+.admin-insight-item .admin-insight-img-container.admin-blue-color {
+  background-color: #007bff;
+}
+
+.admin-insight-item .admin-insight-img-container.admin-dark-blue-color {
+  background-color: #2a3f74;
+}
+
+.admin-insight-item .admin-insight-img-container.admin-green-color {
+  background-color: #4caf50;
+}
+.admin-insight-item .admin-insight-img-container .admin-image-insight {
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+}
+
+.admin-insight-info h4 {
+  color: #a0aac8;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 30px;
+  margin: 0;
+}
+
+.admin-insight-info p {
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+  font-weight: 600;
+  margin: 0;
+}
+/*======================insight-patient =========End======================*/
+
+/*======================your income =========start======================*/
+.admin-income {
+  position: relative;
+}
+
+.admin-income .admin-dashboard-head-common {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.admin-income .admin-dashboard-head-common p {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 26.4px;
+  color: #272848;
+}
+
+.admin-income .admin-dashboard-head-common .admin-select-container .admin-select-box-common {
+  padding: 5px 50px 5px 10px;
+  background: #f7faff;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: 12px;
+  color: #272848;
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+}
+
+.admin-chart-area {
+  max-width: 340px;
+  height: 200px;
+  margin-top: 40px;
+  position: relative;
+  right: 15px;
+}
+
+.admin-coming-soon-overlay {
+  position: absolute;
+  top: -20px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: 600;
+  color: #272848;
+  z-index: 1;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+/*====================== your income end =========End======================*/
+
+/*====================== blogs =========start======================*/
+.admin-dashboard-blogs-patient .admin-dashboard-head-common {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.admin-dashboard-blogs-patient .admin-dashboard-head-common p {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 26.4px;
+  color: #272848;
+}
+
+.admin-dashboard-blogs-patient
+.admin-dashboard-head-common
+.admin-select-container
+.admin-select-box-common {
+  padding: 5px 50px 5px 10px;
+  background: #f7faff;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 12px;
+  color: #272848;
+  cursor: pointer;
+  -webkit-appearance: none; /* For Chrome */
+  -moz-appearance: none; /* For Firefox */
+  appearance: none; /* For modern browsers */
+  outline: none;
+}
+
+.admin-dashboard-blogs-patient .admin-dashboard-blogs-item {
+  background: #f7faff;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin: 10px 0px 20px 0px;
+  padding: 5px;
+}
+
+.admin-dashboard-blogs-item .admin-blog-img-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-left: 10px;
+}
+
+
+.admin-dashboard-blogs-item .admin-blog-img-container.admin-dark-blue-color {
+  background-color: #2a3f74;
+}
+
+.admin-dashboard-blogs-item .admin-blog-img-container.admin-orange-color {
+  background-color: orange;
+}
+
+.admin-dashboard-blogs-item .admin-blog-img-container.admin-green-color {
+  background-color: #4caf50;
+}
+.admin-dashboard-blogs-item .admin-blog-img-container .admin-dashboard-image-blogs {
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+}
+
+.admin-dashboard-blog-image {
+  width: 30px;
+  height: 30px;
+}
+
+.admin-dashboard-blogs-info h4 {
+  color: #a0aac8;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 30px;
+  margin: 0;
+}
+
+.admin-dashboard-blogs-info p {
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+  font-weight: 600;
+  margin: 0;
+}
+/*====================== blogs end =========End======================*/
+
+/*====================== consultation =========start======================*/
+.admin-consultation .admin-consultation-coverarea {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.admin-consultation-coverarea .admin-consultation-info .admin-consultation-count {
+  font-size: 62px;
+  font-weight: 600;
+  line-height: 90px;
+  color: #ffffff;
+  margin: 0;
+}
+
+.admin-consultation-coverarea .admin-consultation-info .admin-consultation-label {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  color: #ffffff;
+  text-align: left;
+  margin-top: -10px;
+}
+
+.admin-consultation-coverarea .admin-consultation-img {
+  width: 165px;
+  height: 150px;
+}
+
+/*====================== consultation end =========End======================*/
+
+/*====================== Review =========start======================*/
+.admin-reviews .admin-reviews-coverarea {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.admin-reviews-coverarea .admin-reviews-info .admin-reviews-count {
+  font-size: 62px;
+  font-weight: 600;
+  line-height: 90px;
+  color: #ffffff;
+  margin: 0;
+}
+
+.admin-reviews-coverarea .admin-reviews-info .admin-reviews-label {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  color: #ffffff;
+  text-align: left;
+  margin-top: -10px;
+}
+
+.admin-reviews-coverarea .admin-reviews-img {
+  width: 140px;
+  height: 130px;
+}
+/*====================== review end =========End======================*/
+
+/*====================== booking rate =========start======================*/
+.admin-booking-rate .admin-booking-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.admin-booking-header .admin-booking-title {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 26.4px;
+  color: #272848;
+}
+
+/*select box down arrow css*/
+.admin-select-container {
+  position: relative;
+  display: inline-block;
+}
+
+.admin-select-container .admin-recently {
+  padding: 5px 50px 5px 10px;
+  background: #f7faff;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: 12px;
+  color: #272848;
+  cursor: pointer;
+  -webkit-appearance: none; /* For Chrome */
+  -moz-appearance: none; /* For Firefox */
+  appearance: none; /* For modern browsers */
+  outline: none;
+}
+
+.admin-arrow-icon-filter {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  font-size: 20px;
+  color: #ff7f50;
+  pointer-events: none;
+}
+
+
+.admin-booking-area {
+  margin: 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.admin-rate {
+  flex: 1 1 250px;
+}
+
+.admin-rate h1 {
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 30px;
+  text-align: left;
+  color: #00a500;
+}
+
+.admin-booking-description {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 28.8px;
+  text-align: left;
+  color: #272848;
+}
+
+.admin-increase {
+  font-size: 14px;
+  font-weight: 500;
+  width: 60%;
+  line-height: 16.8px;
+  text-align: left;
+  color: #a0aac8;
+}
+
+.admin-chart {
+  flex: 2 1 350px;
+  max-width: 600px;
+  padding-top: 50px;
+}
+
+@media (max-width: 768px) {
+  .admin-rate {
+    flex: 1 1 100px;
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+
+  .admin-rate h1 {
+    font-size: 2rem;
+  }
+
+  .admin-rate .admin-booking-description {
+    font-size: 1rem;
+    line-height: 20px;
+  }
+  .admin-rate .admin-increase {
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  .admin-chart {
+    flex: 2 1 250px;
+    max-width: 300px;
+  }
+}
+
+/*====================== booking rate =========End======================*/
+

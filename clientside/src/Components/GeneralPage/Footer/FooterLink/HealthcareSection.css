@@ -1,0 +1,454 @@
+
+  .enp-top-section {
+    display: flex;
+
+    align-items: center;
+    padding: 2rem;
+  }
+  
+  .enp-text-content {
+    width: 55%;
+   margin-top: 20px;
+
+    position: relative;
+    left: 6.5%;
+
+  
+  }
+  .health-section-about{
+    width: 1002px;
+    position: relative;
+
+height: 44px;
+font-family: Matter;
+font-size: 14px;
+font-weight: 400;
+line-height: 22.26px;
+text-align: center;
+color: #000000;
+margin-bottom: 50px;
+margin-top: 30px;
+margin-left: auto;
+margin-right: auto;
+justify-content: center;
+
+  }
+  .enp-text-content h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #000;
+    width: 569px;
+    height: 84px;
+    font-family: Matter;
+    font-size: 35px;
+    font-weight: 600;
+    line-height: 42px;
+
+  }
+  
+  .enp-text-content h1 span {
+    width: 569px;
+height: 84px;
+font-family: Matter;
+font-size: 35px;
+font-weight: 600;
+line-height: 42px;
+
+    font-size: 35px;
+
+    color: #0167FF; 
+  }
+
+  .enp-bottom-section h1  span{
+    font-size: 28px;
+    color: #007BFF; /* Blue text for "for Healthcare Entities" */
+  }
+
+ .sub-health-section{
+    width: 462px;
+height: 38px;
+
+font-family: Matter;
+font-size: 16px;
+font-weight: 500;
+line-height: 19.2px;
+text-align: left;
+margin:20px 0px 20px 0px;
+
+
+  }
+
+  
+  .enp-text-content p {
+    margin: 1rem 0;
+    color: #555;
+    text-align: justify;
+    font-size: 14px;
+    font-weight: 400;
+    width: 569px;
+    height: 95px;
+  }
+  
+  .enp-image-content img {
+
+
+    width: 462px;
+height: 474px;
+border-radius: 0px 100px 0px 100px;
+    border-right: 30px;
+position: relative;
+left:9%;
+    margin-top: 0px;
+    margin-right: 50px;
+  }
+
+  .enp-bottom-section {
+
+    margin-bottom: 5rem;
+    text-align: center;
+    padding: 3rem;
+    
+  }
+  
+  .enp-bottom-section h2 {
+   margin-bottom: 30px;
+
+
+font-family: Matter;
+font-size: 28px;
+font-weight: 600;
+line-height: 33.6px;
+text-align: center;
+
+
+    
+  }
+  
+  .enp-features-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    margin-top: 2rem;
+    text-align: left;
+  }
+  
+  .enp-feature-card {
+    padding: 1.5rem;
+    border-radius: 8px;
+    background-color: #F2F6FF; /* Highlight selected card */
+    /* border: 1px solid #007BFF; */
+    border: 0.5px solid #0167FF80;
+    
+  }
+  
+  .enp-feature-card h3 {
+    font-size: 1.2rem;
+    color:  #023047;
+  }
+  
+  .enp-feature-card p {
+    color:#535353;
+    font-size: 14px;
+    font-weight: 400;
+    
+  }
+  
+  .enp-spanclass091{
+    color:  #0167FF;
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .enp-spanclass0916{
+
+font-family: Matter;
+font-size: 28px;
+font-weight: 600;
+line-height: 33.6px;
+text-align: center;
+color: #000000;
+
+  }
+
+
+
+  
+  .enp-content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 60px;
+    padding: 3rem;
+  
+  }
+  
+  .enp-left-content {
+    width: 50%;
+    text-align: left;
+    margin-top: -50px;
+  }
+  
+  .enp-left-content h2 {
+    font-size: 2rem;
+    color: #000;
+    
+  }
+  
+  .enp-left-content h2 span {
+    color: #007BFF;  /* Blue for 'Large Healthcare Systems' */
+  }
+  
+  .enp-benefit {
+    display: flex;
+    margin-top: 1.2rem;
+    align-items: flex-start;
+  }
+  
+  .enp-icon {
+    
+    color: #007BFF;  /* Icon color */
+    margin-right: 1rem;
+
+  }
+  
+  .enp-benefit-text h3 {
+    color:  #023047;
+    
+    font-size: 20px !important;
+    text-align: left;
+  }
+  .enp-benefit-text img{
+    margin-bottom: 10px;
+  }
+  
+  .enp-benefit-text p {
+    color:#535353;
+    text-align: left;
+    font-size: 14px;
+  }
+  
+  .enp-right-content {
+    width: 45%;
+    margin-right: 20px;
+  }
+  
+  .enp-image-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+  
+  .image-grid img {
+   margin-top: 20px;
+    border-radius: 8px;
+    object-fit: cover;
+  }
+
+  .enp-image-grid1{
+    width: 280px !important;
+    height: 332px;
+    object-fit: cover;
+    margin-top: 30px;
+    border-radius: 12px;
+
+  }
+
+  .enp-image-grid2{
+    margin-top: 30px;
+    width: 285px !important;
+    height:198px;
+    object-fit: cover;
+    border-radius: 12px;
+  }
+
+  .enp-image-grid4{
+    width: 280px !important;
+    height: 332px;
+    margin-top: -140px;
+    object-fit: cover;
+    border-radius: 12px;
+
+  }
+  .enp-image-grid3{
+    width: 285px !important;
+    height:188px;
+    object-fit: cover;
+    border-radius: 12px;
+
+  }
+
+
+
+
+
+  .enp-telehealth-section {
+  
+
+    text-align: center;
+    background-color: #f9f9f9; /* Light background color */
+  }
+
+
+  .enp-top-section890{
+    margin-top: 70px;
+    background-color: #007BFF; /* Blue background */
+    padding: 5rem 0rem;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .enp-top-section890 h3 {
+    font-size: 28px;
+    color: #fff;
+   
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+
+  }
+  
+  .enp-top-section890 p {
+    color: white;
+    margin-bottom: 2rem;
+    font-size: 14px;
+    font-weight: 400;
+  }
+  
+  .enp-feature-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 2rem;
+    margin-bottom: 3rem;
+    margin-top: -120px;
+  }
+  
+  .enp-card {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 1rem;
+    margin: 2rem;
+    text-align: left;
+    width: 30%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .enp-icon {
+    font-size: 2rem;
+    color: #ff7b00;
+    margin-bottom: 1rem;
+  }
+  
+  .enp-card h3 {
+    color:#023047 ;
+    margin-bottom: 1rem;
+    font-size: 21px;
+  }
+  
+  .enp-card p {
+    color: #535353;
+    font-size: 14px;
+    font-weight: 400;
+  }
+  
+  .enp-cta-section h3 {
+    font-size: 28px;
+    
+   
+    padding-bottom: 1.5rem;
+    text-align: center;
+  }
+  
+  .enp-cta-section h3 span {
+    color: #0167FF;
+font-size: 28px;
+  }
+
+
+  .enp-cta-section  {
+ text-align: center;
+  }
+  
+  
+  .enp-cta-section p {
+    color: #555;
+    margin-bottom: 2rem;
+    padding-bottom: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 12px;
+
+  }
+  
+  .enp-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+  }
+  
+  .enp-signup-btn, .enp-demo-btn {
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .enp-signup-btn {
+    background-color: #007BFF;
+    color: #fff;
+  }
+  
+  .enp-demo-btn {
+    background-color: #fff;
+    color: #007BFF;
+    border: 2px solid #007BFF;
+  }
+  
+  .enp-signup-btn:hover, .enp-demo-btn:hover {
+    opacity: 0.8;
+  }
+  
+
+  .selected-feature {
+    box-shadow: 0px 4px 4px 0px #00000040;
+
+
+    background-color:#e4eaf9; /* Highlight selected card */
+    /* border: 1px solid #007BFF; */
+  }
+  .selected-card {
+    background-color: #F2F6FF; /* Highlight selected card */
+  }
+
+  .selected-card {
+    background-color: #F2F6FF; /* Background color for selected card */
+}
+@media (min-width: 1024px) and (max-width: 1439px) {
+
+
+
+  .enp-text-content {
+    width: 55%;
+   margin-top: 20px;
+
+    position: relative;
+    left: 6.5%;
+
+  
+  }
+  
+
+  .enp-image-content img {
+
+    width: 362px;
+height: 374px;
+border-radius: 0px 100px 0px 100px;
+    border-right: 30px;
+position: relative;
+left:36%;
+    margin-top: 0px;
+    margin-right: 50px;
+  }
+}

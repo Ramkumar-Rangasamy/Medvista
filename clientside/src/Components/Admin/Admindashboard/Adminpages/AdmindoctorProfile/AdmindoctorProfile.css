@@ -1,0 +1,108 @@
+.admin-doctorprofile{
+  padding: 0px 20px;
+}
+
+.admin-doctorprofile .admin-doctorprofile-title {
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 28.8px;
+  color: #272848;
+  display: inline-block;
+  padding:20px 10px 0 5px;
+  margin-bottom: 20px;
+}
+  
+.admin-doctorprofile-table-container {
+  overflow-y: auto;
+  height:calc(100vh - 250px);
+}
+
+/* Scrollbar styles */
+.admin-doctorprofile-table-container::-webkit-scrollbar {
+  width: 0px;
+}
+  
+.admin-doctorprofile-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+}
+  
+.admin-doctorprofile-table thead tr {
+  background: #fbfbfb;
+  color: #272848;
+  border: 1px solid #0000001a;
+}
+  
+.admin-doctorprofile-table thead tr th {
+  padding: 5px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #272848;
+}
+  
+.admin-doctorprofile-table tbody tr td {
+  font-size: 16px;
+  font-weight: 500;
+  padding: 15px;
+  border-bottom: 4px solid #f0f0f5;
+}
+
+.admin-doctorprofile-table .admin-select-container {
+  position: relative;
+  display: inline-block;
+}
+
+.admin-doctorprofile-table .admin-select-container .admin-status-select {
+  border: 1px solid #78798d;
+  font-weight: 600;
+  padding: 5px 30px 5px 20px;
+  border-radius: 4px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  width: 150px;
+}
+
+.admin-doctorprofile-table .admin-select-container .arrow-icon {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-45%);
+  font-size: 20px;
+  color: #2AA7FF;
+  pointer-events: none;
+}
+
+/* Status Colors */
+
+.status-verified {
+  color: green;
+}
+
+.status-pending {
+  color: orange; 
+}
+
+.status-NotVerified {
+  color: red; 
+}
+
+.admin-doctorprofile-submit {
+  border: 1.5px solid #0067FF;
+  background: none;
+  outline: none;
+  border-radius: 4px;
+  color: #272848;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.admin-doctorprofile-submit:hover {
+  background-color: #0067FF;
+  color: #FFFFFF;
+}
+
+

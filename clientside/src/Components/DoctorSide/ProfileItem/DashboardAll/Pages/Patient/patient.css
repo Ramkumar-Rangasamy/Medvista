@@ -1,0 +1,56 @@
+.table-header, .table-data {
+  text-align: center !important;
+  vertical-align: middle !important;
+}
+
+.table-adjustment{
+  margin-top: 40px;
+}
+
+.table-header {
+  background-color: #272848;
+  color: white !important; 
+  border-bottom: 1px solid #F0F1F5;
+  padding: 10px;
+  white-space: nowrap;
+  font-weight: bold !important;
+  font-size: 16px;
+}
+
+.table-data {
+  padding: 10px;
+  font-size: 14px;
+}
+
+.prescription-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+.pagination-button {
+  margin: 0 5px;
+}
+
+.mypatients {
+  color: #272848;
+  margin-left: 15px;
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: -40px;
+}
+
+.medicine-grid {
+  margin-bottom: 20px;
+}

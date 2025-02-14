@@ -1,0 +1,225 @@
+.user-notification-card {
+  border-radius: 12px;
+  background-color: #ffffff;
+  padding:20px 10px;
+  width: 100%;
+  height: fit-content;
+}
+
+.user-notification-card h2 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28.8px;
+  color: #272848;
+  display: inline-block;
+  padding:10px;
+}
+
+.user-notification-list {
+  padding: 0px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  overflow-y: auto;
+  max-height: 550px;
+}
+
+.user-notification-list::-webkit-scrollbar {
+  width: 10px;
+}
+
+.user-notification-list::-webkit-scrollbar-thumb {
+  background-color:#dfdede;
+  height: 200px;
+  border-radius: 2px;
+}
+
+.user-notification {
+  border: 2px solid #2E37A41A;
+  border-radius: 5px;
+  padding:15px 10px;
+  background-color: #FFFFFF;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  display: flex;
+  align-items:center;
+  gap:10px;
+}
+
+.user-details-head{
+  display: flex;
+  align-items:center;
+  gap:20px;
+}
+
+.user-details-head img {
+  border-radius:10px;
+  width:50px; 
+  height:50px;
+}
+
+.user-details-head .user-details {
+  display: flex;
+  align-items:start;
+  flex-direction: column;
+}
+
+.user-details h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.user-details p {
+  font-size: 14px;
+  font-weight: 400;
+  margin:0;
+  text-align: justify;
+  padding-right: 60px;
+  color: #666;
+  overflow-wrap: break-word;
+}
+
+.user-notification-list-status {
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.user-notification-list-time {
+  font-size: 0.9em;
+  width:80px;
+  color: #aaa;
+}
+
+.user-notification-list-status p {
+  margin: 0;
+  font-weight: bold;
+}
+
+.user-buttons{
+  display: flex;
+  gap: 10px;
+}
+
+.user-buttons .btn-Mark-Read {
+  border: 1.2px solid #0167FF;
+  color: #0167FF;
+  background: none;
+  border-radius: 5px;
+  width: 110px;
+  padding: 7px 10px;
+  font-size: 0.9em;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.user-buttons .btn-Mark-Read:hover {
+  background-color: #0167FF;
+  color: #fff; 
+}
+
+.user-buttons .btn-user-delete-buttons {
+  border: 1.2px solid #FF8C00;
+  color: #FF8C00;
+  background: none;
+  border-radius: 5px;
+  width: 70px;
+  padding: 7px 10px;
+  font-size: 0.9em;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease; 
+}
+
+.user-buttons .btn-user-delete-buttons:hover {
+  background-color: #FF8C00;
+  color: #fff;
+}
+
+@media (max-width: 992px) {
+  .user-notification {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .user-details p {
+    width: 100%;
+    text-align: center;
+  }
+
+  .user-buttons {
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .user-notification-list {
+    max-height: 450px;
+  }
+}
+
+@media (max-width: 768px) {
+  .user-notification-card h2 {
+    font-size: 20px;
+  }
+
+  .user-notification img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .user-details h2 {
+    font-size: 16px;
+  }
+
+  .user-details p {
+    width: 100%;
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .user-notification {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .user-notification-list {
+    max-height: 350px;
+  }
+
+  .user-buttons .btn-Mark-Read,
+  .user-buttons .btn-user-delete-buttons {
+    width: 100px;
+  }
+}
+
+@media (max-width: 576px) {
+  .user-notification-card {
+    padding: 10px;
+  }
+
+  .user-notification {
+    padding: 10px;
+  }
+
+  .user-notification img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .user-details h2 {
+    font-size: 14px;
+  }
+
+  .user-details p {
+    font-size: 12px;
+  }
+
+  .user-buttons .btn-Mark-Read,
+  .user-buttons .btn-user-delete-buttons {
+    width: 90px;
+    font-size: 0.8em;
+  }
+}

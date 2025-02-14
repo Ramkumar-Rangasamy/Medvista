@@ -1,0 +1,650 @@
+/* Container */
+.Patients-whole-container {
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    background: linear-gradient(180deg, rgba(238, 244, 255, 0.3) 0%, #FFFFFF 100%);
+}
+
+/* First Section */
+.patients-first-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.Patients-text-content{
+    display: flex;
+    flex-direction: column;
+}
+
+.patients-first-image {
+    /* margin-top: 20px; */
+    max-height: 500px;
+    max-width: 462px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.first-section-heading {
+    font-size: 35px;
+    font-weight: 600;
+    line-height: 42px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.first-section-main-description{
+    color: rgba(83, 83, 83, 1);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+
+
+}
+.Patients-highlight-text {
+    color: #0066ff;
+}
+
+.patients-first-section-items {
+    display: flex;
+    flex-direction: row; 
+    flex-wrap: 80px;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.first-section-items {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.first-section-head-item {
+    display: flex;
+    align-items: center;
+}
+
+.first-section-head-item h3 {
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.first-section-description p {
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18.4px;
+}
+
+.patients-check-icon {
+    width: 20px;
+    height: 20px;
+}
+
+/* Second Section */
+.patients-second-section {
+    text-align: center;
+}
+
+.second-section-heading {
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 33.6px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.patients-second-section-area {
+    display: flex;
+    /* justify-content: space-between; */
+    gap: 60px;
+    margin-top: 30px;
+}
+
+.patients-second-image {
+    width: 624px;
+    height: 600px;
+    border-radius: 10px;
+    object-fit: cover;
+    filter: drop-shadow(2px 2px 2px #1A0F011F);
+}
+
+.second-section-text-area {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 600px;
+    text-align: left;
+}
+
+.second-section-items {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.second-section-item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.second-section-item h3 {
+    font-size: 18px;
+    font-weight: 600;
+}
+.second-section-item-title{
+    margin-left: 10px;
+    line-height: 30px;
+    color: rgba(2, 48, 71, 1);
+
+}
+
+.second-section-item-number{
+font-size: 14px;
+font-weight: 600;
+line-height: 16.8px;
+    padding: 5px 7px;
+    background: rgba(255, 127, 80, 1);
+    color: #FFFFFF;
+border-radius: 50%;
+}
+.second-section-item p {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 18.6px;
+    text-align: left;
+    color: rgba(83, 83, 83, 1);
+    margin-top: 5px;
+}
+
+/* third Section */
+
+.third-section-heading {
+    text-align: center;
+    color: #272848;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 33.6px;    
+    margin-bottom: 10px;
+}
+
+.third-section-description{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24.3px;
+    text-align: center;
+    color: rgba(83, 83, 83, 1);
+    margin-bottom: 50px;
+
+    }
+
+.patients-steps {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.patients-step {
+    width: 25%;
+    padding: 20px;
+    text-align: center;
+
+}
+
+.patients-step-icon-number{
+    z-index: 2;
+     font-size: 14px;
+    font-weight: 600;
+    padding: 2px 5px;
+    position: absolute;
+    color: #0066ff;
+    margin-right: 70px;
+    margin-top: -40px;
+    background: rgba(255, 255, 255, 1);
+    border-radius: 50%;
+    box-shadow: 0px 2px 3px 0px rgba(1, 103, 255, 0.12);
+
+}
+.patients-step-icon {
+    background: rgba(1, 103, 255, 0.1);
+    border: 2px dashed rgba(1, 103, 255, 0.5);
+    color: #fff;
+    font-size: 18px;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin: 0 auto 10px auto;
+}
+
+.patients-step h3 {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26.6px;
+    text-align: center;
+    color: rgba(2, 48, 71, 1);
+    margin-bottom: 10px;
+}
+
+.patients-step p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.8px;
+    text-align: center;
+    color: rgba(83, 83, 83, 1);
+
+    
+}
+
+.Patientsthird-img{
+    z-index: 1;
+    position: relative;
+    width: 35px;
+    height: 35px;
+}
+
+/* .patient-curve {
+    width: 100px; 
+    height: 40px; 
+    position: relative;
+  }
+  
+  .patient-curve::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    transform: translateY(-50%);
+    width: 100%;
+    height: 100%;
+    border-top: 2px dashed #007bff; 
+    border-radius: 50%;
+    z-index: -1;
+  } */
+
+/* fourth section */
+
+.fourth-section-heading {
+    text-align: center;
+    color: #272848;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 33.6px;    
+    margin-bottom: 10px;
+}
+
+.fourth-section-description{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22.26px;
+    text-align: center;
+    color: rgba(0, 0, 0, 1);
+    margin-bottom: 20px;
+
+    }
+
+    .patients-fourth-signup-button {
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 25px;
+        padding: 5px 20px; 
+        background: rgba(1, 103, 255, 1);
+        border: none;
+        color: #fff;
+        border-radius: 5px;
+        display: block; 
+        margin: 0 auto; 
+        text-align: center; 
+        cursor: pointer; 
+    }
+    
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 1024px) {
+    .patients-first-section {
+        flex-direction: column;
+        align-items: center;
+    }
+.patients-image-content{
+    order: 1;
+}
+.Patients-text-content{
+    order: 2;
+}
+.first-section-heading{
+    text-align: center;
+}
+.first-section-main-description{
+    text-align: center;
+}
+    
+    .patients-first-section-items {
+        flex-direction: column; 
+        gap: 20px; 
+    }
+
+  
+
+    .first-section-head-item h3 {
+        font-size: 18px; 
+        margin-top: 5px; 
+    }
+
+    .first-section-description p {
+        font-size: 14px; 
+    }
+
+    .patients-second-section-area {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .patients-second-image {
+        width: 100%;
+        height: auto;
+    }
+
+    .patients-step {
+        width: 80%;
+        margin: 10px 0;
+    }
+
+    .patients-steps {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .patients-fourth-signup-button {
+        width: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+    .Patients-whole-container {
+        padding: 30px;
+        gap: 60px;
+    }
+
+    .first-section-heading,
+    .second-section-heading,
+    .third-section-heading,
+    .fourth-section-heading {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .first-section-main-description,
+    .third-section-description,
+    .fourth-section-description {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .patients-first-image {
+        max-width: 100%;
+        max-height: 300px;
+    }
+
+    .patients-second-image {
+        width: 100%;
+        height: auto;
+    }
+
+    .patients-step-icon {
+        width: 60px;
+        height: 60px;
+    }
+    .patients-step-icon-number{
+        margin-right: 60px;
+        margin-top: -40px;
+    }
+
+
+    .patients-step h3 {
+        font-size: 18px;
+    }
+
+    .patients-step p {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .patients-first-section,
+    .patients-second-section,
+    .patients-steps {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .patients-first-section-items {
+        gap: 20px;
+    }
+
+    .first-section-heading {
+        font-size: 24px;
+    }
+
+    .first-section-main-description {
+        font-size: 12px;
+    }
+    .first-section-description p{
+      line-height: 20px;
+    }
+    .second-section-item h3 {
+        font-size: 13px;
+    }
+
+    .second-section-item p {
+        font-size: 14px;
+    }
+
+    .patients-fourth-signup-button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+    .second-section-item-title{
+        font-size: 12px;
+        margin-left: 5px;
+    }
+    .second-section-item-number{
+        font-size: 10px;
+        font-weight: 600;
+        padding: 3px 4px;
+        border-radius: 50%;
+        }
+    .patients-check-icon{
+        width: 15px;
+        height: 15px;
+    }
+    .first-section-head-item h3{
+        margin-top: 9px;
+        font-size: 13px;
+    }
+}
+
+
+@media (min-width: 1500px) {
+    /* Container */
+    .Patients-whole-container {
+        padding: 80px;
+        gap: 120px;
+    }
+
+    /* First Section */
+    .patients-first-section {
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .Patients-text-content {
+        max-width: 600px;
+    }
+
+    .patients-first-image {
+        max-height: 500px;
+        max-width: 500px;
+    }
+
+    .first-section-heading {
+        font-size: 48px;
+        line-height: 60px;
+        margin-bottom: 30px;
+    }
+
+    .first-section-main-description {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .patients-first-section-items {
+        display: flex;
+        flex-direction: row;
+        /* justify-content: center;
+        align-items: center; */
+        gap: 40px;
+    }
+
+    .first-section-items {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .first-section-head-item {
+        display: flex;
+        align-items: center;
+    }
+
+    .first-section-head-item h3 {
+        font-size: 22px;
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+
+    .first-section-description p {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .patients-check-icon {
+        width: 28px;
+        height: 28px;
+    }
+
+    /* Second Section */
+    .patients-second-section {
+        text-align: center;
+    }
+
+    .second-section-heading {
+        font-size: 48px;
+        line-height: 60px;
+        margin-bottom: 50px;
+    }
+
+    .patients-second-section-area {
+        display: flex;
+        justify-content: center;
+        /* gap: 80px; */
+        margin-top: 30px;
+    }
+
+    .patients-second-image {
+        width: 700px;
+        height: auto;
+        border-radius: 10px;
+        object-fit: cover;
+    }
+
+    .second-section-text-area {
+        max-width: 650px;
+        text-align: left;
+        gap: 20px;
+    }
+
+    .second-section-item h3 {
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    /* Third Section */
+
+    .third-section-heading {
+        text-align: center;
+        font-size: 48px;
+        line-height: 60px;
+        margin-bottom: 50px;
+    }
+
+    .third-section-description {
+/* padding:0px 100px 0px 100px; */
+        font-size: 20px;
+        line-height: 28px;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .patients-steps {
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+    }
+
+    .patients-step {
+        width: 20%;
+        padding: 30px;
+        text-align: center;
+    }
+
+    .patients-step-icon {
+        width: 90px;
+        height: 90px;
+        margin: 0 auto 10px auto;
+    }
+
+    .patients-step h3 {
+        font-size: 24px;
+        color: #333;
+        margin-bottom: 10px;
+    }
+
+    /* Fourth Section */
+    .fourth-section-heading {
+        text-align: center;
+        font-size: 48px;
+        line-height: 60px;
+        margin-bottom: 50px;
+    }
+
+    .fourth-section-description {
+        font-size: 20px;
+        line-height: 28px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .patients-fourth-signup-button {
+        font-size: 18px;
+        padding: 12px 25px;
+        background: rgba(1, 103, 255, 1);
+        border: none;
+        color: #fff;
+        border-radius: 5px;
+        display: block; 
+        margin: 0 auto; 
+        text-align: center; 
+        cursor: pointer; 
+    }
+}
+
+    

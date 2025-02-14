@@ -1,0 +1,333 @@
+.navbar-head-style{
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding:10px 5%;
+}
+
+.logged-in-background {
+  background: #FFFFFF !important;
+  box-shadow: 0px 10px 24px 0px #ACACAC26;
+  border-bottom: 1px solid #C3CFE0;
+}
+
+.brand-img {
+  max-width: 135.48px;
+  max-height: 31px;
+}
+
+.nav-link-style{
+  padding: 0.5rem 1rem;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 25px;
+  text-align: left;
+  color: rgba(39, 40, 72, 1);
+}
+
+.trial-count-head{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.trial-count-head .free-trial-doctor{
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 25px;
+  text-align: left;
+  color: rgba(39, 40, 72, 1);
+  margin: 0;
+}
+
+.trial-countdown {
+  min-width: 150px;
+  height: fit-content; 
+  text-align: center; 
+  color: #333; 
+  border-radius:2px; 
+  color:#FF7F50 ;
+  border: 1px solid #FF7F50;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 25px;
+  white-space: nowrap; 
+}
+
+
+
+
+.nav-item.active {
+  position: relative; 
+}
+
+
+/* Background color for doctors page only */
+/* .navbar-doctor {
+  background-color: #ffffff ; 
+} */
+
+
+
+
+/* Dropdown styles */
+.dropdown-menu {
+  border-radius: 5px !important;
+}
+
+.dropdown-item {
+  color: black;
+  padding: 10px 20px;
+}
+
+.dropdown-item:hover {
+  background-color: #0167FF;
+  color: #fff;
+}
+
+.nav-link.dropdown-toggle::after {
+  display: none;
+}
+
+.nav-signin-button {
+  border: 1px solid #0167FF;
+  background: none;
+  border-radius: 5px;
+  color: #0167FF;
+  padding: 7px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  text-wrap: nowrap;
+
+}
+
+.nav-register-button {
+  background: #0167FF;
+  color: #FFFFFF;
+  border-radius: 5px;
+  border: none;
+  padding: 7px 20px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/* Blur background for modals */
+.blur-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3); 
+  backdrop-filter: blur(5px); 
+  z-index: 1000; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.logout-container-button{
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap:4px;
+  background: #F3F6FF;
+  color: #7979B2;
+  border-radius: 20px 5px 20px 5px;
+  width: 50px;
+  height: 50px;
+}
+
+
+.logout-button {
+  border: none;
+  background: none;
+  outline: none;
+  color: #7979B2;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19.2px;    
+}
+
+.dashboard-setting-bell{
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px 5px 20px 5px;
+  background: #F3F6FF;
+}
+
+.nav-notification-button {
+  background: none;
+  border: none;
+  position: relative;
+}
+
+/* .nav-notification-button::after {
+  position: absolute;
+  content: '';
+  top: -22px;
+  left:22px;
+  width: 23.38px;
+  height: 23.38px;
+  border-radius:50%;
+  background: #42427D;
+  border: 5px solid #FFFFFF;
+} */
+
+.notification-icon{
+  color: #42427D;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 16px;
+  height: 18px;
+}
+
+
+.find-doctor.nav-link.nav-link-style {
+  background: none;
+  border: none;
+  
+  cursor: pointer; /* Indicate that it is clickable */
+}
+
+.find-doctor.nav-link.nav-link-style:hover {
+  color: #007bff; /* Optionally, add a hover effect */
+}
+
+
+/* Show the navbar-toggler at 1024px or below */
+@media (max-width: 1440px) {
+  .nav-link-style{
+    font-size: 14px;
+  }
+}
+/* Show the navbar-toggler at 1024px or below */
+@media (max-width: 1200px) {
+  .nav-link-style{
+    font-size: 14px;
+    /* text-wrap: nowrap; */
+  }
+}
+@media (max-width: 1100px) {
+  .nav-signin-button{
+    font-size: 14px;
+  padding: 7px 20px;
+  /* text-wrap: nowrap; */
+  }
+  .nav-register-button{
+    font-size: 14px;
+  padding: 7px 20px;
+  /* text-wrap: nowrap; */
+  }
+}
+@media (max-width: 1023px) {
+  .navbar-brand {
+    margin-left: 0.5rem;
+  }
+}
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-nav .nav-link {
+      padding-right: .1rem;
+      padding-left: .1rem;
+  }
+  .brand-img {
+    padding-left: 0rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar-brand {
+    margin-left: 0rem;
+  }
+}
+
+/* Show offcanvas only in mobile view (max-width 768px) */
+/* Hide offcanvas on large screens */
+@media (min-width: 992px) {
+  .offcanvas-custom {
+    display: none !important;
+  }
+  
+}
+
+/* Show offcanvas only on mobile */
+@media (max-width: 991px) {
+  .offcanvas-custom {
+    display: block !important;
+  }
+
+  .navbar-collapse{
+    display: none !important;
+  }
+}
+
+/* Custom offcanvas container */
+.offcanvas-custom {
+  position: fixed;
+  top: 0;
+  left: -100%; /* Start hidden on the left */
+  width: 300px;
+  height: 100%;
+  background-color: #fff;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5); /* Left shadow */
+  transition: left 0.3s ease; /* Animate from left */
+  z-index: 1050;
+}
+
+/* Open state for the offcanvas */
+.offcanvas-custom.open {
+  left: 0; /* Slide in from the left */
+}
+
+
+/* Offcanvas header */
+.offcanvas-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #dee2e6;
+}
+
+/* Offcanvas close button */
+.offcanvas-close {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* Offcanvas body */
+.offcanvas-body {
+  padding: 1rem;
+}
+
+/* Navbar toggler for mobile */
+.navbar-toggler {
+  border: none;
+  background-color: transparent;
+}
+.offcanvas-btn-div{
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+.offcanvas-btn{
+  background-color: #FF7F50 !important;
+  color: #fff !important;
+  padding: 10px;
+}
+.offcanvas-body .navbar-nav{
+  padding:0px 20px;
+}
